@@ -1,0 +1,11 @@
+syntax: regexp
+.*\.pyc
+.*\.idea/.*
+syntax: glob
+txt2json/corpus/json/*
+txt2json/corpus/txt/*
+corpus/*
+search/media/*
+search/tmp/*
+src_convertors/error.log
+docs_doxygen/*

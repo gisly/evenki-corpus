@@ -1,0 +1,110 @@
+{
+  "json_indent": -1,
+  "corpus_dir": "D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/evenki",
+  "meta_filename": "meta.csv",
+  "meta_fields": ["filename",
+    "author",
+    "year",
+    "recplace",
+    "title",
+    "genre",
+    "year_from",
+    "year_to",
+	"site_url"],
+  "main_tiers": ["sentFon"],
+  "aligned_tiers": ["rus", "evCyr"],
+  "analysis_tiers": {"fonWord":"word", "fonConcat":"parts", "glConcat":"gloss"},
+  "tier_languages": {"sentFon" : "evenkiTr", "rus":"russian",
+    "fonConcat":"evenkiTr", "fonWord":"russian", "evCyr" : "evenki"},
+  "corpus_name": "evenki",
+  "input_format": "json-gzip",
+  "debug": false,
+  "media": false,
+  "viewing_mode": "glossed",
+  "media_length": 60,
+  "max_context_expand": 4,
+  "max_distance_filter": 200000,
+  "max_docs_retrieve": 9999,
+  "max_words_in_sentence": 40,
+  "query_timeout": 60,
+  "viewable_meta": [
+    "filename",
+    "author",
+    "year",
+    "recplace",
+    "title",
+    "genre",
+    "year_from",
+    "year_to",
+	"site_url"
+  ],
+  "sentence_meta": [
+    "age",
+    "gender"
+  ],
+  "search_meta": {
+    "columns": [
+      [
+        {"type": "input_text", "name": "author", "placeholder": "Author"},
+		{"type": "input_text", "name": "recplace", "placeholder": "recplace"},
+        {"type": "input_text", "name": "title", "placeholder": "Title"},
+        {"type": "separator"},
+        {"type": "input_number", "name": "year_from", "placeholder": "Year: from"},
+        {"type": "input_number", "name": "year_to", "placeholder": "Year: to"}
+      ],
+      [
+        {"type": "input_text", "name": "genre", "placeholder": "Genre"},
+        {"type": "option", "name": "genre", "value": "folklore", "text": "folklore"},
+        {"type": "option", "name": "genre", "value": "lifestory", "text": "lifestory"}
+      ]
+    ],
+    "stat_options": [
+      "genre",
+      "author",
+      "title",
+      "year",
+      "recplace"
+    ]
+  },
+  "word_fields":
+  [
+    "trans_ru",
+    "trans_en"
+  ],
+  "languages": ["evenkiTr", "evenki", "russian"],
+  "transliterations": ["original", "IPA"],
+  "input_methods": ["normal"],
+  "interface_languages": {"en": "English", "ru": "Russian"},
+  "all_language_search_enabled": true,
+  "gloss_search_enabled": true,
+  "ambiguous_analyses": true,
+  "lang_props":
+  {
+    "evenkiTr":
+    {
+      "gloss_shortcuts": {
+        "case": "(obl(\\.pl)?|abs|erg|gen|abl|ins)",
+        "tense": "(pst|fut|prs)"
+      },
+      "gr_fields_order": ["tense", "person", "number", "case", "poss"],
+      "gloss_selection": {
+        "columns": [
+          [
+            {"type": "gloss", "value": "CASE", "tooltip": "Any&nbsp;case&nbsp;marker"}
+          ]
+        ]
+      },
+      "gramm_selection": {
+        "columns": [
+          [
+            {"type": "header", "value": "Parts of speech"},
+            {"type": "gramm", "value": "N", "category": "pos", "tooltip": "Noun"},
+            {"type": "gramm", "value": "V", "category": "pos", "tooltip": "Verb"},
+            {"type": "gramm", "value": "A", "category": "pos", "tooltip": "Adjective"},
+            {"type": "separator"}
+          ]
+        ]
+      }
+    }
+  }
+}

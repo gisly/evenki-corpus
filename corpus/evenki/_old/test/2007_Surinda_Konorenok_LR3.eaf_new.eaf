@@ -1,0 +1,2157 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ANNOTATION_DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" AUTHOR="unspecified" DATE="2017-01-19T07:47:01+12:00" FORMAT="2.8" VERSION="2.8" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv2.8.xsd">
+    <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
+        <MEDIA_DESCRIPTOR EXTRACTED_FROM="file:///D:/ForElan/OldMethod/2007_Surinda_Konorenok_LR3/2007_Surinda_Konorenok_LR3.wav" MEDIA_URL="file:///D:/ForElan/OldMethod/2007_Surinda_Konorenok_LR3/2007_Surinda_Konorenok_LR3.wav" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="./2007_Surinda_Konorenok_LR3.wav" />
+        <MEDIA_DESCRIPTOR MEDIA_URL="file:///D:/ForElan/OldMethod/2007_Surinda_Konorenok_LR3/2007_Surinda_Konorenok_LR3_MP4.mp4" MIME_TYPE="video/mp4" RELATIVE_MEDIA_URL="./2007_Surinda_Konorenok_LR3_MP4.mp4" TIME_ORIGIN="1251" />
+        <MEDIA_DESCRIPTOR MEDIA_URL="file:///D:/ForElan/OldMethod/2007_Surinda_Konorenok_LR3/2007_Surinda_Konorenok_LR3_MPEG1.mpg" MIME_TYPE="video/mpeg" RELATIVE_MEDIA_URL="./2007_Surinda_Konorenok_LR3_MPEG1.mpg" TIME_ORIGIN="1251" />
+        <PROPERTY NAME="URN">urn:nl-mpi-tools-elan-eaf:7e6677a2-c7c7-4b8e-a01a-ac9cc7f88460</PROPERTY>
+        <PROPERTY NAME="lastUsedAnnotationId">261</PROPERTY>
+    </HEADER>
+    <TIME_ORDER>
+        <TIME_SLOT TIME_SLOT_ID="ts1" TIME_VALUE="174" />
+        <TIME_SLOT TIME_SLOT_ID="ts2" TIME_VALUE="900" />
+        <TIME_SLOT TIME_SLOT_ID="ts3" TIME_VALUE="2517" />
+        <TIME_SLOT TIME_SLOT_ID="ts4" TIME_VALUE="3262" />
+        <TIME_SLOT TIME_SLOT_ID="ts5" TIME_VALUE="5228" />
+        <TIME_SLOT TIME_SLOT_ID="ts6" TIME_VALUE="6557" />
+        <TIME_SLOT TIME_SLOT_ID="ts7" TIME_VALUE="7302" />
+        <TIME_SLOT TIME_SLOT_ID="ts8" TIME_VALUE="8941" />
+        <TIME_SLOT TIME_SLOT_ID="ts9" TIME_VALUE="9576" />
+        <TIME_SLOT TIME_SLOT_ID="ts10" TIME_VALUE="12998" />
+        <TIME_SLOT TIME_SLOT_ID="ts11" TIME_VALUE="13347" />
+        <TIME_SLOT TIME_SLOT_ID="ts12" TIME_VALUE="17844" />
+        <TIME_SLOT TIME_SLOT_ID="ts13" TIME_VALUE="18219" />
+        <TIME_SLOT TIME_SLOT_ID="ts14" TIME_VALUE="20102" />
+        <TIME_SLOT TIME_SLOT_ID="ts15" TIME_VALUE="20446" />
+        <TIME_SLOT TIME_SLOT_ID="ts16" TIME_VALUE="22200" />
+        <TIME_SLOT TIME_SLOT_ID="ts17" TIME_VALUE="22200" />
+        <TIME_SLOT TIME_SLOT_ID="ts18" TIME_VALUE="24047" />
+        <TIME_SLOT TIME_SLOT_ID="ts19" TIME_VALUE="27556" />
+        <TIME_SLOT TIME_SLOT_ID="ts20" TIME_VALUE="29580" />
+        <TIME_SLOT TIME_SLOT_ID="ts21" TIME_VALUE="32390" />
+        <TIME_SLOT TIME_SLOT_ID="ts22" TIME_VALUE="33170" />
+        <TIME_SLOT TIME_SLOT_ID="ts23" TIME_VALUE="33170" />
+        <TIME_SLOT TIME_SLOT_ID="ts24" TIME_VALUE="34218" />
+        <TIME_SLOT TIME_SLOT_ID="ts25" TIME_VALUE="35091" />
+        <TIME_SLOT TIME_SLOT_ID="ts26" TIME_VALUE="35671" />
+        <TIME_SLOT TIME_SLOT_ID="ts27" TIME_VALUE="35712" />
+        <TIME_SLOT TIME_SLOT_ID="ts28" TIME_VALUE="39577" />
+        <TIME_SLOT TIME_SLOT_ID="ts29" TIME_VALUE="40332" />
+        <TIME_SLOT TIME_SLOT_ID="ts30" TIME_VALUE="41577" />
+        <TIME_SLOT TIME_SLOT_ID="ts31" TIME_VALUE="47611" />
+        <TIME_SLOT TIME_SLOT_ID="ts32" TIME_VALUE="49611" />
+        <TIME_SLOT TIME_SLOT_ID="ts33" TIME_VALUE="49916" />
+        <TIME_SLOT TIME_SLOT_ID="ts34" TIME_VALUE="50681" />
+        <TIME_SLOT TIME_SLOT_ID="ts35" TIME_VALUE="51141" />
+        <TIME_SLOT TIME_SLOT_ID="ts36" TIME_VALUE="52336" />
+        <TIME_SLOT TIME_SLOT_ID="ts37" TIME_VALUE="53775" />
+        <TIME_SLOT TIME_SLOT_ID="ts38" TIME_VALUE="54963" />
+        <TIME_SLOT TIME_SLOT_ID="ts39" TIME_VALUE="55403" />
+        <TIME_SLOT TIME_SLOT_ID="ts40" TIME_VALUE="55993" />
+        <TIME_SLOT TIME_SLOT_ID="ts41" TIME_VALUE="56007" />
+        <TIME_SLOT TIME_SLOT_ID="ts42" TIME_VALUE="56487" />
+        <TIME_SLOT TIME_SLOT_ID="ts43" TIME_VALUE="57300" />
+        <TIME_SLOT TIME_SLOT_ID="ts44" TIME_VALUE="58300" />
+    </TIME_ORDER>
+    <TIER DEFAULT_LOCALE="ru" LINGUISTIC_TYPE_REF="default" TIER_ID="ev">
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a174" TIME_SLOT_REF1="ts1" TIME_SLOT_REF2="ts2">
+                <ANNOTATION_VALUE>А̄дичав. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a175" TIME_SLOT_REF1="ts3" TIME_SLOT_REF2="ts4">
+                <ANNOTATION_VALUE>Тэгэм. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a176" TIME_SLOT_REF1="ts5" TIME_SLOT_REF2="ts6">
+                <ANNOTATION_VALUE>Гулувунмэ илам. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a177" TIME_SLOT_REF1="ts7" TIME_SLOT_REF2="ts8">
+                <ANNOTATION_VALUE>Эртыко̄н ӣдӯвэл бидерэн.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a178" TIME_SLOT_REF1="ts9" TIME_SLOT_REF2="ts10">
+                <ANNOTATION_VALUE>орорво камнӣка̄сча камнӣка̄сча. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a179" TIME_SLOT_REF1="ts11" TIME_SLOT_REF2="ts12">
+                <ANNOTATION_VALUE>Колобое ирчов эсӣ нулгистэ̄т. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a180" TIME_SLOT_REF1="ts13" TIME_SLOT_REF2="ts14">
+                <ANNOTATION_VALUE>Нуӈан орорво тадӯ дяваксидяран. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a181" TIME_SLOT_REF1="ts15" TIME_SLOT_REF2="ts16">
+                <ANNOTATION_VALUE>Орорво дявадян. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a182" TIME_SLOT_REF1="ts17" TIME_SLOT_REF2="ts18">
+                <ANNOTATION_VALUE>Чаттыдяп, тадук нулгиситэ̄т. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a183" TIME_SLOT_REF1="ts19" TIME_SLOT_REF2="ts20">
+                <ANNOTATION_VALUE>Саво̄далви ве̄спа такум. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a184" TIME_SLOT_REF1="ts21" TIME_SLOT_REF2="ts22">
+                <ANNOTATION_VALUE>Этырко̄н эмэден. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a185" TIME_SLOT_REF1="ts23" TIME_SLOT_REF2="ts24">
+                <ANNOTATION_VALUE>Орорво дявадяп. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a186" TIME_SLOT_REF1="ts25" TIME_SLOT_REF2="ts26">
+                <ANNOTATION_VALUE>Депдет. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a187" TIME_SLOT_REF1="ts27" TIME_SLOT_REF2="ts28">
+                <ANNOTATION_VALUE>Тадук сурудет нулгиситэ̄т, ча̄ски нулгистэ̄т. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a188" TIME_SLOT_REF1="ts29" TIME_SLOT_REF2="ts30">
+                <ANNOTATION_VALUE>Тыкчакивэ эё̄кӣ. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a189" TIME_SLOT_REF1="ts31" TIME_SLOT_REF2="ts32">
+                <ANNOTATION_VALUE>Эл, ӈинакир тадӯ гоголлэ. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a190" TIME_SLOT_REF1="ts33" TIME_SLOT_REF2="ts34">
+                <ANNOTATION_VALUE>Эмэдяӈан. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a191" TIME_SLOT_REF1="ts35" TIME_SLOT_REF2="ts36">
+                <ANNOTATION_VALUE>Орорво дяваксидяӈан. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a192" TIME_SLOT_REF1="ts37" TIME_SLOT_REF2="ts38">
+                <ANNOTATION_VALUE>Дяваксидян – эмэден. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a193" TIME_SLOT_REF1="ts39" TIME_SLOT_REF2="ts40">
+                <ANNOTATION_VALUE>Чаттыдят. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a194" TIME_SLOT_REF1="ts41" TIME_SLOT_REF2="ts42">
+                <ANNOTATION_VALUE>Сурудят. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a195" TIME_SLOT_REF1="ts43" TIME_SLOT_REF2="ts44">
+                <ANNOTATION_VALUE>Нулгисчат.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER DEFAULT_LOCALE="ru" LINGUISTIC_TYPE_REF="child" PARENT_REF="ev" TIER_ID="fon_old">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a196" ANNOTATION_REF="a174">
+                <ANNOTATION_VALUE>ā-d'ə-čā-w</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a197" ANNOTATION_REF="a175">
+                <ANNOTATION_VALUE>təə-Ø-m</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a198" ANNOTATION_REF="a176">
+                <ANNOTATION_VALUE>guluwun-mə ila-Ø-m</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a199" ANNOTATION_REF="a177">
+                <ANNOTATION_VALUE>ətirkōn īdū-wəl bi-d'ə-rə-n </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a200" ANNOTATION_REF="a178">
+                <ANNOTATION_VALUE>oro-r-wo kamnīkās-ta kamnīkās-ča</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a201" ANNOTATION_REF="a179">
+                <ANNOTATION_VALUE>kolobo-jə ir-čo-w əsī nulgi-s-tə̄-t</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a202" ANNOTATION_REF="a180">
+                <ANNOTATION_VALUE>nuŋan oro-r-wo tadū d'awa-ksi-d'a-ra-n</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a203" ANNOTATION_REF="a181">
+                <ANNOTATION_VALUE>oro-r-wo oro-r-wo d'awa-d'a-n</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a204" ANNOTATION_REF="a182">
+                <ANNOTATION_VALUE>čat-ti-d'a-p taduk nulgi-si-tə̄-t</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a205" ANNOTATION_REF="a183">
+                <ANNOTATION_VALUE>sawoda-l-wī=wəl wes-pa taku-Ø-m</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a206" ANNOTATION_REF="a184">
+                <ANNOTATION_VALUE>ətirkōn əmə-d'ə-n</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a207" ANNOTATION_REF="a185">
+                <ANNOTATION_VALUE>oro-r-wo d'awa-d'a-Ø-p</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a208" ANNOTATION_REF="a186">
+                <ANNOTATION_VALUE>d'əp-d'ə-t</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209" ANNOTATION_REF="a187">
+                <ANNOTATION_VALUE>taduk suru-d'ə-t nulgi-si-tə̄-t čāski nulgi-s-tə̄-t</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a210" ANNOTATION_REF="a188">
+                <ANNOTATION_VALUE>tikčaki-wə ojōkī</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a211" ANNOTATION_REF="a189">
+                <ANNOTATION_VALUE>əl ŋinaki-r tadū goo-l-lə-Ø</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a212" ANNOTATION_REF="a190">
+                <ANNOTATION_VALUE>əmə-d'aŋā-n</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a213" ANNOTATION_REF="a191">
+                <ANNOTATION_VALUE>oro-r-wo d'awa-ksi-d'aŋā-n</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a214" ANNOTATION_REF="a192">
+                <ANNOTATION_VALUE>d'awa-ksi-d'a-n əmə-d'ə-n</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a215" ANNOTATION_REF="a193">
+                <ANNOTATION_VALUE>čat-ti-d'a-t</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a216" ANNOTATION_REF="a194">
+                <ANNOTATION_VALUE>suru-d'ə-t</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a217" ANNOTATION_REF="a195">
+                <ANNOTATION_VALUE>nulgi-s-t’ə-t</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER DEFAULT_LOCALE="ru" LINGUISTIC_TYPE_REF="child" PARENT_REF="ev" TIER_ID="rus">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a218" ANNOTATION_REF="a174">
+                <ANNOTATION_VALUE>Я спала. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a219" ANNOTATION_REF="a175">
+                <ANNOTATION_VALUE>Проснулась. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a220" ANNOTATION_REF="a176">
+                <ANNOTATION_VALUE>Костер зажгла. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a221" ANNOTATION_REF="a177">
+                <ANNOTATION_VALUE>Муж где-то ходит.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a222" ANNOTATION_REF="a178">
+                <ANNOTATION_VALUE>оленей собирает, собирает. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a223" ANNOTATION_REF="a179">
+                <ANNOTATION_VALUE>Я хлеб состряпала, чтобы сегодня нам отправиться аргишить. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a224" ANNOTATION_REF="a180">
+                <ANNOTATION_VALUE>Он оленей там ловит. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a225" ANNOTATION_REF="a181">
+                <ANNOTATION_VALUE>Оленей поймает, </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a226" ANNOTATION_REF="a182">
+                <ANNOTATION_VALUE>чай попьем, потом чтобы поехать аргишить. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a227" ANNOTATION_REF="a183">
+                <ANNOTATION_VALUE>Вещи-то все я упаковала. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a228" ANNOTATION_REF="a184">
+                <ANNOTATION_VALUE>Муж придет, </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a229" ANNOTATION_REF="a185">
+                <ANNOTATION_VALUE>оленей поймаем, </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a230" ANNOTATION_REF="a186">
+                <ANNOTATION_VALUE>поедим, </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a231" ANNOTATION_REF="a187">
+                <ANNOTATION_VALUE>потом поедем, чтобы аргишить, далеко аргишить.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a232" ANNOTATION_REF="a188">
+                <ANNOTATION_VALUE>Вниз по (реке) Тыкчаки. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a233" ANNOTATION_REF="a189">
+                <ANNOTATION_VALUE>Эй, собаки там залаяли. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a234" ANNOTATION_REF="a190">
+                <ANNOTATION_VALUE>Придет, </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a235" ANNOTATION_REF="a191">
+                <ANNOTATION_VALUE>оленей найдет. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a236" ANNOTATION_REF="a192">
+                <ANNOTATION_VALUE>Поймает –придет. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a237" ANNOTATION_REF="a193">
+                <ANNOTATION_VALUE>Попьем чаю, </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a238" ANNOTATION_REF="a194">
+                <ANNOTATION_VALUE>поедем, </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a239" ANNOTATION_REF="a195">
+                <ANNOTATION_VALUE>будем аргишить.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER DEFAULT_LOCALE="ru" LINGUISTIC_TYPE_REF="child" PARENT_REF="fon_old" TIER_ID="gl_old">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a240" ANNOTATION_REF="a196">
+                <ANNOTATION_VALUE>спать-IPFV-PST-1SG</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a241" ANNOTATION_REF="a197">
+                <ANNOTATION_VALUE>сесть-NFUT-1SG</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a242" ANNOTATION_REF="a198">
+                <ANNOTATION_VALUE>костер-ACC зажечь-NFUT-1SG</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a243" ANNOTATION_REF="a199">
+                <ANNOTATION_VALUE>муж где-INDEF быть-IPFV-NFUT-3SG </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a244" ANNOTATION_REF="a200">
+                <ANNOTATION_VALUE>олень-PL-ACC бежать.за.зверем-SLIP бежать.за.зверем-PANT</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a245" ANNOTATION_REF="a201">
+                <ANNOTATION_VALUE>хлеб-ACCIN жарить-PST-1SG сегодня кочевать-INCEP-CVPURP-1PL(INCL)</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a246" ANNOTATION_REF="a202">
+                <ANNOTATION_VALUE>3SG олень-PL-ACC там схватить-DES-IPFV-NFUT-3SG</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a247" ANNOTATION_REF="a203">
+                <ANNOTATION_VALUE>олень-PL-ACC олень-PL-ACC схватить-FUTCNT-3SG</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a248" ANNOTATION_REF="a204">
+                <ANNOTATION_VALUE>чай-VBLZ.FAG-FUTCNT-1PL(INCL) потом кочевать-INCEP-CVPURP-1PL(INCL)</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a249" ANNOTATION_REF="a205">
+                <ANNOTATION_VALUE>вещь-PL-ACC.RFL=FOC все-ACC собрать-NFUT-1SG</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a250" ANNOTATION_REF="a206">
+                <ANNOTATION_VALUE>муж прийти-FUTCNT-3SG</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a251" ANNOTATION_REF="a207">
+                <ANNOTATION_VALUE>олень-PL-ACC схватить-IPFV-NFUT-1PL(INCL)</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a252" ANNOTATION_REF="a208">
+                <ANNOTATION_VALUE>есть-FUTCNT-1PL(INCL)</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a253" ANNOTATION_REF="a209">
+                <ANNOTATION_VALUE>потом пойти-FUTCNT-1PL(INCL) кочевать-INCEP-CVPURP-1PL(INCL) далеко кочевать-INCEP-CPURP-1PL(INCL)</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a254" ANNOTATION_REF="a210">
+                <ANNOTATION_VALUE>Тыкчаки-ACC вниз.по.течению</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a255" ANNOTATION_REF="a211">
+                <ANNOTATION_VALUE>эй собака-PL там лаять-INCH-NFUT-3PL</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a256" ANNOTATION_REF="a212">
+                <ANNOTATION_VALUE>приходить-FUT-3SG</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a257" ANNOTATION_REF="a213">
+                <ANNOTATION_VALUE>олень-PL-ACC схватить-DES-FUT-3SG</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a258" ANNOTATION_REF="a214">
+                <ANNOTATION_VALUE>схватить-DES-FUTCNT-3SG приходить-FUTCNT-3SG</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a259" ANNOTATION_REF="a215">
+                <ANNOTATION_VALUE>чай-VBLZ.FAG-FUTCNT-1PL(INCL)</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a260" ANNOTATION_REF="a216">
+                <ANNOTATION_VALUE>пойти-FUTCNT-1PL(INCL)</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a261" ANNOTATION_REF="a217">
+                <ANNOTATION_VALUE>кочевать-INCEP-FUTCNT-1PL(INCL)</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="default" TIME_ALIGNABLE="true" />
+    <LINGUISTIC_TYPE CONSTRAINTS="Time_Subdivision" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="&lt;gl&gt;" TIME_ALIGNABLE="true" />
+    <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Subdivision" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="child" TIME_ALIGNABLE="false" />
+    <LOCALE COUNTRY_CODE="RU" LANGUAGE_CODE="ru" />
+    <CONSTRAINT DESCRIPTION="Time subdivision of parent annotation's time interval, no time gaps allowed within this interval" STEREOTYPE="Time_Subdivision" />
+    <CONSTRAINT DESCRIPTION="Symbolic subdivision of a parent annotation. Annotations refering to the same parent are ordered" STEREOTYPE="Symbolic_Subdivision" />
+    <CONSTRAINT DESCRIPTION="1-1 association with a parent annotation" STEREOTYPE="Symbolic_Association" />
+    <CONSTRAINT DESCRIPTION="Time alignable annotations within the parent annotation's time interval, gaps are allowed" STEREOTYPE="Included_In" />
+<LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Subdivision" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="fonWord" /><LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Subdivision" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="fon_new" /><LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Association" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="gl_new" /><TIER DEFAULT_LOCALE="us" LINGUISTIC_TYPE_REF="fonWord" PARENT_REF="ev" TIER_ID="fonWord"><ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a196_fw_0" ANNOTATION_REF="a174">
+                <ANNOTATION_VALUE>ād'əčāw</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a197_fw_0" ANNOTATION_REF="a175">
+                <ANNOTATION_VALUE>təəØm</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a198_fw_0" ANNOTATION_REF="a176">
+                <ANNOTATION_VALUE>guluwunmə</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a198_fw_1" ANNOTATION_REF="a176" PREVIOUS_ANNOTATION="a198_fw_0">
+                <ANNOTATION_VALUE>ilaØm</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a199_fw_0" ANNOTATION_REF="a177">
+                <ANNOTATION_VALUE>ətirkōn</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a199_fw_1" ANNOTATION_REF="a177" PREVIOUS_ANNOTATION="a199_fw_0">
+                <ANNOTATION_VALUE>īdūwəl</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a199_fw_2" ANNOTATION_REF="a177" PREVIOUS_ANNOTATION="a199_fw_1">
+                <ANNOTATION_VALUE>bid'ərən</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a200_fw_0" ANNOTATION_REF="a178">
+                <ANNOTATION_VALUE>ororwo</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a200_fw_1" ANNOTATION_REF="a178" PREVIOUS_ANNOTATION="a200_fw_0">
+                <ANNOTATION_VALUE>kamnīkāsta</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a200_fw_2" ANNOTATION_REF="a178" PREVIOUS_ANNOTATION="a200_fw_1">
+                <ANNOTATION_VALUE>kamnīkāsča</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a201_fw_0" ANNOTATION_REF="a179">
+                <ANNOTATION_VALUE>kolobojə</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a201_fw_1" ANNOTATION_REF="a179" PREVIOUS_ANNOTATION="a201_fw_0">
+                <ANNOTATION_VALUE>irčow</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a201_fw_2" ANNOTATION_REF="a179" PREVIOUS_ANNOTATION="a201_fw_1">
+                <ANNOTATION_VALUE>əsī</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a201_fw_3" ANNOTATION_REF="a179" PREVIOUS_ANNOTATION="a201_fw_2">
+                <ANNOTATION_VALUE>nulgistə̄t</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a202_fw_0" ANNOTATION_REF="a180">
+                <ANNOTATION_VALUE>nuŋan</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a202_fw_1" ANNOTATION_REF="a180" PREVIOUS_ANNOTATION="a202_fw_0">
+                <ANNOTATION_VALUE>ororwo</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a202_fw_2" ANNOTATION_REF="a180" PREVIOUS_ANNOTATION="a202_fw_1">
+                <ANNOTATION_VALUE>tadū</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a202_fw_3" ANNOTATION_REF="a180" PREVIOUS_ANNOTATION="a202_fw_2">
+                <ANNOTATION_VALUE>d'awaksid'aran</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a203_fw_0" ANNOTATION_REF="a181">
+                <ANNOTATION_VALUE>ororwo</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a203_fw_1" ANNOTATION_REF="a181" PREVIOUS_ANNOTATION="a203_fw_0">
+                <ANNOTATION_VALUE>ororwo</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a203_fw_2" ANNOTATION_REF="a181" PREVIOUS_ANNOTATION="a203_fw_1">
+                <ANNOTATION_VALUE>d'awad'an</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a204_fw_0" ANNOTATION_REF="a182">
+                <ANNOTATION_VALUE>čattid'ap</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a204_fw_1" ANNOTATION_REF="a182" PREVIOUS_ANNOTATION="a204_fw_0">
+                <ANNOTATION_VALUE>taduk</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a204_fw_2" ANNOTATION_REF="a182" PREVIOUS_ANNOTATION="a204_fw_1">
+                <ANNOTATION_VALUE>nulgisitə̄t</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a205_fw_0" ANNOTATION_REF="a183">
+                <ANNOTATION_VALUE>sawodalwīwəl</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a205_fw_1" ANNOTATION_REF="a183" PREVIOUS_ANNOTATION="a205_fw_0">
+                <ANNOTATION_VALUE>wespa</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a205_fw_2" ANNOTATION_REF="a183" PREVIOUS_ANNOTATION="a205_fw_1">
+                <ANNOTATION_VALUE>takuØm</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a206_fw_0" ANNOTATION_REF="a184">
+                <ANNOTATION_VALUE>ətirkōn</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a206_fw_1" ANNOTATION_REF="a184" PREVIOUS_ANNOTATION="a206_fw_0">
+                <ANNOTATION_VALUE>əməd'ən</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a207_fw_0" ANNOTATION_REF="a185">
+                <ANNOTATION_VALUE>ororwo</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a207_fw_1" ANNOTATION_REF="a185" PREVIOUS_ANNOTATION="a207_fw_0">
+                <ANNOTATION_VALUE>d'awad'aØp</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a208_fw_0" ANNOTATION_REF="a186">
+                <ANNOTATION_VALUE>d'əpd'ət</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_0" ANNOTATION_REF="a187">
+                <ANNOTATION_VALUE>taduk</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_1" ANNOTATION_REF="a187" PREVIOUS_ANNOTATION="a209_fw_0">
+                <ANNOTATION_VALUE>surud'ət</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_2" ANNOTATION_REF="a187" PREVIOUS_ANNOTATION="a209_fw_1">
+                <ANNOTATION_VALUE>nulgisitə̄t</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_3" ANNOTATION_REF="a187" PREVIOUS_ANNOTATION="a209_fw_2">
+                <ANNOTATION_VALUE>čāski</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_4" ANNOTATION_REF="a187" PREVIOUS_ANNOTATION="a209_fw_3">
+                <ANNOTATION_VALUE>nulgistə̄t</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a210_fw_0" ANNOTATION_REF="a188">
+                <ANNOTATION_VALUE>tikčakiwə</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a210_fw_1" ANNOTATION_REF="a188" PREVIOUS_ANNOTATION="a210_fw_0">
+                <ANNOTATION_VALUE>ojōkī</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a211_fw_0" ANNOTATION_REF="a189">
+                <ANNOTATION_VALUE>əl</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a211_fw_1" ANNOTATION_REF="a189" PREVIOUS_ANNOTATION="a211_fw_0">
+                <ANNOTATION_VALUE>ŋinakir</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a211_fw_2" ANNOTATION_REF="a189" PREVIOUS_ANNOTATION="a211_fw_1">
+                <ANNOTATION_VALUE>tadū</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a211_fw_3" ANNOTATION_REF="a189" PREVIOUS_ANNOTATION="a211_fw_2">
+                <ANNOTATION_VALUE>goolləØ</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a212_fw_0" ANNOTATION_REF="a190">
+                <ANNOTATION_VALUE>əməd'aŋān</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a213_fw_0" ANNOTATION_REF="a191">
+                <ANNOTATION_VALUE>ororwo</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a213_fw_1" ANNOTATION_REF="a191" PREVIOUS_ANNOTATION="a213_fw_0">
+                <ANNOTATION_VALUE>d'awaksid'aŋān</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a214_fw_0" ANNOTATION_REF="a192">
+                <ANNOTATION_VALUE>d'awaksid'an</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a214_fw_1" ANNOTATION_REF="a192" PREVIOUS_ANNOTATION="a214_fw_0">
+                <ANNOTATION_VALUE>əməd'ən</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a215_fw_0" ANNOTATION_REF="a193">
+                <ANNOTATION_VALUE>čattid'at</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a216_fw_0" ANNOTATION_REF="a194">
+                <ANNOTATION_VALUE>surud'ət</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a217_fw_0" ANNOTATION_REF="a195">
+                <ANNOTATION_VALUE>nulgist’ət</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER><TIER DEFAULT_LOCALE="us" LINGUISTIC_TYPE_REF="fon_new" PARENT_REF="fonWord" TIER_ID="fon"><ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a196_fw_0_f_0" ANNOTATION_REF="a196_fw_0">
+                <ANNOTATION_VALUE>ā</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a196_fw_0_f_2" ANNOTATION_REF="a196_fw_0" PREVIOUS_ANNOTATION="a196_fw_0_f_0">
+                <ANNOTATION_VALUE>-d'ə</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a196_fw_0_f_4" ANNOTATION_REF="a196_fw_0" PREVIOUS_ANNOTATION="a196_fw_0_f_2">
+                <ANNOTATION_VALUE>-čā</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a196_fw_0_f_6" ANNOTATION_REF="a196_fw_0" PREVIOUS_ANNOTATION="a196_fw_0_f_4">
+                <ANNOTATION_VALUE>-w</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a197_fw_0_f_0" ANNOTATION_REF="a197_fw_0">
+                <ANNOTATION_VALUE>təə</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a197_fw_0_f_2" ANNOTATION_REF="a197_fw_0" PREVIOUS_ANNOTATION="a197_fw_0_f_0">
+                <ANNOTATION_VALUE>-Ø</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a197_fw_0_f_4" ANNOTATION_REF="a197_fw_0" PREVIOUS_ANNOTATION="a197_fw_0_f_2">
+                <ANNOTATION_VALUE>-m</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a198_fw_0_f_0" ANNOTATION_REF="a198_fw_0">
+                <ANNOTATION_VALUE>guluwun</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a198_fw_0_f_2" ANNOTATION_REF="a198_fw_0" PREVIOUS_ANNOTATION="a198_fw_0_f_0">
+                <ANNOTATION_VALUE>-mə</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a198_fw_1_f_0" ANNOTATION_REF="a198_fw_1">
+                <ANNOTATION_VALUE>ila</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a198_fw_1_f_2" ANNOTATION_REF="a198_fw_1" PREVIOUS_ANNOTATION="a198_fw_1_f_0">
+                <ANNOTATION_VALUE>-Ø</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a198_fw_1_f_4" ANNOTATION_REF="a198_fw_1" PREVIOUS_ANNOTATION="a198_fw_1_f_2">
+                <ANNOTATION_VALUE>-m</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a199_fw_0_f_0" ANNOTATION_REF="a199_fw_0">
+                <ANNOTATION_VALUE>ətirkōn</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a199_fw_1_f_0" ANNOTATION_REF="a199_fw_1">
+                <ANNOTATION_VALUE>īdū</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a199_fw_1_f_2" ANNOTATION_REF="a199_fw_1" PREVIOUS_ANNOTATION="a199_fw_1_f_0">
+                <ANNOTATION_VALUE>-wəl</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a199_fw_2_f_0" ANNOTATION_REF="a199_fw_2">
+                <ANNOTATION_VALUE>bi</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a199_fw_2_f_2" ANNOTATION_REF="a199_fw_2" PREVIOUS_ANNOTATION="a199_fw_2_f_0">
+                <ANNOTATION_VALUE>-d'ə</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a199_fw_2_f_4" ANNOTATION_REF="a199_fw_2" PREVIOUS_ANNOTATION="a199_fw_2_f_2">
+                <ANNOTATION_VALUE>-rə</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a199_fw_2_f_6" ANNOTATION_REF="a199_fw_2" PREVIOUS_ANNOTATION="a199_fw_2_f_4">
+                <ANNOTATION_VALUE>-n</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a200_fw_0_f_0" ANNOTATION_REF="a200_fw_0">
+                <ANNOTATION_VALUE>oro</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a200_fw_0_f_2" ANNOTATION_REF="a200_fw_0" PREVIOUS_ANNOTATION="a200_fw_0_f_0">
+                <ANNOTATION_VALUE>-r</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a200_fw_0_f_4" ANNOTATION_REF="a200_fw_0" PREVIOUS_ANNOTATION="a200_fw_0_f_2">
+                <ANNOTATION_VALUE>-wo</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a200_fw_1_f_0" ANNOTATION_REF="a200_fw_1">
+                <ANNOTATION_VALUE>kamnīkās</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a200_fw_1_f_2" ANNOTATION_REF="a200_fw_1" PREVIOUS_ANNOTATION="a200_fw_1_f_0">
+                <ANNOTATION_VALUE>-ta</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a200_fw_2_f_0" ANNOTATION_REF="a200_fw_2">
+                <ANNOTATION_VALUE>kamnīkās</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a200_fw_2_f_2" ANNOTATION_REF="a200_fw_2" PREVIOUS_ANNOTATION="a200_fw_2_f_0">
+                <ANNOTATION_VALUE>-ča</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a201_fw_0_f_0" ANNOTATION_REF="a201_fw_0">
+                <ANNOTATION_VALUE>kolobo</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a201_fw_0_f_2" ANNOTATION_REF="a201_fw_0" PREVIOUS_ANNOTATION="a201_fw_0_f_0">
+                <ANNOTATION_VALUE>-jə</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a201_fw_1_f_0" ANNOTATION_REF="a201_fw_1">
+                <ANNOTATION_VALUE>ir</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a201_fw_1_f_2" ANNOTATION_REF="a201_fw_1" PREVIOUS_ANNOTATION="a201_fw_1_f_0">
+                <ANNOTATION_VALUE>-čo</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a201_fw_1_f_4" ANNOTATION_REF="a201_fw_1" PREVIOUS_ANNOTATION="a201_fw_1_f_2">
+                <ANNOTATION_VALUE>-w</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a201_fw_2_f_0" ANNOTATION_REF="a201_fw_2">
+                <ANNOTATION_VALUE>əsī</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a201_fw_3_f_0" ANNOTATION_REF="a201_fw_3">
+                <ANNOTATION_VALUE>nulgi</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a201_fw_3_f_2" ANNOTATION_REF="a201_fw_3" PREVIOUS_ANNOTATION="a201_fw_3_f_0">
+                <ANNOTATION_VALUE>-s</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a201_fw_3_f_4" ANNOTATION_REF="a201_fw_3" PREVIOUS_ANNOTATION="a201_fw_3_f_2">
+                <ANNOTATION_VALUE>-tə̄</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a201_fw_3_f_6" ANNOTATION_REF="a201_fw_3" PREVIOUS_ANNOTATION="a201_fw_3_f_4">
+                <ANNOTATION_VALUE>-t</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a202_fw_0_f_0" ANNOTATION_REF="a202_fw_0">
+                <ANNOTATION_VALUE>nuŋan</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a202_fw_1_f_0" ANNOTATION_REF="a202_fw_1">
+                <ANNOTATION_VALUE>oro</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a202_fw_1_f_2" ANNOTATION_REF="a202_fw_1" PREVIOUS_ANNOTATION="a202_fw_1_f_0">
+                <ANNOTATION_VALUE>-r</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a202_fw_1_f_4" ANNOTATION_REF="a202_fw_1" PREVIOUS_ANNOTATION="a202_fw_1_f_2">
+                <ANNOTATION_VALUE>-wo</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a202_fw_2_f_0" ANNOTATION_REF="a202_fw_2">
+                <ANNOTATION_VALUE>tadū</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a202_fw_3_f_0" ANNOTATION_REF="a202_fw_3">
+                <ANNOTATION_VALUE>d'awa</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a202_fw_3_f_2" ANNOTATION_REF="a202_fw_3" PREVIOUS_ANNOTATION="a202_fw_3_f_0">
+                <ANNOTATION_VALUE>-ksi</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a202_fw_3_f_4" ANNOTATION_REF="a202_fw_3" PREVIOUS_ANNOTATION="a202_fw_3_f_2">
+                <ANNOTATION_VALUE>-d'a</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a202_fw_3_f_6" ANNOTATION_REF="a202_fw_3" PREVIOUS_ANNOTATION="a202_fw_3_f_4">
+                <ANNOTATION_VALUE>-ra</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a202_fw_3_f_8" ANNOTATION_REF="a202_fw_3" PREVIOUS_ANNOTATION="a202_fw_3_f_6">
+                <ANNOTATION_VALUE>-n</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a203_fw_0_f_0" ANNOTATION_REF="a203_fw_0">
+                <ANNOTATION_VALUE>oro</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a203_fw_0_f_2" ANNOTATION_REF="a203_fw_0" PREVIOUS_ANNOTATION="a203_fw_0_f_0">
+                <ANNOTATION_VALUE>-r</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a203_fw_0_f_4" ANNOTATION_REF="a203_fw_0" PREVIOUS_ANNOTATION="a203_fw_0_f_2">
+                <ANNOTATION_VALUE>-wo</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a203_fw_1_f_0" ANNOTATION_REF="a203_fw_1">
+                <ANNOTATION_VALUE>oro</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a203_fw_1_f_2" ANNOTATION_REF="a203_fw_1" PREVIOUS_ANNOTATION="a203_fw_1_f_0">
+                <ANNOTATION_VALUE>-r</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a203_fw_1_f_4" ANNOTATION_REF="a203_fw_1" PREVIOUS_ANNOTATION="a203_fw_1_f_2">
+                <ANNOTATION_VALUE>-wo</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a203_fw_2_f_0" ANNOTATION_REF="a203_fw_2">
+                <ANNOTATION_VALUE>d'awa</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a203_fw_2_f_2" ANNOTATION_REF="a203_fw_2" PREVIOUS_ANNOTATION="a203_fw_2_f_0">
+                <ANNOTATION_VALUE>-d'a</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a203_fw_2_f_4" ANNOTATION_REF="a203_fw_2" PREVIOUS_ANNOTATION="a203_fw_2_f_2">
+                <ANNOTATION_VALUE>-n</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a204_fw_0_f_0" ANNOTATION_REF="a204_fw_0">
+                <ANNOTATION_VALUE>čat</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a204_fw_0_f_2" ANNOTATION_REF="a204_fw_0" PREVIOUS_ANNOTATION="a204_fw_0_f_0">
+                <ANNOTATION_VALUE>-ti</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a204_fw_0_f_4" ANNOTATION_REF="a204_fw_0" PREVIOUS_ANNOTATION="a204_fw_0_f_2">
+                <ANNOTATION_VALUE>-d'a</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a204_fw_0_f_6" ANNOTATION_REF="a204_fw_0" PREVIOUS_ANNOTATION="a204_fw_0_f_4">
+                <ANNOTATION_VALUE>-p</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a204_fw_1_f_0" ANNOTATION_REF="a204_fw_1">
+                <ANNOTATION_VALUE>taduk</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a204_fw_2_f_0" ANNOTATION_REF="a204_fw_2">
+                <ANNOTATION_VALUE>nulgi</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a204_fw_2_f_2" ANNOTATION_REF="a204_fw_2" PREVIOUS_ANNOTATION="a204_fw_2_f_0">
+                <ANNOTATION_VALUE>-si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a204_fw_2_f_4" ANNOTATION_REF="a204_fw_2" PREVIOUS_ANNOTATION="a204_fw_2_f_2">
+                <ANNOTATION_VALUE>-tə̄</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a204_fw_2_f_6" ANNOTATION_REF="a204_fw_2" PREVIOUS_ANNOTATION="a204_fw_2_f_4">
+                <ANNOTATION_VALUE>-t</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a205_fw_0_f_0" ANNOTATION_REF="a205_fw_0">
+                <ANNOTATION_VALUE>sawoda</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a205_fw_0_f_2" ANNOTATION_REF="a205_fw_0" PREVIOUS_ANNOTATION="a205_fw_0_f_0">
+                <ANNOTATION_VALUE>-l</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a205_fw_0_f_4" ANNOTATION_REF="a205_fw_0" PREVIOUS_ANNOTATION="a205_fw_0_f_2">
+                <ANNOTATION_VALUE>-wī</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a205_fw_0_f_6" ANNOTATION_REF="a205_fw_0" PREVIOUS_ANNOTATION="a205_fw_0_f_4">
+                <ANNOTATION_VALUE>=wəl</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a205_fw_1_f_0" ANNOTATION_REF="a205_fw_1">
+                <ANNOTATION_VALUE>wes</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a205_fw_1_f_2" ANNOTATION_REF="a205_fw_1" PREVIOUS_ANNOTATION="a205_fw_1_f_0">
+                <ANNOTATION_VALUE>-pa</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a205_fw_2_f_0" ANNOTATION_REF="a205_fw_2">
+                <ANNOTATION_VALUE>taku</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a205_fw_2_f_2" ANNOTATION_REF="a205_fw_2" PREVIOUS_ANNOTATION="a205_fw_2_f_0">
+                <ANNOTATION_VALUE>-Ø</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a205_fw_2_f_4" ANNOTATION_REF="a205_fw_2" PREVIOUS_ANNOTATION="a205_fw_2_f_2">
+                <ANNOTATION_VALUE>-m</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a206_fw_0_f_0" ANNOTATION_REF="a206_fw_0">
+                <ANNOTATION_VALUE>ətirkōn</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a206_fw_1_f_0" ANNOTATION_REF="a206_fw_1">
+                <ANNOTATION_VALUE>əmə</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a206_fw_1_f_2" ANNOTATION_REF="a206_fw_1" PREVIOUS_ANNOTATION="a206_fw_1_f_0">
+                <ANNOTATION_VALUE>-d'ə</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a206_fw_1_f_4" ANNOTATION_REF="a206_fw_1" PREVIOUS_ANNOTATION="a206_fw_1_f_2">
+                <ANNOTATION_VALUE>-n</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a207_fw_0_f_0" ANNOTATION_REF="a207_fw_0">
+                <ANNOTATION_VALUE>oro</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a207_fw_0_f_2" ANNOTATION_REF="a207_fw_0" PREVIOUS_ANNOTATION="a207_fw_0_f_0">
+                <ANNOTATION_VALUE>-r</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a207_fw_0_f_4" ANNOTATION_REF="a207_fw_0" PREVIOUS_ANNOTATION="a207_fw_0_f_2">
+                <ANNOTATION_VALUE>-wo</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a207_fw_1_f_0" ANNOTATION_REF="a207_fw_1">
+                <ANNOTATION_VALUE>d'awa</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a207_fw_1_f_2" ANNOTATION_REF="a207_fw_1" PREVIOUS_ANNOTATION="a207_fw_1_f_0">
+                <ANNOTATION_VALUE>-d'a</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a207_fw_1_f_4" ANNOTATION_REF="a207_fw_1" PREVIOUS_ANNOTATION="a207_fw_1_f_2">
+                <ANNOTATION_VALUE>-Ø</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a207_fw_1_f_6" ANNOTATION_REF="a207_fw_1" PREVIOUS_ANNOTATION="a207_fw_1_f_4">
+                <ANNOTATION_VALUE>-p</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a208_fw_0_f_0" ANNOTATION_REF="a208_fw_0">
+                <ANNOTATION_VALUE>d'əp</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a208_fw_0_f_2" ANNOTATION_REF="a208_fw_0" PREVIOUS_ANNOTATION="a208_fw_0_f_0">
+                <ANNOTATION_VALUE>-d'ə</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a208_fw_0_f_4" ANNOTATION_REF="a208_fw_0" PREVIOUS_ANNOTATION="a208_fw_0_f_2">
+                <ANNOTATION_VALUE>-t</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_0_f_0" ANNOTATION_REF="a209_fw_0">
+                <ANNOTATION_VALUE>taduk</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_1_f_0" ANNOTATION_REF="a209_fw_1">
+                <ANNOTATION_VALUE>suru</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_1_f_2" ANNOTATION_REF="a209_fw_1" PREVIOUS_ANNOTATION="a209_fw_1_f_0">
+                <ANNOTATION_VALUE>-d'ə</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_1_f_4" ANNOTATION_REF="a209_fw_1" PREVIOUS_ANNOTATION="a209_fw_1_f_2">
+                <ANNOTATION_VALUE>-t</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_2_f_0" ANNOTATION_REF="a209_fw_2">
+                <ANNOTATION_VALUE>nulgi</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_2_f_2" ANNOTATION_REF="a209_fw_2" PREVIOUS_ANNOTATION="a209_fw_2_f_0">
+                <ANNOTATION_VALUE>-si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_2_f_4" ANNOTATION_REF="a209_fw_2" PREVIOUS_ANNOTATION="a209_fw_2_f_2">
+                <ANNOTATION_VALUE>-tə̄</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_2_f_6" ANNOTATION_REF="a209_fw_2" PREVIOUS_ANNOTATION="a209_fw_2_f_4">
+                <ANNOTATION_VALUE>-t</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_3_f_0" ANNOTATION_REF="a209_fw_3">
+                <ANNOTATION_VALUE>čāski</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_4_f_0" ANNOTATION_REF="a209_fw_4">
+                <ANNOTATION_VALUE>nulgi</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_4_f_2" ANNOTATION_REF="a209_fw_4" PREVIOUS_ANNOTATION="a209_fw_4_f_0">
+                <ANNOTATION_VALUE>-s</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_4_f_4" ANNOTATION_REF="a209_fw_4" PREVIOUS_ANNOTATION="a209_fw_4_f_2">
+                <ANNOTATION_VALUE>-tə̄</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_4_f_6" ANNOTATION_REF="a209_fw_4" PREVIOUS_ANNOTATION="a209_fw_4_f_4">
+                <ANNOTATION_VALUE>-t</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a210_fw_0_f_0" ANNOTATION_REF="a210_fw_0">
+                <ANNOTATION_VALUE>tikčaki</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a210_fw_0_f_2" ANNOTATION_REF="a210_fw_0" PREVIOUS_ANNOTATION="a210_fw_0_f_0">
+                <ANNOTATION_VALUE>-wə</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a210_fw_1_f_0" ANNOTATION_REF="a210_fw_1">
+                <ANNOTATION_VALUE>ojōkī</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a211_fw_0_f_0" ANNOTATION_REF="a211_fw_0">
+                <ANNOTATION_VALUE>əl</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a211_fw_1_f_0" ANNOTATION_REF="a211_fw_1">
+                <ANNOTATION_VALUE>ŋinaki</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a211_fw_1_f_2" ANNOTATION_REF="a211_fw_1" PREVIOUS_ANNOTATION="a211_fw_1_f_0">
+                <ANNOTATION_VALUE>-r</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a211_fw_2_f_0" ANNOTATION_REF="a211_fw_2">
+                <ANNOTATION_VALUE>tadū</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a211_fw_3_f_0" ANNOTATION_REF="a211_fw_3">
+                <ANNOTATION_VALUE>goo</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a211_fw_3_f_2" ANNOTATION_REF="a211_fw_3" PREVIOUS_ANNOTATION="a211_fw_3_f_0">
+                <ANNOTATION_VALUE>-l</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a211_fw_3_f_4" ANNOTATION_REF="a211_fw_3" PREVIOUS_ANNOTATION="a211_fw_3_f_2">
+                <ANNOTATION_VALUE>-lə</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a211_fw_3_f_6" ANNOTATION_REF="a211_fw_3" PREVIOUS_ANNOTATION="a211_fw_3_f_4">
+                <ANNOTATION_VALUE>-Ø</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a212_fw_0_f_0" ANNOTATION_REF="a212_fw_0">
+                <ANNOTATION_VALUE>əmə</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a212_fw_0_f_2" ANNOTATION_REF="a212_fw_0" PREVIOUS_ANNOTATION="a212_fw_0_f_0">
+                <ANNOTATION_VALUE>-d'aŋā</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a212_fw_0_f_4" ANNOTATION_REF="a212_fw_0" PREVIOUS_ANNOTATION="a212_fw_0_f_2">
+                <ANNOTATION_VALUE>-n</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a213_fw_0_f_0" ANNOTATION_REF="a213_fw_0">
+                <ANNOTATION_VALUE>oro</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a213_fw_0_f_2" ANNOTATION_REF="a213_fw_0" PREVIOUS_ANNOTATION="a213_fw_0_f_0">
+                <ANNOTATION_VALUE>-r</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a213_fw_0_f_4" ANNOTATION_REF="a213_fw_0" PREVIOUS_ANNOTATION="a213_fw_0_f_2">
+                <ANNOTATION_VALUE>-wo</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a213_fw_1_f_0" ANNOTATION_REF="a213_fw_1">
+                <ANNOTATION_VALUE>d'awa</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a213_fw_1_f_2" ANNOTATION_REF="a213_fw_1" PREVIOUS_ANNOTATION="a213_fw_1_f_0">
+                <ANNOTATION_VALUE>-ksi</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a213_fw_1_f_4" ANNOTATION_REF="a213_fw_1" PREVIOUS_ANNOTATION="a213_fw_1_f_2">
+                <ANNOTATION_VALUE>-d'aŋā</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a213_fw_1_f_6" ANNOTATION_REF="a213_fw_1" PREVIOUS_ANNOTATION="a213_fw_1_f_4">
+                <ANNOTATION_VALUE>-n</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a214_fw_0_f_0" ANNOTATION_REF="a214_fw_0">
+                <ANNOTATION_VALUE>d'awa</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a214_fw_0_f_2" ANNOTATION_REF="a214_fw_0" PREVIOUS_ANNOTATION="a214_fw_0_f_0">
+                <ANNOTATION_VALUE>-ksi</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a214_fw_0_f_4" ANNOTATION_REF="a214_fw_0" PREVIOUS_ANNOTATION="a214_fw_0_f_2">
+                <ANNOTATION_VALUE>-d'a</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a214_fw_0_f_6" ANNOTATION_REF="a214_fw_0" PREVIOUS_ANNOTATION="a214_fw_0_f_4">
+                <ANNOTATION_VALUE>-n</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a214_fw_1_f_0" ANNOTATION_REF="a214_fw_1">
+                <ANNOTATION_VALUE>əmə</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a214_fw_1_f_2" ANNOTATION_REF="a214_fw_1" PREVIOUS_ANNOTATION="a214_fw_1_f_0">
+                <ANNOTATION_VALUE>-d'ə</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a214_fw_1_f_4" ANNOTATION_REF="a214_fw_1" PREVIOUS_ANNOTATION="a214_fw_1_f_2">
+                <ANNOTATION_VALUE>-n</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a215_fw_0_f_0" ANNOTATION_REF="a215_fw_0">
+                <ANNOTATION_VALUE>čat</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a215_fw_0_f_2" ANNOTATION_REF="a215_fw_0" PREVIOUS_ANNOTATION="a215_fw_0_f_0">
+                <ANNOTATION_VALUE>-ti</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a215_fw_0_f_4" ANNOTATION_REF="a215_fw_0" PREVIOUS_ANNOTATION="a215_fw_0_f_2">
+                <ANNOTATION_VALUE>-d'a</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a215_fw_0_f_6" ANNOTATION_REF="a215_fw_0" PREVIOUS_ANNOTATION="a215_fw_0_f_4">
+                <ANNOTATION_VALUE>-t</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a216_fw_0_f_0" ANNOTATION_REF="a216_fw_0">
+                <ANNOTATION_VALUE>suru</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a216_fw_0_f_2" ANNOTATION_REF="a216_fw_0" PREVIOUS_ANNOTATION="a216_fw_0_f_0">
+                <ANNOTATION_VALUE>-d'ə</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a216_fw_0_f_4" ANNOTATION_REF="a216_fw_0" PREVIOUS_ANNOTATION="a216_fw_0_f_2">
+                <ANNOTATION_VALUE>-t</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a217_fw_0_f_0" ANNOTATION_REF="a217_fw_0">
+                <ANNOTATION_VALUE>nulgi</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a217_fw_0_f_2" ANNOTATION_REF="a217_fw_0" PREVIOUS_ANNOTATION="a217_fw_0_f_0">
+                <ANNOTATION_VALUE>-s</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a217_fw_0_f_4" ANNOTATION_REF="a217_fw_0" PREVIOUS_ANNOTATION="a217_fw_0_f_2">
+                <ANNOTATION_VALUE>-t’ə</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a217_fw_0_f_6" ANNOTATION_REF="a217_fw_0" PREVIOUS_ANNOTATION="a217_fw_0_f_4">
+                <ANNOTATION_VALUE>-t</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER><TIER DEFAULT_LOCALE="us" LINGUISTIC_TYPE_REF="gl_new" PARENT_REF="fon" TIER_ID="gl"><ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a196_fw_0_f_0_gl" ANNOTATION_REF="a196_fw_0_f_0">
+                <ANNOTATION_VALUE>спать</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a196_fw_0_f_2_gl" ANNOTATION_REF="a196_fw_0_f_2">
+                <ANNOTATION_VALUE>-IPFV</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a196_fw_0_f_4_gl" ANNOTATION_REF="a196_fw_0_f_4">
+                <ANNOTATION_VALUE>-PST</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a196_fw_0_f_6_gl" ANNOTATION_REF="a196_fw_0_f_6">
+                <ANNOTATION_VALUE>-1SG</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a197_fw_0_f_0_gl" ANNOTATION_REF="a197_fw_0_f_0">
+                <ANNOTATION_VALUE>сесть</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a197_fw_0_f_2_gl" ANNOTATION_REF="a197_fw_0_f_2">
+                <ANNOTATION_VALUE>-NFUT</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a197_fw_0_f_4_gl" ANNOTATION_REF="a197_fw_0_f_4">
+                <ANNOTATION_VALUE>-1SG</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a198_fw_0_f_0_gl" ANNOTATION_REF="a198_fw_0_f_0">
+                <ANNOTATION_VALUE>костер</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a198_fw_0_f_2_gl" ANNOTATION_REF="a198_fw_0_f_2">
+                <ANNOTATION_VALUE>-ACC</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a198_fw_1_f_0_gl" ANNOTATION_REF="a198_fw_1_f_0">
+                <ANNOTATION_VALUE>зажечь</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a198_fw_1_f_2_gl" ANNOTATION_REF="a198_fw_1_f_2">
+                <ANNOTATION_VALUE>-NFUT</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a198_fw_1_f_4_gl" ANNOTATION_REF="a198_fw_1_f_4">
+                <ANNOTATION_VALUE>-1SG</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a199_fw_0_f_0_gl" ANNOTATION_REF="a199_fw_0_f_0">
+                <ANNOTATION_VALUE>муж</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a199_fw_1_f_0_gl" ANNOTATION_REF="a199_fw_1_f_0">
+                <ANNOTATION_VALUE>где</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a199_fw_1_f_2_gl" ANNOTATION_REF="a199_fw_1_f_2">
+                <ANNOTATION_VALUE>-INDEF</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a199_fw_2_f_0_gl" ANNOTATION_REF="a199_fw_2_f_0">
+                <ANNOTATION_VALUE>быть</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a199_fw_2_f_2_gl" ANNOTATION_REF="a199_fw_2_f_2">
+                <ANNOTATION_VALUE>-IPFV</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a199_fw_2_f_4_gl" ANNOTATION_REF="a199_fw_2_f_4">
+                <ANNOTATION_VALUE>-NFUT</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a199_fw_2_f_6_gl" ANNOTATION_REF="a199_fw_2_f_6">
+                <ANNOTATION_VALUE>-3SG</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a200_fw_0_f_0_gl" ANNOTATION_REF="a200_fw_0_f_0">
+                <ANNOTATION_VALUE>олень</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a200_fw_0_f_2_gl" ANNOTATION_REF="a200_fw_0_f_2">
+                <ANNOTATION_VALUE>-PL</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a200_fw_0_f_4_gl" ANNOTATION_REF="a200_fw_0_f_4">
+                <ANNOTATION_VALUE>-ACC</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a200_fw_1_f_0_gl" ANNOTATION_REF="a200_fw_1_f_0">
+                <ANNOTATION_VALUE>бежать.за.зверем</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a200_fw_1_f_2_gl" ANNOTATION_REF="a200_fw_1_f_2">
+                <ANNOTATION_VALUE>-SLIP</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a200_fw_2_f_0_gl" ANNOTATION_REF="a200_fw_2_f_0">
+                <ANNOTATION_VALUE>бежать.за.зверем</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a200_fw_2_f_2_gl" ANNOTATION_REF="a200_fw_2_f_2">
+                <ANNOTATION_VALUE>-PANT</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a201_fw_0_f_0_gl" ANNOTATION_REF="a201_fw_0_f_0">
+                <ANNOTATION_VALUE>хлеб</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a201_fw_0_f_2_gl" ANNOTATION_REF="a201_fw_0_f_2">
+                <ANNOTATION_VALUE>-ACCIN</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a201_fw_1_f_0_gl" ANNOTATION_REF="a201_fw_1_f_0">
+                <ANNOTATION_VALUE>жарить</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a201_fw_1_f_2_gl" ANNOTATION_REF="a201_fw_1_f_2">
+                <ANNOTATION_VALUE>-PST</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a201_fw_1_f_4_gl" ANNOTATION_REF="a201_fw_1_f_4">
+                <ANNOTATION_VALUE>-1SG</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a201_fw_2_f_0_gl" ANNOTATION_REF="a201_fw_2_f_0">
+                <ANNOTATION_VALUE>сегодня</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a201_fw_3_f_0_gl" ANNOTATION_REF="a201_fw_3_f_0">
+                <ANNOTATION_VALUE>кочевать</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a201_fw_3_f_2_gl" ANNOTATION_REF="a201_fw_3_f_2">
+                <ANNOTATION_VALUE>-INCEP</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a201_fw_3_f_4_gl" ANNOTATION_REF="a201_fw_3_f_4">
+                <ANNOTATION_VALUE>-CVPURP</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a201_fw_3_f_6_gl" ANNOTATION_REF="a201_fw_3_f_6">
+                <ANNOTATION_VALUE>-1PL(INCL)</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a202_fw_0_f_0_gl" ANNOTATION_REF="a202_fw_0_f_0">
+                <ANNOTATION_VALUE>3SG</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a202_fw_1_f_0_gl" ANNOTATION_REF="a202_fw_1_f_0">
+                <ANNOTATION_VALUE>олень</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a202_fw_1_f_2_gl" ANNOTATION_REF="a202_fw_1_f_2">
+                <ANNOTATION_VALUE>-PL</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a202_fw_1_f_4_gl" ANNOTATION_REF="a202_fw_1_f_4">
+                <ANNOTATION_VALUE>-ACC</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a202_fw_2_f_0_gl" ANNOTATION_REF="a202_fw_2_f_0">
+                <ANNOTATION_VALUE>там</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a202_fw_3_f_0_gl" ANNOTATION_REF="a202_fw_3_f_0">
+                <ANNOTATION_VALUE>схватить</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a202_fw_3_f_2_gl" ANNOTATION_REF="a202_fw_3_f_2">
+                <ANNOTATION_VALUE>-DES</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a202_fw_3_f_4_gl" ANNOTATION_REF="a202_fw_3_f_4">
+                <ANNOTATION_VALUE>-IPFV</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a202_fw_3_f_6_gl" ANNOTATION_REF="a202_fw_3_f_6">
+                <ANNOTATION_VALUE>-NFUT</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a202_fw_3_f_8_gl" ANNOTATION_REF="a202_fw_3_f_8">
+                <ANNOTATION_VALUE>-3SG</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a203_fw_0_f_0_gl" ANNOTATION_REF="a203_fw_0_f_0">
+                <ANNOTATION_VALUE>олень</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a203_fw_0_f_2_gl" ANNOTATION_REF="a203_fw_0_f_2">
+                <ANNOTATION_VALUE>-PL</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a203_fw_0_f_4_gl" ANNOTATION_REF="a203_fw_0_f_4">
+                <ANNOTATION_VALUE>-ACC</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a203_fw_1_f_0_gl" ANNOTATION_REF="a203_fw_1_f_0">
+                <ANNOTATION_VALUE>олень</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a203_fw_1_f_2_gl" ANNOTATION_REF="a203_fw_1_f_2">
+                <ANNOTATION_VALUE>-PL</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a203_fw_1_f_4_gl" ANNOTATION_REF="a203_fw_1_f_4">
+                <ANNOTATION_VALUE>-ACC</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a203_fw_2_f_0_gl" ANNOTATION_REF="a203_fw_2_f_0">
+                <ANNOTATION_VALUE>схватить</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a203_fw_2_f_2_gl" ANNOTATION_REF="a203_fw_2_f_2">
+                <ANNOTATION_VALUE>-FUTCNT</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a203_fw_2_f_4_gl" ANNOTATION_REF="a203_fw_2_f_4">
+                <ANNOTATION_VALUE>-3SG</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a204_fw_0_f_0_gl" ANNOTATION_REF="a204_fw_0_f_0">
+                <ANNOTATION_VALUE>чай</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a204_fw_0_f_2_gl" ANNOTATION_REF="a204_fw_0_f_2">
+                <ANNOTATION_VALUE>-VBLZ.FAG</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a204_fw_0_f_4_gl" ANNOTATION_REF="a204_fw_0_f_4">
+                <ANNOTATION_VALUE>-FUTCNT</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a204_fw_0_f_6_gl" ANNOTATION_REF="a204_fw_0_f_6">
+                <ANNOTATION_VALUE>-1PL(INCL)</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a204_fw_1_f_0_gl" ANNOTATION_REF="a204_fw_1_f_0">
+                <ANNOTATION_VALUE>потом</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a204_fw_2_f_0_gl" ANNOTATION_REF="a204_fw_2_f_0">
+                <ANNOTATION_VALUE>кочевать</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a204_fw_2_f_2_gl" ANNOTATION_REF="a204_fw_2_f_2">
+                <ANNOTATION_VALUE>-INCEP</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a204_fw_2_f_4_gl" ANNOTATION_REF="a204_fw_2_f_4">
+                <ANNOTATION_VALUE>-CVPURP</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a204_fw_2_f_6_gl" ANNOTATION_REF="a204_fw_2_f_6">
+                <ANNOTATION_VALUE>-1PL(INCL)</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a205_fw_0_f_0_gl" ANNOTATION_REF="a205_fw_0_f_0">
+                <ANNOTATION_VALUE>вещь</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a205_fw_0_f_2_gl" ANNOTATION_REF="a205_fw_0_f_2">
+                <ANNOTATION_VALUE>-PL</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a205_fw_0_f_4_gl" ANNOTATION_REF="a205_fw_0_f_4">
+                <ANNOTATION_VALUE>-ACC.RFL</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a205_fw_0_f_6_gl" ANNOTATION_REF="a205_fw_0_f_6">
+                <ANNOTATION_VALUE>=FOC</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a205_fw_1_f_0_gl" ANNOTATION_REF="a205_fw_1_f_0">
+                <ANNOTATION_VALUE>все</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a205_fw_1_f_2_gl" ANNOTATION_REF="a205_fw_1_f_2">
+                <ANNOTATION_VALUE>-ACC</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a205_fw_2_f_0_gl" ANNOTATION_REF="a205_fw_2_f_0">
+                <ANNOTATION_VALUE>собрать</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a205_fw_2_f_2_gl" ANNOTATION_REF="a205_fw_2_f_2">
+                <ANNOTATION_VALUE>-NFUT</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a205_fw_2_f_4_gl" ANNOTATION_REF="a205_fw_2_f_4">
+                <ANNOTATION_VALUE>-1SG</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a206_fw_0_f_0_gl" ANNOTATION_REF="a206_fw_0_f_0">
+                <ANNOTATION_VALUE>муж</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a206_fw_1_f_0_gl" ANNOTATION_REF="a206_fw_1_f_0">
+                <ANNOTATION_VALUE>прийти</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a206_fw_1_f_2_gl" ANNOTATION_REF="a206_fw_1_f_2">
+                <ANNOTATION_VALUE>-FUTCNT</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a206_fw_1_f_4_gl" ANNOTATION_REF="a206_fw_1_f_4">
+                <ANNOTATION_VALUE>-3SG</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a207_fw_0_f_0_gl" ANNOTATION_REF="a207_fw_0_f_0">
+                <ANNOTATION_VALUE>олень</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a207_fw_0_f_2_gl" ANNOTATION_REF="a207_fw_0_f_2">
+                <ANNOTATION_VALUE>-PL</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a207_fw_0_f_4_gl" ANNOTATION_REF="a207_fw_0_f_4">
+                <ANNOTATION_VALUE>-ACC</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a207_fw_1_f_0_gl" ANNOTATION_REF="a207_fw_1_f_0">
+                <ANNOTATION_VALUE>схватить</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a207_fw_1_f_2_gl" ANNOTATION_REF="a207_fw_1_f_2">
+                <ANNOTATION_VALUE>-IPFV</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a207_fw_1_f_4_gl" ANNOTATION_REF="a207_fw_1_f_4">
+                <ANNOTATION_VALUE>-NFUT</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a207_fw_1_f_6_gl" ANNOTATION_REF="a207_fw_1_f_6">
+                <ANNOTATION_VALUE>-1PL(INCL)</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a208_fw_0_f_0_gl" ANNOTATION_REF="a208_fw_0_f_0">
+                <ANNOTATION_VALUE>есть</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a208_fw_0_f_2_gl" ANNOTATION_REF="a208_fw_0_f_2">
+                <ANNOTATION_VALUE>-FUTCNT</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a208_fw_0_f_4_gl" ANNOTATION_REF="a208_fw_0_f_4">
+                <ANNOTATION_VALUE>-1PL(INCL)</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_0_f_0_gl" ANNOTATION_REF="a209_fw_0_f_0">
+                <ANNOTATION_VALUE>потом</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_1_f_0_gl" ANNOTATION_REF="a209_fw_1_f_0">
+                <ANNOTATION_VALUE>пойти</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_1_f_2_gl" ANNOTATION_REF="a209_fw_1_f_2">
+                <ANNOTATION_VALUE>-FUTCNT</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_1_f_4_gl" ANNOTATION_REF="a209_fw_1_f_4">
+                <ANNOTATION_VALUE>-1PL(INCL)</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_2_f_0_gl" ANNOTATION_REF="a209_fw_2_f_0">
+                <ANNOTATION_VALUE>кочевать</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_2_f_2_gl" ANNOTATION_REF="a209_fw_2_f_2">
+                <ANNOTATION_VALUE>-INCEP</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_2_f_4_gl" ANNOTATION_REF="a209_fw_2_f_4">
+                <ANNOTATION_VALUE>-CVPURP</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_2_f_6_gl" ANNOTATION_REF="a209_fw_2_f_6">
+                <ANNOTATION_VALUE>-1PL(INCL)</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_3_f_0_gl" ANNOTATION_REF="a209_fw_3_f_0">
+                <ANNOTATION_VALUE>далеко</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_4_f_0_gl" ANNOTATION_REF="a209_fw_4_f_0">
+                <ANNOTATION_VALUE>кочевать</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_4_f_2_gl" ANNOTATION_REF="a209_fw_4_f_2">
+                <ANNOTATION_VALUE>-INCEP</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_4_f_4_gl" ANNOTATION_REF="a209_fw_4_f_4">
+                <ANNOTATION_VALUE>-CPURP</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209_fw_4_f_6_gl" ANNOTATION_REF="a209_fw_4_f_6">
+                <ANNOTATION_VALUE>-1PL(INCL)</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a210_fw_0_f_0_gl" ANNOTATION_REF="a210_fw_0_f_0">
+                <ANNOTATION_VALUE>Тыкчаки</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a210_fw_0_f_2_gl" ANNOTATION_REF="a210_fw_0_f_2">
+                <ANNOTATION_VALUE>-ACC</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a210_fw_1_f_0_gl" ANNOTATION_REF="a210_fw_1_f_0">
+                <ANNOTATION_VALUE>вниз.по.течению</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a211_fw_0_f_0_gl" ANNOTATION_REF="a211_fw_0_f_0">
+                <ANNOTATION_VALUE>эй</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a211_fw_1_f_0_gl" ANNOTATION_REF="a211_fw_1_f_0">
+                <ANNOTATION_VALUE>собака</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a211_fw_1_f_2_gl" ANNOTATION_REF="a211_fw_1_f_2">
+                <ANNOTATION_VALUE>-PL</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a211_fw_2_f_0_gl" ANNOTATION_REF="a211_fw_2_f_0">
+                <ANNOTATION_VALUE>там</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a211_fw_3_f_0_gl" ANNOTATION_REF="a211_fw_3_f_0">
+                <ANNOTATION_VALUE>лаять</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a211_fw_3_f_2_gl" ANNOTATION_REF="a211_fw_3_f_2">
+                <ANNOTATION_VALUE>-INCH</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a211_fw_3_f_4_gl" ANNOTATION_REF="a211_fw_3_f_4">
+                <ANNOTATION_VALUE>-NFUT</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a211_fw_3_f_6_gl" ANNOTATION_REF="a211_fw_3_f_6">
+                <ANNOTATION_VALUE>-3PL</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a212_fw_0_f_0_gl" ANNOTATION_REF="a212_fw_0_f_0">
+                <ANNOTATION_VALUE>приходить</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a212_fw_0_f_2_gl" ANNOTATION_REF="a212_fw_0_f_2">
+                <ANNOTATION_VALUE>-FUT</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a212_fw_0_f_4_gl" ANNOTATION_REF="a212_fw_0_f_4">
+                <ANNOTATION_VALUE>-3SG</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a213_fw_0_f_0_gl" ANNOTATION_REF="a213_fw_0_f_0">
+                <ANNOTATION_VALUE>олень</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a213_fw_0_f_2_gl" ANNOTATION_REF="a213_fw_0_f_2">
+                <ANNOTATION_VALUE>-PL</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a213_fw_0_f_4_gl" ANNOTATION_REF="a213_fw_0_f_4">
+                <ANNOTATION_VALUE>-ACC</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a213_fw_1_f_0_gl" ANNOTATION_REF="a213_fw_1_f_0">
+                <ANNOTATION_VALUE>схватить</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a213_fw_1_f_2_gl" ANNOTATION_REF="a213_fw_1_f_2">
+                <ANNOTATION_VALUE>-DES</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a213_fw_1_f_4_gl" ANNOTATION_REF="a213_fw_1_f_4">
+                <ANNOTATION_VALUE>-FUT</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a213_fw_1_f_6_gl" ANNOTATION_REF="a213_fw_1_f_6">
+                <ANNOTATION_VALUE>-3SG</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a214_fw_0_f_0_gl" ANNOTATION_REF="a214_fw_0_f_0">
+                <ANNOTATION_VALUE>схватить</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a214_fw_0_f_2_gl" ANNOTATION_REF="a214_fw_0_f_2">
+                <ANNOTATION_VALUE>-DES</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a214_fw_0_f_4_gl" ANNOTATION_REF="a214_fw_0_f_4">
+                <ANNOTATION_VALUE>-FUTCNT</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a214_fw_0_f_6_gl" ANNOTATION_REF="a214_fw_0_f_6">
+                <ANNOTATION_VALUE>-3SG</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a214_fw_1_f_0_gl" ANNOTATION_REF="a214_fw_1_f_0">
+                <ANNOTATION_VALUE>приходить</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a214_fw_1_f_2_gl" ANNOTATION_REF="a214_fw_1_f_2">
+                <ANNOTATION_VALUE>-FUTCNT</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a214_fw_1_f_4_gl" ANNOTATION_REF="a214_fw_1_f_4">
+                <ANNOTATION_VALUE>-3SG</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a215_fw_0_f_0_gl" ANNOTATION_REF="a215_fw_0_f_0">
+                <ANNOTATION_VALUE>чай</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a215_fw_0_f_2_gl" ANNOTATION_REF="a215_fw_0_f_2">
+                <ANNOTATION_VALUE>-VBLZ.FAG</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a215_fw_0_f_4_gl" ANNOTATION_REF="a215_fw_0_f_4">
+                <ANNOTATION_VALUE>-FUTCNT</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a215_fw_0_f_6_gl" ANNOTATION_REF="a215_fw_0_f_6">
+                <ANNOTATION_VALUE>-1PL(INCL)</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a216_fw_0_f_0_gl" ANNOTATION_REF="a216_fw_0_f_0">
+                <ANNOTATION_VALUE>пойти</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a216_fw_0_f_2_gl" ANNOTATION_REF="a216_fw_0_f_2">
+                <ANNOTATION_VALUE>-FUTCNT</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a216_fw_0_f_4_gl" ANNOTATION_REF="a216_fw_0_f_4">
+                <ANNOTATION_VALUE>-1PL(INCL)</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a217_fw_0_f_0_gl" ANNOTATION_REF="a217_fw_0_f_0">
+                <ANNOTATION_VALUE>кочевать</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a217_fw_0_f_2_gl" ANNOTATION_REF="a217_fw_0_f_2">
+                <ANNOTATION_VALUE>-INCEP</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a217_fw_0_f_4_gl" ANNOTATION_REF="a217_fw_0_f_4">
+                <ANNOTATION_VALUE>-FUTCNT</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a217_fw_0_f_6_gl" ANNOTATION_REF="a217_fw_0_f_6">
+                <ANNOTATION_VALUE>-1PL(INCL)</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER></ANNOTATION_DOCUMENT>
