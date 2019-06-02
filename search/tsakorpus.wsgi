@@ -1,4 +1,4 @@
-python_home = '/home/distribs/my_corpus/tsakonian_corpus_platform/search/venv'
+python_home = '/home/gisly/evenki-corpus/search/venv'
 
 activator = python_home + '/bin/activate_this.py'
 with open(activator) as f:
@@ -9,8 +9,8 @@ import sys
 # sys.path.insert(0, '.../')
 # sys.path.insert(0, '.../app/')
 import os
-os.chdir('/home/distribs/my_corpus/tsakonian_corpus_platform/search')
-sys.path.append('/home/distribs/my_corpus/tsakonian_corpus_platform/search')
+os.chdir('/home/gisly/evenki-corpus/search')
+sys.path.append('/home/gisly/evenki-corpus/search')
 
 from web_app import app as application, get_locale as app_get_locale
 from flask_babel import Babel
