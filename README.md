@@ -1,2 +1,0 @@
-# evenki-corpus
-evenki-corpus
