@@ -2,7 +2,7 @@ filename	author	year	recplace	title	genre	year_from	year_to	site_url
 1998_Sovrechka_Saygotina_Vera_LR_transliterated_new2.eaf_new	Сайготина Вера Николаевна	1998	Советская Речка	Рассказ о жизни	lifestory	1998	1998	http://siberian-lang.srcc.msu.ru/ru/text/rasskaz-o-zhizni-v-n-saygotina
 2005_Poligus_Khadonchina_LO.eaf_new	Хадончина Надежда Тимофеевна	2005	Полигус	Лосенок	lifestory	2005	2005	http://siberian-lang.srcc.msu.ru/ru/text/losenok-n-t-hadonchina
 2005_Poligus_Khadonchina_LR2.eaf_new	Хадончина Надежда Тимофеевна	2005	Полигус	Подарок Трофима	lifestory	2005	2005	http://siberian-lang.srcc.msu.ru/ru/text/podarok-trofima-n-t-hadonchina
-2005_Poligus_Sergeev_LAv.eaf_new								
+2005_Poligus_Sergeev_LAv.eaf_new	Сергеев Трофим Павлович	2005	Полигус	Рассказ о жизни	lifestory	2005	2005	
 2006_Ozero_Bolshoe_Sovetskoe_Saygotin_LO1.eaf_new	Сайготин Владимир Николаевич	2006	Большое Советское озеро	Медведь ходит	lifestory	2006	2006	http://siberian-lang.srcc.msu.ru/ru/text/medved-hodit-v-n-saygotin
 2006_Ozero_Bolshoe_Sovetskoe_Saygotin_LO2_transliterated	Сайготин Владимир Николаевич	2006	Большое Советское озеро	Собаки	lifestory	2006	2006	http://siberian-lang.srcc.msu.ru/ru/text/sobaki-v-n-saygotin
 2006_Ozero_Bolshoe_Sovetskoe_Saygotin_LO3_transliterated	Сайготин Владимир Николаевич	2006	Большое Советское озеро	Лапа медведя	lifestory	2006	2006	http://siberian-lang.srcc.msu.ru/ru/text/lapa-medvedya-v-n-saygotin
@@ -32,14 +32,14 @@ filename	author	year	recplace	title	genre	year_from	year_to	site_url
 2007_Ekonda_Pankagir_LAv_transliterated.eaf_new	Панкагир Алексей Иннокентьевич	2007	Эконда	Вот здесь я живу 20 лет	lifestory	2007	2007	http://siberian-lang.srcc.msu.ru/ru/text/vot-zdes-zhivu-20-let-i-pankagir
 2007_Ekonda_Udygir_Viktor_FSk3_transliterated	Удыгир Виктор Николаевич	2007	Эконда	Стрелки	folklore	2007	2007	http://siberian-lang.srcc.msu.ru/ru/text/strelki-v-n-udygir
 2007_Mutoray_Dmitriev_LO1.eaf_new	Дмитриев Андрей Викторович	2007	Муторай	Как я убил медведя	lifestory	2007	2007	http://siberian-lang.srcc.msu.ru/ru/text/kak-ya-ubil-medvedya-v-dmitriev
-2007_Mutoray_Dmitriev_LO2.eaf_new								
-2007_Mutoray_Dmitriev_LO3.eaf_new								
-2007_Strelka_Andreeva_LR1_transliterated								
+2007_Mutoray_Dmitriev_LO2.eaf_new	Дмитриев Андрей Викторович	2007	Муторай	На Енчембу	lifestory	2007	2007	
+2007_Mutoray_Dmitriev_LO3.eaf_new	Дмитриев Андрей Викторович	2007	Муторай	Дикий олень	lifestory	2007	2007	
+2007_Strelka_Andreeva_LR1_transliterated	Андреева Светлана Михайловна	2007	Стрелка-Чуня	На Северной Таймуре	lifestory	2007	2007	http://siberian-lang.srcc.msu.ru/ru/text/na-severnoy-taymure-s-m-andreeva
 2007_Strelka_Andreeva_LR6_1_transliterated	Андреева Светлана Михайловна	2007	Стрелка-Чуня	Длинные	lifestory	2007	2007	http://siberian-lang.srcc.msu.ru/ru/text/dlinnye-s-m-andreeva
 2007_Strelka_Andreeva_LR8.eaf_new	Андреева Светлана Михайловна	2007	Стрелка-Чуня	Росомаха	lifestory	2007	2007	http://siberian-lang.srcc.msu.ru/ru/text/rosomaha-s-m-andreeva-torpushonok
 2007_Strelka_Andreev_LR1.eaf_new	Андреев Василий Иванович	2007	Стрелка-Чуня	Лисичка	lifestory	2007	2007	http://siberian-lang.srcc.msu.ru/ru/text/lisichka-v-i-andreev
 2007_Strelka_Andreev_LR3_transliterated	Андреев Василий Иванович	2007	Стрелка-Чуня	Волки	lifestory	2007	2007	http://siberian-lang.srcc.msu.ru/ru/text/volki-v-i-andreev
-2007_Surinda_Konorenok_LR3.eaf_new								
+2007_Surinda_Konorenok_LR3.eaf_new	Конорёнок Марта Алексеевна	2005	Суринда	Подготовка к аргишу	lifestory	2005	2005	
 2008_Kislokan_Sidorov_Gavrila_LAv.eaf_new	Сидоров Гавриил Степанович	2008	Кислокан	Рассказ о жизни	lifestory	2008	2008	http://siberian-lang.srcc.msu.ru/ru/text/rasskaz-o-zhizni-g-s-sidorov
 2008_Kislokan_Sidorov_Konstantin_LAvPart1.eaf_new	Сидоров Константин Степанович	2008	Кислокан	Рассказ о жизни	lifestory	2008	2008	http://siberian-lang.srcc.msu.ru/ru/text/rasskaz-o-zhizni-k-s-sidorov
 2008_Kislokan_Udygir_Valentina_LAv.eaf_new	Удыгир Валентина Иннокентьевна	2008	Кислокан	Рассказ о жизни	lifestory	2008	2008	http://siberian-lang.srcc.msu.ru/ru/text/rasskaz-o-zhizni-v-i-udygir
@@ -54,18 +54,18 @@ filename	author	year	recplace	title	genre	year_from	year_to	site_url
 2008_Tutonchany_Bondareva_LR1.eaf_new	Бондарева (Хукочар) Светлана Дмитриевна	2008	Тутончаны	Хукочары и Панкагиры	lifestory	2008	2008	http://siberian-lang.srcc.msu.ru/ru/text/hukochary-i-pankagiry-s-d-bondareva-hukochar
 2008_Tutonchany_KhukocharMaksim_LR.eaf_new	Хукочар Максим Дмитриевич	2008	Тутончаны	Рассказ о жизни	lifestory	2008	2008	http://siberian-lang.srcc.msu.ru/ru/text/rasskaz-o-zhizni-m-d-hukochar
 2008_Tutonchany_Khukochar_Danil_LR_transliterated	Хукочар Даниил Афанасьевич	2008	Тутончаны	История рода Хукочаров	lifestory	2008	2008	http://siberian-lang.srcc.msu.ru/ru/text/istoriya-roda-hukocharov-d-hukochar
-2008_Tutonchany_Lapushkina_LAv2_transliterated.eaf_new								
+2008_Tutonchany_Lapushkina_LAv2_transliterated.eaf_new	Лапушкина Марина Дмитриевна	2008	Тутончаны	Рассказ о жизни	lifestory	2008	2008	
 2008_Tutonchany_Pankagir_FSk_transliterated	Панкагир Прасковья Кирилловна, Хукочар Валентина Павловна	2008	Тутончаны	Ожившая	folklore	2008	2008	http://siberian-lang.srcc.msu.ru/ru/text/ozhivshaya-p-k-pankagir
-2008_Tutonchany_Uvachan_Inna_LAv1.eaf_new								
-2008_Tutonchany_Uvachan_Inna_LAv2.eaf_new								
-2008_Tutonchany_Uvachan_Inna_LAv3_transliterated.eaf_new								
+2008_Tutonchany_Uvachan_Inna_LAv1.eaf_new	Увачан Инна Константиновна	2008	Тутончаны	Рассказ о жизни	lifestory	2008	2008	
+2008_Tutonchany_Uvachan_Inna_LAv2.eaf_new	Увачан Инна Константиновна	2008	Тутончаны	Рассказ о жизни	lifestory	2008	2008	
+2008_Tutonchany_Uvachan_Inna_LAv3_transliterated.eaf_new	Увачан Инна Константиновна	2008	Тутончаны	Рассказ о жизни	lifestory	2008	2008	
 2009 Sym Boyarin Georgiy L-R 3_Gl_New.eaf_new	Боярин Георгий Павлович	2009	Сым	Орленок	lifestory	2009	2009	http://siberian-lang.srcc.msu.ru/ru/text/orlenok-g-p-boyarin
 2009 Sym Boyarin Georgiy L-R 4Part1.doc_transliterated.eaf_new	Боярин Георгий Павлович	2009	Сым	Как мы в лес уходим	lifestory	2009	2009	http://siberian-lang.srcc.msu.ru/ru/text/kak-my-v-les-uhodim-g-p-boyarin
-2010_Bely_Yar_Ivigin_Vladimir_LR1_transliterated.eaf_new								
+2010_Bely_Yar_Ivigin_Vladimir_LR1_transliterated.eaf_new	Ивигин Владимир Александрович	2010	Белый Яр	Я родился в лесу	lifestory	2010	2010	
 2010_Bely_Yar_Ivigin_Vladimir_LR2_transliterated.eaf_new	Ивигин Владимир Александрович	2010	Белый Яр	Шестой бубен	lifestory	2010	2010	http://siberian-lang.srcc.msu.ru/ru/text/shestoy-buben-v-ivigin
 2011_Hantayskoye_Ozero_0Chempogir_AD_Utukogir_LDFM								
-2011_Hantayskoye_Ozero_Chempogir_Antonina_Dmitriyevna_LB1_transliterated								
-2011_Hantayskoye_Ozero_Chempogir_Antonina_Dmitriyevna_LR								
+2011_Hantayskoye_Ozero_Chempogir_Antonina_Dmitriyevna_LB1_transliterated	Чемпогир Антонина Дмитриевна	2011	Хантайское Озеро	Рассказ о жизни	lifestory	2011	2011	http://siberian-lang.srcc.msu.ru/ru/text/rasskaz-o-zhizni-d-chempogir
+2011_Hantayskoye_Ozero_Chempogir_Antonina_Dmitriyevna_LR	Чемпогир Антонина Дмитриевна	2011	Хантайское Озеро	В тундре	lifestory	2011	2011	
 2011_Hantayskoye_Ozero_Turskaya_Minna_Dmitriyevna_LR1_transliterated	Турская Минна (Зинаида) Дмитриевна	2011	Хантайское Озеро	Шаман	lifestory	2011	2011	http://siberian-lang.srcc.msu.ru/ru/text/shaman-m-d-turskaya
 2011_Hantayskoye_Ozero_Turskaya_Minna_Dmitriyevna_L_transliterated	Турская Минна (Зинаида) Дмитриевна	2011	Хантайское Озеро	Рассказ о жизни	lifestory	2011	2011	http://siberian-lang.srcc.msu.ru/ru/text/rasskaz-o-zhizni-m-d-turskaya
 2011_Potapovo_Bogdanova_Tamara_Andreevna_FM1_transliterated	Богданова Тамара Андреевна	2011	Потапово	Бог и Сатана	folklore	2011	2011	http://siberian-lang.srcc.msu.ru/ru/text/bog-i-satana

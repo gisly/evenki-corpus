@@ -132,3 +132,13 @@ data/txt2json/conf/categories.json.i
 data/search/web_app/templates/select_gloss.html.i
 data/src_convertors/tmx2json.py.i
 data/search/web_app/templates/result_sentences.html.i
+data/search/transliterators/erzya.py.i
+data/search/web_app/templates/lemma_table_row.html.i
+data/search/transliterators/albanian.py.i
+data/src_convertors/iso_tei_hamburg2json.py.i
+data/src_convertors/morphy_yaml2json.py.i
+data/requirements.txt.i
+data/search/transliterators/uralic_simple.py.i
+data/search/web_app/templates/gramdic_popup.html.i
+data/src_convertors/img_csv2json.py.i
+data/search/web_app/translations/ru/LC_MESSAGES/messages.mo.d

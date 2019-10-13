@@ -20,7 +20,6 @@
   "input_format": "json-gzip",
   "debug": false,
   "media": false,
-  "viewing_mode": "glossed",
   "media_length": 60,
   "max_context_expand": 4,
   "max_distance_filter": 200000,

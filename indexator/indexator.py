@@ -472,6 +472,9 @@ class Indexator:
         self.add_meta_keywords(meta)
         meta['n_words'] = self.numWords
         meta['n_sents'] = self.numSents
+        if not 'author_kw' in meta or meta['author_kw'] is None:
+            print('!!!', meta)
+
         if len(self.settings['languages']) > 1:
             for i in range(len(self.languages)):
                 meta['n_words_' + self.languages[i]] = self.numWordsLang[i]

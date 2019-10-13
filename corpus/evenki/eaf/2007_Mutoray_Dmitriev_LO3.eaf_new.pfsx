@@ -37,7 +37,7 @@
         <Int>1</Int>
     </pref>
     <pref key="FrameSize">
-        <Object class="java.awt.Dimension">1917,1152</Object>
+        <Object class="java.awt.Dimension">1920,1152</Object>
     </pref>
     <prefGroup key="AAM-LR Phone level audio segmentation">
         <pref key="base_url">
@@ -52,16 +52,16 @@
     </pref>
     <prefGroup key="TierColors">
         <pref key="ev">
-            <Object class="java.awt.Color">90,0,90</Object>
+            <Object class="java.awt.Color">90,90,160</Object>
         </pref>
         <pref key="fonConcat">
-            <Object class="java.awt.Color">90,90,0</Object>
+            <Object class="java.awt.Color">160,0,90</Object>
         </pref>
         <pref key="glConcat">
-            <Object class="java.awt.Color">0,90,160</Object>
+            <Object class="java.awt.Color">0,90,90</Object>
         </pref>
         <pref key="sentFon">
-            <Object class="java.awt.Color">0,160,90</Object>
+            <Object class="java.awt.Color">90,0,0</Object>
         </pref>
     </prefGroup>
     <prefList key="CommentViewer.Columns.Hidden">
@@ -69,7 +69,7 @@
         <String>Отправитель</String>
     </prefList>
     <pref key="FrameLocation">
-        <Object class="java.awt.Point">0,2</Object>
+        <Object class="java.awt.Point">0,0</Object>
     </pref>
     <pref key="ActiveRecognizerName">
         <String>AAM-LR Phone level audio segmentation</String>
@@ -113,7 +113,7 @@
         <Long>0</Long>
     </pref>
     <pref key="TimeScaleBeginTime">
-        <Long>160</Long>
+        <Long>0</Long>
     </pref>
     <pref key="LayoutManager.CurrentMode">
         <Int>1</Int>

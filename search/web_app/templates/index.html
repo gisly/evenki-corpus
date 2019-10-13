@@ -130,7 +130,7 @@ var nothingFoundCaption = "{{ _('Nothing found.') }}";
 						<div class="options_column">
 						{{ _('Viewing mode:') }} <select name="viewing_mode" id="viewing_mode" class="search_input">
 							<option value="standard">{{ _('view_standard') }}</option>
-							<option value="glossed">{{ _('view_glossed') }}</option>
+							<option value="glossed" selected>{{ _('view_glossed') }}</option>
 						</select><br>
 						{% if transliterations and transliterations|length > 1 %}
 							{{ _('Transliteration: ') }}<select name="translit" id="translit" class="search_input">
