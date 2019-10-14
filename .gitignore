@@ -1,3 +1,14 @@
 *.pfsx
 *.001
 *.gz
+**.pyc
+**.idea/**
+txt2json/corpus/json/**
+txt2json/corpus/txt/**
+corpus/**
+src_convertors/corpus/**
+search/media/**
+search/tmp/**
+src_convertors/error.log
+docs_doxygen/**
+search/img/**
