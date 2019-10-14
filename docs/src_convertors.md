@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## Source convertors
 This document describes how to run the srcipts that convert files in various input formats to the tsakorpus JSON. All of the convertors are located in the ``src_convertors`` directory.
 
