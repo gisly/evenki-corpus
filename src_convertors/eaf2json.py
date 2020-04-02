@@ -482,7 +482,9 @@ class Eaf2JSON(Txt2JSON):
         srcTree = etree.parse(fnameSrc)
         self.tlis = self.get_tlis(srcTree)
         self.build_segment_tree(srcTree)
-        srcFileNode = srcTree.xpath('/ANNOTATION_DOCUMENT/HEADER/MEDIA_DESCRIPTOR')
+        srcFileNode = srcTree.xpath('/ANNOTATION_DOCUMENT/HEADER/MEDIA_DESCRIPTOR[@MIME_TYPE="audio/x-wav"]')
+        if not srcFileNode:
+            srcFileNode = srcTree.xpath('/ANNOTATION_DOCUMENT/HEADER/MEDIA_DESCRIPTOR')
         if len(srcFileNode) > 0 and 'RELATIVE_MEDIA_URL' in srcFileNode[0].attrib:
             srcFile = self.rxStripDir.sub('', html.unescape(srcFileNode[0].attrib['RELATIVE_MEDIA_URL']))
         elif len(srcFileNode) > 0 and 'MEDIA_URL' in srcFileNode[0].attrib:
@@ -528,4 +530,6 @@ class Eaf2JSON(Txt2JSON):
 
 if __name__ == '__main__':
     t2j = Eaf2JSON()
-    t2j.process_corpus(cutMedia=False)
+    t2j.process_corpus(cutMedia=True)
+    
+
