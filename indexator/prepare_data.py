@@ -19,17 +19,26 @@ class PrepareData:
         self.wordFields = []
         if 'word_fields' in self.settings:
             self.wordFields = self.settings['word_fields']
+        self.kwFields = []
+        if 'kw_word_fields' in self.settings:
+            self.kwFields = self.settings['kw_word_fields']
         f = open(os.path.join(self.SETTINGS_DIR, 'categories.json'),
                  'r', encoding='utf-8')
         self.categories = json.loads(f.read())
         f.close()
+        wfAnalyzerPatter = '[.\n()\\[\\]/]'
+        if 'wf_analyzer_pattern' in self.settings:
+            wfAnalyzerPatter = self.settings['wf_analyzer_pattern']
+        wfLowercase = True
+        if 'wf_lowercase' in self.settings:
+            wfLowercase = self.settings['wf_lowercase']
         self.wfAnalyzer = {
             'analysis': {
                 'analyzer': {
                     'wf_analyzer': {
                         'type': 'pattern',
-                        'pattern': '[.\n()\\[\\]/]',
-                        'lowercase': True
+                        'pattern': wfAnalyzerPatter,
+                        'lowercase': wfLowercase
                     },
                     'gloss_analyzer': {
                         'type': 'pattern',
@@ -64,13 +73,17 @@ class PrepareData:
         m = {'wf': {'type': 'text',
                     'fielddata': True,
                     'analyzer': 'wf_analyzer'},
+             'wf_display': {'type': 'text', 'index': False},
              'wtype': {'type': 'keyword'},
              'lang': {'type': 'byte'},
              'sentence_index': {'type': 'short'},
+             'sentence_index_neg': {'type': 'short'},
              'sids': {'type': 'integer', 'index': False},
              'n_ana': {'type': 'byte'},
              'ana': {'type': 'nested',
-                     'properties': {'lex': {'type': 'text'},
+                     'properties': {'lex': {'type': 'text',
+                                            'fielddata': True,
+                                            'analyzer': 'wf_analyzer'},
                                     'gloss_index': {'type': 'text',
                                                     'analyzer': 'gloss_analyzer'}}},
              'freq': {'type': 'integer'},
@@ -82,8 +95,11 @@ class PrepareData:
              'l_order': {'type': 'integer'}     # position of the lemma in sorted list of lemmata
              }
         for field in self.wordFields:
-            if self.rxBadField.search(field) is None:
+            if self.rxBadField.search(field) is None and field not in self.kwFields:
                 m['ana']['properties'][field] = {'type': 'text'}
+        for field in self.kwFields:
+            if self.rxBadField.search(field) is None:
+                m['ana']['properties'][field] = {'type': 'keyword'}
         for field in set(v for lang in self.categories.values()
                          for v in lang.values()):
             if self.rxBadField.search(field) is None:
@@ -159,6 +175,7 @@ class PrepareData:
         """
         wordProps = word_mapping['mappings']['word']['properties']
         wordProps['w_id'] = {'type': 'integer'}
+        wordProps['l_id'] = {'type': 'integer'}
         m = {'prev_id': {'type': 'integer'},
              'next_id': {'type': 'integer'},
              'doc_id': {'type': 'integer'},
@@ -195,13 +212,23 @@ class PrepareData:
                                     'sent_ids': {'type': 'integer',
                                                  'index': False}
                                 }},
+             'style_spans': {'type': 'nested',
+                             'properties': {
+                                 'off_start': {'type': 'short',
+                                               'index': False},
+                                 'off_end': {'type': 'short',
+                                             'index': False},
+                                 'span_class': {'type': 'keyword',
+                                                'index': False}
+                             }},
              'segment_ids': {'type': 'integer',
                              'index': False},
              'words': {'type': 'nested',
                        'properties': word_mapping['mappings']['word']['properties']}}
-        sentMetaDict = {}
+        sentMetaDict = {'sent_analyses_kw': {'type': 'keyword'}}
         for meta in self.settings['sentence_meta']:
-            if meta.startswith('year'):
+            if meta.startswith('year') or ('integer_meta_fields' in self.settings
+                                           and meta in self.settings['integer_meta_fields']):
                 sentMetaDict[meta] = {'type': 'integer'}
             else:
                 sentMetaDict[meta] = {'type': 'text'}
