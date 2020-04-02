@@ -171,6 +171,7 @@ $(function() {
 	load_additional_word_fields();
 	assign_input_events();
 	assign_show_hide();
+	search_if_query();
 });
 
 function start_progress_bar() {
@@ -192,6 +193,7 @@ function continue_progress_bar() {
 				$('#progress_bar_seconds').html(max_request_time - secElapsed);
 				if (secElapsed == 2) {
 					hide_player();
+					hide_img();
 					hide_query_panel();
 					$('.progress').css('visibility', 'visible');
 				}
@@ -221,12 +223,30 @@ function load_expanded_context(n_sent) {
 	});
 }
 
+function load_glossed_sentence(n_sent) {
+	var glossedText = '';
+	$.ajax({
+		async: false,
+		url: "get_glossed_sentence/" + n_sent,
+		type: "GET",
+		success: function(result) {
+			$('#glossed_copy_textarea').val(result);
+		},
+//		success: print_json,
+		error: function(errorThrown) {
+			alert( JSON.stringify(errorThrown) );
+		}
+	});
+	return glossedText;
+}
+
 function load_additional_word_fields() {
 	$.ajax({
 		url: "get_word_fields",
 		type: "GET",
 		success: function(result) {
 			$("div.add_word_fields").html(result);
+			change_tier({'target': $('#lang1')});
 		},
 		error: function(errorThrown) {
 			alert( JSON.stringify(errorThrown) );
@@ -286,6 +306,8 @@ function assign_input_events() {
 	//$("neg_query_checkbox").unbind('change');
 	$("span.neg_query").unbind('click');
 	$("#show_help").unbind('click');
+	$("#show_dictionary").unbind('click');
+	$("#cite_corpus").unbind('click');
 	$("#show_word_stat").unbind('click');
 	$("span.locale").unbind('click');
 	$(".search_input").unbind('on');
@@ -293,6 +315,8 @@ function assign_input_events() {
 	$('#share_query').unbind('click');
 	$('#load_query').unbind('click');
 	$('#query_load_ok').unbind('click');
+	$('.toggle_glossed_layer').unbind('click');
+	$(".tier_select").unbind('change');
 	$("span.word_plus").click(add_word_inputs);
 	$("span.word_minus").click(del_word_inputs);
 	$("span.word_expand").click(expand_word_input);
@@ -302,6 +326,8 @@ function assign_input_events() {
 	//$("neg_query_checkbox").change(negative_query);
 	$("span.neg_query").click(negative_query_span);
 	$("#show_help").click(show_help);
+	$("#show_dictionary").click(show_dictionary);
+	$("#cite_corpus").click(show_citation);
 	$("#show_word_stat").click(show_word_stats);
 	$("span.locale").click(change_locale);
 	$(".search_input").on("keydown", search_if_enter);
@@ -309,6 +335,8 @@ function assign_input_events() {
 	$('#share_query').click(share_query);
 	$('#load_query').click(show_load_query);
 	$('#query_load_ok').click(load_query);
+	$('.toggle_glossed_layer').click(toggle_glossed_layer);
+	$(".tier_select").change(change_tier);
 }
 
 function assign_show_hide() {
@@ -481,6 +509,25 @@ function show_help(e) {
 		});
 }
 
+function show_dictionary(e) {
+	var lang = $('#lang1 option:selected').val();
+	$.ajax({
+			url: "dictionary/" + lang,
+			type: "GET",
+			success: function(result) {
+				$('#dictionary_dialogue_body').html(result);
+				$('#dictionary_dialogue').modal('show');
+				assign_dictionary_events();
+			},
+			error: function(errorThrown) {
+			}
+		});
+}
+
+function show_citation(e) {
+	$('#citation_dialogue').modal('show');
+}
+
 function gramm_selector_loaded(result) {
 	$("#gram_sel_body").html(result);
 	$("#gramm_selector_ok").unbind('click');
@@ -495,6 +542,17 @@ function gloss_selector_loaded(result) {
 	$("#gloss_selector_ok").click(gloss_selector_ok);
 	$("#gloss_selector_cancel").unbind('click');
 	$("#gloss_selector_cancel").click(function() {$('#gram_selector').modal('toggle');});
+}
+
+function assign_dictionary_events(){
+	$(".dictionary_lemma").unbind("click");
+	$(".dictionary_lemma").click(input_lemma);
+}
+
+function input_lemma(e) {
+	$('#wf1').val("");
+	$('#lex1').val($(e.target).html());
+	$('#gr1').val($(e.target).next().html().replace(" ", ""));
 }
 
 function gram_selector_ok(e) {
@@ -534,3 +592,19 @@ function search_if_enter(e) {
     }
 }
 
+function toggle_glossed_layer(e) {
+	classToToggle = ".popup_" + $(this).attr('data');
+	if ($(this).is(':checked')) {
+		$(classToToggle).css("display", "");
+	}
+	else {
+		$(classToToggle).css("display", "none");
+	}
+}
+
+function search_if_query() {
+	if ($('#query_to_load').val().length > 1) {
+		$('#query_load_ok').click();
+		$('#search_sent').click();
+	}
+}

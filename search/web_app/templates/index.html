@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="{{ locale }}">
 <head>
-<title>{{ _('Corpus search page') }}</title>
+<title>{{ _('corpus_title') }} - {{ _('Corpus search page') }}</title>
 <link rel="stylesheet" type="text/css" href="static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="static/css/search.css">
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -24,20 +24,28 @@ var selectGrammTagsCaption = "{{ _('Select combinations of tags') }}";
 var selectGlossCaption = "{{ _('Select glosses') }}";
 var forTheQueryCaption = "{{ _('the query') }}";
 var nothingFoundCaption = "{{ _('Nothing found.') }}";
+var autoSwitchTiers = {{ auto_switch_tiers|safe }};
+var wordFieldsByTier = {{ word_fields_by_tier|safe }};
 </script>
 <!-- <link href="https://fonts.googleapis.com/css?family=Lato:400,400i" rel="stylesheet"> -->
 {% if media %}
-<link href="http://vjs.zencdn.net/5.19.2/video-js.css" rel="stylesheet">
+<link href="https://vjs.zencdn.net/5.19.2/video-js.css" rel="stylesheet">
 <link href="static/css/videojs.markers.min.css" rel="stylesheet">
-<script src="http://vjs.zencdn.net/5.19.2/video.js"></script>
+<script src="https://vjs.zencdn.net/5.19.2/video.js"></script>
 <script src="static/js/videojs-markers.js"></script>
 {% if youtube %}
 <script src="static/js/videojs-youtube.js"></script>
 {% endif %}
 {% endif %}
+{% include "head_add.html" ignore missing %}
 </head>
 <body>
-<p id="header"><span id="corpus_title">{{ _('corpus_title') }}</span> {% if debug %}{{ _('Corpus name') }}: {{ corpus_name }}.{% endif %}
+{% include "header.html" ignore missing %}
+<p id="header"><span id="corpus_title">
+{% if start_page_url %}<a href="{{ start_page_url }}">{% endif %}
+{{ _('corpus_title') }}
+{% if start_page_url %}</a>{% endif %}
+</span> {% if debug %}{{ _('Corpus name') }}: {{ corpus_name }}.{% endif %}
 {% if locales|length > 1 %}
 &nbsp;&nbsp;
 {% for l_code in locales %}
@@ -48,8 +56,16 @@ var nothingFoundCaption = "{{ _('Nothing found.') }}";
 		|&nbsp;&nbsp;
 	{% endif %}
 {% endfor %}
+{% else %}
+<span style="padding-right: 70px;">&nbsp;</span>
+{% endif %}
+{% if generate_dictionary %}
+<span id="show_dictionary" class="glyphicon glyphicon-book" aria-hidden="true"><span class="tooltip_prompt">{{ _('Show dictionary') }}</span></span>
 {% endif %}
 <span id="show_help" class="glyphicon glyphicon-question-sign" aria-hidden="true"><span class="tooltip_prompt">{{ _('Show help') }}</span></span>
+{% if citation %}
+<span id="cite_corpus"><span class="tooltip_prompt">{{ _('How to cite') }}</span><img id="cite_corpus_img" src="static/img/cite.png"></span>
+{% endif %}
 </p>
 <div id="search_div" class="transitions init-hidden">
 	<div class="show-hide">
@@ -71,17 +87,18 @@ var nothingFoundCaption = "{{ _('Nothing found.') }}";
 						<div class="word_search" id="first_word">
 							<div class="word_search_l">
 								<div class="query_word_header"><div class="circle circle_w1"></div>{{ _('Word_header') }} {{ _('Number_sign') }}1</div>
-								{{ _('Word:') }} <input type="text" class="search_input" name="wf1" id="wf1"><br>
-								{{ _('Lemma:') }} <input type="text" class="search_input" name="lex1" id="lex1"><br>
-								{{ _('Grammar:') }} <input type="text" class="search_input gram_selector_input" name="gr1" id="gr1"><span class="gram_selector_link glyphicon glyphicon-edit" data-field="gr" data-nword="1"></span><br>
+								<span id="_label_wf1" class="search_label">{{ _('Word:') }}</span> <input type="text" class="search_input" name="wf1" id="wf1"><br>
+								<span id="_label_lex1" class="search_label">{{ _('Lemma:') }}</span> <input type="text" class="search_input" name="lex1" id="lex1"><br>
+								<span id="_label_gr1" class="search_label">{{ _('Grammar:') }}</span> <input type="text" class="search_input gram_selector_input" name="gr1" id="gr1"><span class="gram_selector_link glyphicon glyphicon-edit" data-field="gr" data-nword="1"></span><br>
 								<input type="hidden" class="search_input" name="w_id1" id="w_id1">
+								<input type="hidden" class="search_input" name="l_id1" id="l_id1">
 								{% if gloss_search_enabled %}
-								{{ _('Gloss:') }} <input type="text" class="search_input gram_selector_input" name="gloss_index1" id="gloss1"><span class="gram_selector_link glyphicon glyphicon-edit" data-field="gloss" data-nword="1"></span><br>
+								<span id="_label_gloss1" class="search_label">{{ _('Gloss:') }}</span> <input type="text" class="search_input gram_selector_input" name="gloss_index1" id="gloss_index1"><span class="gram_selector_link glyphicon glyphicon-edit" data-field="gloss" data-nword="1"></span><br>
 								{% endif %}
 								<hr class="separator">
 								<div class="add_word_fields"></div>
 								{% if languages|length > 1 %}
-									{{ _('Language/tier:') }} <select name="lang1" id="lang1" class="search_input">
+									{{ _('Language/tier:') }} <select name="lang1" id="lang1" class="tier_select search_input">
 									{% for lang in languages %}
 									<option value="{{ lang }}">{{ _('langname_' + lang) }}</option>
 									{% endfor %}
@@ -98,7 +115,9 @@ var nothingFoundCaption = "{{ _('Nothing found.') }}";
 								{% endif %}
 							</div>
 							<div class="word_search_r">
+								{% if negative_search_enabled %}
 								<span class="neg_query glyphicon glyphicon-off" aria-label="{{ _('negative_query') }}" aria-hidden="true"><span class="tooltip_prompt">{{ _('negative_query') }}</span></span><br>
+								{% endif %}
 								<span class="word_plus glyphicon glyphicon-plus-sign" aria-label="{{ _('add_word') }}" aria-hidden="true"><span class="tooltip_prompt">{{ _('add_word') }}</span></span><br>
 								<span class="add_minus_stub"></span>
 								<span class="add_distance_stub"></span>
@@ -108,7 +127,9 @@ var nothingFoundCaption = "{{ _('Nothing found.') }}";
 						</div>
 					</div>
 					<br>
+{% if fulltext_search_enabled %}
 					{{ _('Full-text search:') }} <input type="text" class="search_input" name="txt" id="txt"> <input type="checkbox" name="precise" id="precise"> {{ _('Precise match') }}<br>
+{% endif %}
 				</div>
 		
 				<div class="tab-pane" id="display_options_tab">
@@ -125,12 +146,12 @@ var nothingFoundCaption = "{{ _('Nothing found.') }}";
 								<option value="">{{ _('no sorting') }}</option>
 								{% endif %}
 							</select><br>
-							<input type="checkbox" name="distance_strict" id="distance_strict"> {{ _('Word distance requirements are strict') }}<br>
+							<input type="checkbox" name="distance_strict" id="distance_strict" checked> {{ _('Word distance requirements are strict') }}<br>
 						</div>
 						<div class="options_column">
 						{{ _('Viewing mode:') }} <select name="viewing_mode" id="viewing_mode" class="search_input">
 							<option value="standard">{{ _('view_standard') }}</option>
-							<option value="glossed" selected>{{ _('view_glossed') }}</option>
+							<option value="glossed">{{ _('view_glossed') }}</option>
 						</select><br>
 						{% if transliterations and transliterations|length > 1 %}
 							{{ _('Transliteration: ') }}<select name="translit" id="translit" class="search_input">
@@ -146,6 +167,15 @@ var nothingFoundCaption = "{{ _('Nothing found.') }}";
 							{% endfor %}
 							</select>
 						{% endif %}
+						</div>
+						<div class="options_column_leftalign">
+						{{ _('Annotation layers in glossed mode:') }}<br>
+						<input type="checkbox" name="toggle_lemma" data="lex" class="toggle_glossed_layer" id="toggle_lemma" checked> {{ _('Lemma') }}<br>
+						<input type="checkbox" name="toggle_grammar" data="gramm" class="toggle_glossed_layer" id="toggle_grammar" checked> {{ _('Grammar') }}<br>
+{% if gloss_search_enabled %}
+						<input type="checkbox" name="toggle_gloss" data="gloss" class="toggle_glossed_layer" id="toggle_gloss" checked> {{ _('Gloss') }}<br>
+{% endif %}
+						<input type="checkbox" name="toggle_additional_ana_fields" data="field_ana_other" class="toggle_glossed_layer" id="toggle_additional_ana_fields" checked> {{ _('Additional fields') }}<br>
 						</div>
 					</div>
 				</div>
@@ -192,6 +222,10 @@ To view this video please enable JavaScript, and consider upgrading to a web bro
 </video>
 </div>
 {% endif %}
+{% if images %}
+<div id="image_div" style="display: none">
+</div>
+{% endif %}
 <div id="res_p">
 <p style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;">{{ _('(Place for results)') }}</p></div>
 <div class="progress" style="visibility: hidden">
@@ -220,7 +254,7 @@ To view this video please enable JavaScript, and consider upgrading to a web bro
 	</div>
 </div>
 
-<div class="modal fade" id="help_dialogue" tabindex="-1" role="dialog" aria-labelledby="help_dialogue_header" aria-hidden="true" data-field="gr1">
+<div class="modal fade" id="help_dialogue" tabindex="-1" role="dialog" aria-labelledby="help_dialogue_header" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
@@ -234,16 +268,68 @@ To view this video please enable JavaScript, and consider upgrading to a web bro
 	</div>
 </div>
 
+<div class="modal fade" id="dictionary_dialogue" tabindex="-1" role="dialog" aria-labelledby="dictionary_dialogue_header" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="dictionary_dialogue_header">{{ _('Dictionary_header') }}</h4>
+			</div>
+			<div class="modal-body" id="dictionary_dialogue_body">
+			<p>The dictionary text should be loaded here.</p>
+			</div>
+		</div>
+	</div>
+</div>
+{% if citation %}
+<div class="modal fade" id="citation_dialogue" tabindex="-1" role="dialog" aria-labelledby="citation_dialogue_header" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="citation_dialogue_header">{{ _('How to cite') }}</h4>
+			</div>
+			<div class="modal-body" id="citation_dialogue_body">
+			<p>{{ citation | safe }}</p>
+			</div>
+		</div>
+	</div>
+</div>
+{% endif %}
+{% if images %}
+<div class="modal fade" id="full_image" tabindex="-1" role="dialog" aria-labelledby="full_image_header" aria-hidden="true" data-field="gr1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			</div>
+			<div class="modal-body" id="full_image_body">
+			<img id="img_fullres" src="">
+			</div>
+		</div>
+	</div>
+</div>
+{% endif %}
+
 {% include "query_share_load.html" %}
 <script src="https://d3js.org/d3.v4.min.js"></script>
 {% include "subcorpus_selection.html" %}
 {% include "word_stats.html" %}
+
+{% include "footer.html" ignore missing %}
 <script type='text/javascript' src='static/js/select_subcorpus.js'></script>
 </body>
 {% if media %}
 	<script>
 	$(function() {
 		$('#res_p').css('width', 'calc(95vw - ' + $('#media_div').width().toString() + 'px)');
+	});
+	</script>
+{% endif %}
+{% if images %}
+	<script>
+	$(function() {
+		$('#res_p').css('width', 'calc(95vw - ' + $('#image_div').width().toString() + 'px)');
 	});
 	</script>
 {% endif %}

@@ -16,10 +16,8 @@ from .response_processors import SentenceViewer
 from .transliteration import *
 
 
-
 SETTINGS_DIR = '../conf'
 MAX_PAGE_SIZE = 100     # maximum number of sentences per page
-print(os.path.abspath(__file__))
 f = open(os.path.join(SETTINGS_DIR, 'corpus.json'), 'r', encoding='utf-8')
 settings = json.loads(f.read())
 f.close()
@@ -40,7 +38,14 @@ for lang in settings['languages']:
     word_freq_by_rank.append(sentView.extract_cumulative_freq_by_rank(sc.get_word_freq_by_rank(lang)))
     # number of lemmata for each frequency rank
     lemma_freq_by_rank.append(sentView.extract_cumulative_freq_by_rank(sc.get_lemma_freq_by_rank(lang)))
-linePlotMetafields = ['year']   # metadata fields whose statistics can be displayed on a line plot
+if 'line_plot_meta' in settings:
+    linePlotMetafields = settings['line_plot_meta']
+else:
+    linePlotMetafields = ['year']   # metadata fields whose statistics can be displayed on a line plot
+if 'citation' not in settings:
+    settings['citation'] = None
+if 'start_page_url' not in settings:
+    settings['start_page_url'] = None
 
 
 def jsonp(func):
@@ -106,6 +111,19 @@ app.config.update(dict(
     BABEL_DEFAULT_LOCALE='en'
 ))
 
+
+def lang_sorting_key(l):
+    """
+    Function for sorting language names in the output according
+    to the general order provided by the settings.
+    """
+    if l in settings['languages']:
+        return settings['languages'].index(l), -1, ''
+    elif re.sub('_[0-9]+$', '', l) in settings['languages']:
+        return (settings['languages'].index(re.sub('_[0-9]+$', '', l)),
+                int(re.sub('^.*_', '', l)), '')
+    else:
+        return len(settings['languages']), 0, l
 
 def initialize_session():
     """
@@ -253,19 +271,23 @@ def add_sent_data_for_session(sent, sentData):
             highlightedText = sentView.process_sentence_csv(sent, lang=settings['languages'][langID],
                                                             translit=get_session_data('translit'))
         lang = settings['languages'][langID]
-        if lang not in sentData['languages']:
-            sentData['languages'][lang] = {'id': sent['_id'],
-                                           'next_id': nextID,
-                                           'prev_id': prevID,
-                                           'highlighted_text': highlightedText}
+        langView = lang
+        if 'transVar' in sent['_source']:
+            langView += '_' + str(sent['_source']['transVar'])
+        if langView not in sentData['languages']:
+            sentData['languages'][langView] = {'id': sent['_id'],
+                                               'next_id': nextID,
+                                               'prev_id': prevID,
+                                               'highlighted_text': highlightedText,
+                                               'source': sent['_source']}
         else:
-            if ('next_id' not in sentData['languages'][lang]
+            if ('next_id' not in sentData['languages'][langView]
                     or nextID == -1
-                    or nextID > sentData['languages'][lang]['next_id']):
-                sentData['languages'][lang]['next_id'] = nextID
-            if ('prev_id' not in sentData['languages'][lang]
-                    or prevID < sentData['languages'][lang]['prev_id']):
-                sentData['languages'][lang]['prev_id'] = prevID
+                    or nextID > sentData['languages'][langView]['next_id']):
+                sentData['languages'][langView]['next_id'] = nextID
+            if ('prev_id' not in sentData['languages'][langView]
+                    or prevID < sentData['languages'][langView]['prev_id']):
+                sentData['languages'][langView]['prev_id'] = prevID
         if 'src_alignment' in sent['_source']:
             for alignment in sent['_source']['src_alignment']:
                 if alignment['src'] not in sentData['src_alignment_files']:
@@ -356,8 +378,8 @@ def update_expanded_contexts(context, neighboringIDs):
             if side in context['languages'][lang] and len(context['languages'][lang][side]) > 0:
                 curSent['languages'][lang][side + '_id'] = neighboringIDs[lang][side]
 
-
 @app.route('/')
+@app.route('/search')
 def search_page():
     """
     Return HTML of the search page (the main page of the corpus).
@@ -375,6 +397,34 @@ def search_page():
         mediaYoutube = True
     else:
         mediaYoutube = False
+    if 'word_fields_by_tier' in settings:
+        wordFieldsByTier = settings['word_fields_by_tier']
+    else:
+        wordFieldsByTier = {}
+    if 'auto_switch_tiers' in settings:
+        autoSwitchTiers = settings['auto_switch_tiers']
+    else:
+        autoSwitchTiers = {}
+    if 'generate_dictionary' in settings:
+        generateDictionary = settings['generate_dictionary']
+    else:
+        generateDictionary = False
+    if 'images' in settings:
+        images = settings['images']
+    else:
+        images = False
+    if 'fulltext_search_enabled' in settings:
+        fulltextSearch = settings['fulltext_search_enabled']
+    else:
+        fulltextSearch = True
+    if 'negative_search_enabled' in settings:
+        negativeSearchEnabled = settings['negative_search_enabled']
+    else:
+        negativeSearchEnabled = True
+    queryString = ''
+    if request.query_string is not None:
+        queryString = request.query_string.decode('utf-8')
+
     return render_template('index.html',
                            locale=get_locale(),
                            corpus_name=corpus_name,
@@ -383,13 +433,22 @@ def search_page():
                            transliterations=transliterations,
                            input_methods=inputMethods,
                            media=settings['media'],
+                           images=images,
                            youtube=mediaYoutube,
                            gloss_search_enabled=settings['gloss_search_enabled'],
+                           negative_search_enabled=negativeSearchEnabled,
+                           fulltext_search_enabled=fulltextSearch,
                            debug=settings['debug'],
                            subcorpus_selection=settings['search_meta'],
+                           word_fields_by_tier=json.dumps(wordFieldsByTier, ensure_ascii=False, indent=-1),
+                           auto_switch_tiers=json.dumps(autoSwitchTiers, ensure_ascii=False, indent=-1),
+                           generate_dictionary=generateDictionary,
+                           citation=settings['citation'],
+                           start_page_url=settings['start_page_url'],
                            max_request_time=settings['query_timeout'] + 1,
                            locales=settings['interface_languages'],
-                           random_seed=get_session_data('seed'))
+                           random_seed=get_session_data('seed'),
+                           query_string=queryString)
 
 
 @app.route('/search_sent_query/<int:page>')
@@ -470,9 +529,12 @@ def get_parallel_for_one_sent_html(sSource, numHit):
         add_sent_data_for_session(s, curSentIDs[numHit])
         langID = s['_source']['lang']
         lang = settings['languages'][langID]
-        sentHTML = sentView.process_sentence(s, numSent=numSent, getHeader=False, lang=lang,
-                                             translit=get_session_data('translit'))['languages'][lang]['text']
-        yield sentHTML, lang
+        langView = lang
+        if 'transVar' in s['_source']:
+            langView += '_' + str(s['_source']['transVar'])
+        sentHTML = sentView.process_sentence(s, numSent=numSent, getHeader=False, lang=lang, langView=langView,
+                                             translit=get_session_data('translit'))['languages'][langView]['text']
+        yield sentHTML, langView
 
 
 def add_parallel(hits, htmlResponse):
@@ -480,6 +542,7 @@ def add_parallel(hits, htmlResponse):
     Add HTML of fragments in other languages aligned with the current
     search results to the response.
     """
+    addLanguages = set()
     for iHit in range(len(hits)):
         if ('para_alignment' not in hits[iHit]['_source']
                 or len(hits[iHit]['_source']['para_alignment']) <= 0):
@@ -489,6 +552,15 @@ def add_parallel(hits, htmlResponse):
                 htmlResponse['contexts'][iHit]['languages'][lang]['text'] += ' ' + sentHTML
             except KeyError:
                 htmlResponse['contexts'][iHit]['languages'][lang] = {'text': sentHTML}
+                # Add new language names that could appear if there are several
+                # translation variants for the same language. In this case, they
+                # are named LANG_V, where LANG is the language name and V is the number
+                # of the version.
+                if lang not in addLanguages:
+                    addLanguages.add(lang)
+    if len(addLanguages) > 0 and 'languages' in htmlResponse:
+        addLanguages -= set(htmlResponse['languages'])
+        htmlResponse['languages'] += [l for l in sorted(addLanguages)]
 
 
 def get_buckets_for_doc_metafield(fieldName, langID=-1, docIDs=None, maxBuckets=300):
@@ -594,7 +666,6 @@ def get_buckets_for_sent_metafield(fieldName, langID=-1, docIDs=None, maxBuckets
     for bucket in hits['aggregations']['metafield']['buckets']:
         bucketListItem = {'name': bucket['key'],
                           'n_sents': bucket['doc_count'],
-
                           'n_words': bucket['subagg_n_words']['value']}
         buckets.append(bucketListItem)
     if not fieldName.startswith(('year', 'byear', 'birth_year')):
@@ -1003,7 +1074,7 @@ def find_sentences_json(page=0):
             nWords = query['n_words']
             for iQueryWord in range(2, nWords + 1):
                 if 'lang' + str(iQueryWord) in query and query['lang' + str(iQueryWord)] != query['lang1']:
-                    print(negWords)
+                    # print(negWords)
                     negWords.append(iQueryWord)
 
     if (len(wordConstraints) > 0
@@ -1122,12 +1193,17 @@ def search_sent(page=-1):
     add_sent_to_session(hits)
     hitsProcessed = sentView.process_sent_json(hits,
                                                translit=get_session_data('translit'))
+    # hitsProcessed['languages'] = settings['languages']
     if len(settings['languages']) > 1 and 'hits' in hits and 'hits' in hits['hits']:
         add_parallel(hits['hits']['hits'], hitsProcessed)
+    hitsProcessed['languages'].sort(key=lang_sorting_key)
     hitsProcessed['page'] = get_session_data('page')
     hitsProcessed['page_size'] = get_session_data('page_size')
-    hitsProcessed['languages'] = settings['languages']
     hitsProcessed['media'] = settings['media']
+    if 'images' in settings:
+        hitsProcessed['images'] = settings['images']
+    else:
+        hitsProcessed['images'] = False
     hitsProcessed['subcorpus_enabled'] = False
     if 'subcorpus_enabled' in hits:
         hitsProcessed['subcorpus_enabled'] = True
@@ -1152,13 +1228,17 @@ def get_sent_context(n):
     if sentData is None or n >= len(sentData) or 'languages' not in sentData[n]:
         return jsonify({})
     curSentData = sentData[n]
-    if curSentData['times_expanded'] >= settings['max_context_expand']:
+    if curSentData['times_expanded'] >= settings['max_context_expand'] >= 0:
         return jsonify({})
     context = {'n': n, 'languages': {lang: {} for lang in curSentData['languages']},
                'src_alignment': {}}
     neighboringIDs = {lang: {'next': -1, 'prev': -1} for lang in curSentData['languages']}
     for lang in curSentData['languages']:
-        langID = settings['languages'].index(lang)
+        try:
+            langID = settings['languages'].index(lang)
+        except:
+            # Language + number of the translation version: chop off the number
+            langID = settings['languages'].index(re.sub('_[0-9]+$', '', lang))
         for side in ['next', 'prev']:
             curCxLang = context['languages'][lang]
             if side + '_id' in curSentData['languages'][lang]:
@@ -1248,11 +1328,15 @@ def search_lemma_json():
     return search_word_json(searchType='lemma')
 
 
+@app.route('/search_word_json/<int:page>')
 @app.route('/search_word_json')
 @jsonp
-def search_word_json(searchType='word'):
+def search_word_json(searchType='word', page=0):
     query = copy_request_args()
     change_display_options(query)
+    if page <= 0:
+        page = 1
+        set_session_data('page', page)
     if 'doc_ids' not in query:
         docIDs = subcorpus_ids(query)
         if docIDs is not None:
@@ -1282,6 +1366,7 @@ def search_word_json(searchType='word'):
                           sortOrder=sortOrder,
                           randomSeed=get_session_data('seed'),
                           query_size=get_session_data('page_size'),
+                          page=get_session_data('page'),
                           distances=queryWordConstraints)
 
     hits = []
@@ -1305,16 +1390,26 @@ def search_word_json(searchType='word'):
     return jsonify(hits)
 
 
+@app.route('/search_lemma/<int:page>')
 @app.route('/search_lemma')
-def search_lemma():
-    return search_word(searchType='lemma')
+def search_lemma(page=0):
+    return search_word(searchType='lemma', page=page)
 
 
+@app.route('/search_word/<int:page>')
 @app.route('/search_word')
-def search_word(searchType='word'):
+def search_word(searchType='word', page=0):
     set_session_data('progress', 0)
-    query = copy_request_args()
-    change_display_options(query)
+    if request.args and page <= 0:
+        query = copy_request_args()
+        page = 1
+        change_display_options(query)
+        if get_session_data('sort') not in ('random', 'freq', 'wf', 'lemma'):
+            set_session_data('sort', 'random')
+        set_session_data('last_query', query)
+    else:
+        query = get_session_data('last_query')
+    set_session_data('page', page)
     if 'doc_ids' not in query:
         docIDs = subcorpus_ids(query)
         if docIDs is not None:
@@ -1348,6 +1443,7 @@ def search_word(searchType='word'):
                           sortOrder=sortOrder,
                           randomSeed=get_session_data('seed'),
                           query_size=get_session_data('page_size'),
+                          page=get_session_data('page'),
                           distances=queryWordConstraints,
                           includeNextWordField=constraintsTooComplex)
 
@@ -1387,8 +1483,31 @@ def search_word(searchType='word'):
                                                             pageSize=get_session_data('page_size'))
 
     hitsProcessed['media'] = settings['media']
+    if 'images' in settings:
+        hitsProcessed['images'] = settings['images']
+    else:
+        hitsProcessed['images'] = False
     set_session_data('progress', 100)
-    return render_template('result_words.html', data=hitsProcessed)
+    otherWordTableFields = []
+    if 'word_table_fields' in settings and searchType == 'word':
+        otherWordTableFields = settings['word_table_fields']
+    displayFreqRank = True
+    if 'display_freq_rank' in settings and not settings['display_freq_rank']:
+        displayFreqRank = False
+    displayGr = True
+    if 'word_search_display_gr' in settings and not settings['word_search_display_gr']:
+        displayGr = False
+    bShowNextButton = True
+    if 'words' not in hitsProcessed or len(hitsProcessed['words']) != get_session_data('page_size'):
+        bShowNextButton = False
+    return render_template('result_words.html',
+                           data=hitsProcessed,
+                           word_table_fields=otherWordTableFields,
+                           word_search_display_gr=displayGr,
+                           display_freq_rank=displayFreqRank,
+                           search_type=searchType,
+                           page=page,
+                           show_next=bShowNextButton)
 
 
 @app.route('/search_doc_query')
@@ -1429,6 +1548,10 @@ def search_doc():
                                                exclude=get_session_data('excluded_doc_ids'),
                                                corpusSize=corpus_size)
     hitsProcessed['media'] = settings['media']
+    if 'images' in settings:
+        hitsProcessed['images'] = settings['images']
+    else:
+        hitsProcessed['images'] = False
     return render_template('result_docs.html', data=hitsProcessed)
 
 
@@ -1441,13 +1564,25 @@ def get_word_fields():
     result = ''
     wordFields = None
     sentMeta = None
+    intMetaFields = None
+    sentMetaValues = None
+    defaultValues = {}
     if 'word_fields' in settings and len(settings['word_fields']) > 0:
         wordFields = settings['word_fields']
     if 'sentence_meta' in settings and len(settings['sentence_meta']) > 0:
         sentMeta = settings['sentence_meta']
+    if 'integer_meta_fields' in settings and len(settings['integer_meta_fields']) > 0:
+        intMetaFields = settings['integer_meta_fields']
+    if 'sentence_meta_values' in settings and len(settings['sentence_meta_values']) > 0:
+        sentMetaValues = settings['sentence_meta_values']
+    if 'default_values' in settings:
+        defaultValues = settings['default_values']
     result += render_template('common_additional_search_fields.html',
                               word_fields=wordFields,
                               sentence_meta=sentMeta,
+                              int_meta_fields=intMetaFields,
+                              sentence_meta_values=sentMetaValues,
+                              default_values=defaultValues,
                               ambiguous_analyses=settings['ambiguous_analyses'])
     return result
 
@@ -1459,6 +1594,12 @@ def send_media(path):
     """
     return send_from_directory(os.path.join('../media', corpus_name), path)
 
+@app.route('/img/<path:path>')
+def send_image(path):
+    """
+    Return the requested image file.
+    """
+    return send_from_directory(os.path.join('../img', corpus_name), path)
 
 def prepare_results_for_download(pageData):
     """
@@ -1499,13 +1640,15 @@ def download_cur_results_xlsx():
         return ''
     results = prepare_results_for_download(pageData)
     XLSXFilename = 'results-' + str(uuid.uuid4()) + '.xlsx'
-    workbook = xlsxwriter.Workbook(os.path.join(current_app.root_path, 'tmp',  XLSXFilename))
+    if not os.path.exists('tmp'):
+        os.makedirs('tmp')
+    workbook = xlsxwriter.Workbook('tmp/' + XLSXFilename)
     worksheet = workbook.add_worksheet('Search results')
     for i in range(len(results)):
         for j in range(len(results[i])):
             worksheet.write(i, j, results[i][j])
     workbook.close()
-    return send_from_directory('tmp', XLSXFilename)
+    return send_from_directory('../tmp', XLSXFilename)
 
 
 @app.route('/toggle_sentence/<int:sentNum>')
@@ -1578,6 +1721,35 @@ def get_gloss_selector(lang=''):
     return render_template('select_gloss.html', glosses=glossSelection)
 
 
+@app.route('/get_glossed_sentence/<int:n>')
+def get_glossed_sentence(n):
+    """
+    Return a tab-delimited glossed sentence ready for insertion into
+    a linguistic paper.
+    """
+    if n < 0:
+        return ''
+    sentData = get_session_data('sentence_data')
+    if sentData is None or n >= len(sentData) or 'languages' not in sentData[n]:
+        return ''
+    curSentData = sentData[n]
+    for langView in curSentData['languages']:
+        lang = langView
+        try:
+            langID = settings['languages'].index(langView)
+        except:
+            # Language + number of the translation version: chop off the number
+            langID = settings['languages'].index(re.sub('_[0-9]+$', '', langView))
+            lang = settings['languages'][langID]
+        if langID != 0:
+            continue  # for now
+        result = sentView.get_glossed_sentence(curSentData['languages'][langView]['source'], lang=lang)
+        if type(result) == str:
+            return result
+        return ''
+    return ''
+
+
 @app.route('/set_locale/<lang>')
 def set_locale(lang=''):
     if lang not in settings['interface_languages']:
@@ -1592,3 +1764,14 @@ def help_dialogue():
     return render_template('help_dialogue_' + l + '.html',
                            media=settings['media'],
                            gloss_search_enabled=settings['gloss_search_enabled'])
+
+
+@app.route('/dictionary/<lang>')
+def get_dictionary(lang):
+    if 'generate_dictionary' not in settings or not settings['generate_dictionary']:
+        return 'No dictionary available for this language.'
+    dictFilename = 'dictionary_' + corpus_name + '_' + lang + '.html'
+    try:
+        return render_template(dictFilename)
+    except:
+        return ''
