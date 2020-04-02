@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*
 import re
+import shutil
 
 __author__ = "gisly"
 
@@ -266,6 +267,36 @@ def preprocess_folder(folder, output_folder, meta_folder, language_tier_name = "
 
 
 
+def copy_media_for_file(filename, folder_media):
+    media_file_uri = get_media_file_uri(filename)
+    if not media_file_uri:
+        print('No media for %s' % filename)
+        return
+    if not os.path.exists(media_file_uri):
+        print('File does not exist for %s: %s' % (media_file_uri, filename))
+        return
+    if media_file_uri.endswith('.avi'):
+        print('AVI file for %s: %s' % (media_file_uri, filename))
+        return
+    base_filename = os.path.basename(media_file_uri)
+    target_filename = os.path.join(folder_media, base_filename)
+    shutil.copy(media_file_uri, target_filename)
+
+def get_media_file_uri(filename):
+    srcTree = etree.parse(filename)
+    main_media_elements = srcTree.xpath('/ANNOTATION_DOCUMENT/HEADER/MEDIA_DESCRIPTOR'
+                                        '[@MIME_TYPE="audio/x-wav"]')
+    if not main_media_elements:
+        main_media_elements = srcTree.xpath('/ANNOTATION_DOCUMENT/HEADER/MEDIA_DESCRIPTOR')
+    if not main_media_elements:
+        return None
+    return main_media_elements[0].attrib['MEDIA_URL'].split('file:///')[-1]
+
+def copy_media(folder_eaf, folder_media):
+    for filename in os.listdir(folder_eaf):
+        full_eaf_filename = os.path.join(folder_eaf, filename)
+        copy_media_for_file(full_eaf_filename, folder_media)
+        print('Moved file for %s' % full_eaf_filename)
 
 
 
@@ -279,8 +310,8 @@ create_child_tier_from_annotation_concatenation("D://ForElan//ForSIL_CORPUS//"
 create_child_gloss_tier_from_annotation_concatenation("D://ForElan//ForSIL_CORPUS//"
                                           "evenki_corpus//eaf//2007_Chirinda_Eldogir_Valentina_FSk9_test.eaf_new.eaf_new.eaf",
                                           "fonWord", "fon", "gl", "glConcat")"""
-
-"""preprocess_folder("D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/evenki//test//",
+"""
+preprocess_folder("D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/evenki//test//",
                   "D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/evenki/eaf",
                   "D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/evenki")"""
 
@@ -295,5 +326,9 @@ create_child_gloss_tier_from_annotation_concatenation("D://ForElan//ForSIL_CORPU
                                                 "1998_Sovrechka_Saygotina_Vera_LR_transliterated_new2.eaf",
                                           "fonConcat", "fon", "gl", "glConcat");"""
 
-convert_plain_file("D://Mansi/AAA_SP_050818_shisup.eaf", "D://Mansi/AAA_SP_050818_shisup_new.eaf",
-                 "fonWord", "fon", "gl", "Mansi")
+"""
+copy_media("D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/evenki/eaf",
+           "D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/evenki/media")"""
+
+print(get_media_file_uri("D://CompLing/CorpusUtils/tsakonian_corpus_platform/"
+                         "corpus/evenki/eaf/2007_Chirinda_Eldogir_Valentina_LR1.eaf_new.eaf"))
