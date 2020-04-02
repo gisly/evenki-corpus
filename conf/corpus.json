@@ -19,7 +19,7 @@
   "corpus_name": "evenki",
   "input_format": "json-gzip",
   "debug": false,
-  "media": false,
+  "media": true,
   "media_length": 60,
   "max_context_expand": 4,
   "max_distance_filter": 200000,
