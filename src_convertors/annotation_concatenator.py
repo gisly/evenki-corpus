@@ -299,6 +299,41 @@ def copy_media(folder_eaf, folder_media):
         print('Moved file for %s' % full_eaf_filename)
 
 
+def process_glosses(folder_eaf):
+    gloss_set = set()
+    for filename in os.listdir(folder_eaf):
+        full_eaf_filename = os.path.join(folder_eaf, filename)
+        if os.path.isfile(full_eaf_filename) and filename.endswith('.eaf'):
+            gloss_set = gloss_set.union(get_glosses_from_file(full_eaf_filename))
+    sorted_gloss_list = sorted(list(gloss_set))
+    for gloss in sorted_gloss_list:
+        print(gloss)
+
+def get_glosses_from_file(filename):
+    gloss_set = set()
+    srcTree = etree.parse(filename)
+    gloss_tier_element = srcTree.xpath('/ANNOTATION_DOCUMENT/TIER[@TIER_ID="gl"]')[0]
+    for ref_annotation in gloss_tier_element.xpath('ANNOTATION/'
+                                              'REF_ANNOTATION/ANNOTATION_VALUE'):
+        gloss_text = normalize_gloss(ref_annotation.text)
+        if is_grammar_gloss(gloss_text):
+            gloss_set.add(gloss_text.upper())
+    return gloss_set
+
+def normalize_gloss(gloss):
+    if '.SLIP' in gloss:
+        return 'SLIP'
+    gloss = gloss.strip().strip('-').replace('(?)', '')
+    for bad_char in '{*}[]?':
+        gloss = gloss.replace(bad_char, '')
+    return gloss
+
+def is_grammar_gloss(gloss):
+    if gloss == '':
+        return False
+    gloss_removed_everything = re.sub('[a-z0-9-.]', '', gloss.lower())
+    return len(gloss_removed_everything) == 0
+
 
 """create_parent_tier_from_annotation_concatenation(,
                                           "ev", "fonWord", "evFon")
@@ -315,6 +350,9 @@ preprocess_folder("D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/eve
                   "D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/evenki/eaf",
                   "D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/evenki")"""
 
+
+process_glosses("D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/evenki/eaf")
+
 """preprocess_folder("D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/ket//test//",
                   "D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/ket/eaf",
                   "D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/ket",
@@ -329,6 +367,3 @@ preprocess_folder("D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/eve
 """
 copy_media("D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/evenki/eaf",
            "D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/evenki/media")"""
-
-print(get_media_file_uri("D://CompLing/CorpusUtils/tsakonian_corpus_platform/"
-                         "corpus/evenki/eaf/2007_Chirinda_Eldogir_Valentina_LR1.eaf_new.eaf"))
