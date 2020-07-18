@@ -371,6 +371,7 @@ class SentenceViewer:
                 result += '[' + dateDisplayed + ']'
             else:
                 result += '<span class="ch_date">' + dateDisplayed + '</span>'
+
         dataMeta = ''
         for metaField in self.settings['viewable_meta']:
             if metaField == 'filename':
@@ -387,6 +388,8 @@ class SentenceViewer:
             result = result.replace('data-meta=""', 'data-meta="' + dataMeta + '"')
         if format != 'csv':
             result += '</span>'
+        if 'site_url' in meta:
+            result += '<span class="ch_site_url"> / <a href="' + meta['site_url'] + '"> URL</a></span>'
         return result
 
     def get_word_offsets(self, sSource, numSent, matchOffsets=None):

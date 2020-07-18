@@ -203,6 +203,13 @@
 	color: #0470a5;
 }
 
+.ch_site_url {
+    padding-left: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #3a537a;
+}
+
 .ch_date {
 	padding-left: 10px;
 }
