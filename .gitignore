@@ -5,10 +5,14 @@
 **.idea/**
 txt2json/corpus/json/**
 txt2json/corpus/txt/**
-corpus/**
 src_convertors/corpus/**
 search/media/**
 search/tmp/**
 src_convertors/error.log
 docs_doxygen/**
 search/img/**
+*.wav
+*.mp4
+*.json
+corpus/evenki/test/
+corpus/evenki/_old/

@@ -3,20 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="3dd3a2ed-f7f5-4065-bdd1-f7bd089790a3" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src_convertors/annotation_concatenator.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/categories.json" afterPath="$PROJECT_DIR$/conf/categories.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/web_app/templates/index.html" afterPath="$PROJECT_DIR$/search/web_app/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/web_app/translations/en/LC_MESSAGES/messages.mo" afterPath="$PROJECT_DIR$/search/web_app/translations/en/LC_MESSAGES/messages.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/web_app/translations/ru/LC_MESSAGES/messages.mo" afterPath="$PROJECT_DIR$/search/web_app/translations/ru/LC_MESSAGES/messages.mo" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src_convertors/conf/corpus.json" afterPath="$PROJECT_DIR$/src_convertors/conf/corpus.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/web_app/__init__.py" afterPath="$PROJECT_DIR$/search/web_app/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/indexator/indexator.py" afterPath="$PROJECT_DIR$/indexator/indexator.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/corpus.json" afterPath="$PROJECT_DIR$/conf/corpus.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/web_app/translations/en/LC_MESSAGES/messages.po" afterPath="$PROJECT_DIR$/search/web_app/translations/en/LC_MESSAGES/messages.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/corpus.json" afterPath="$PROJECT_DIR$/conf/corpus.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/web_app/translations/en/LC_MESSAGES/messages.mo" afterPath="$PROJECT_DIR$/search/web_app/translations/en/LC_MESSAGES/messages.mo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/web_app/templates/index.html" afterPath="$PROJECT_DIR$/search/web_app/templates/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/tsakorpus.wsgi" afterPath="$PROJECT_DIR$/search/tsakorpus.wsgi" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/web_app/translations/ru/LC_MESSAGES/messages.po" afterPath="$PROJECT_DIR$/search/web_app/translations/ru/LC_MESSAGES/messages.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/web_app/translations/ru/LC_MESSAGES/messages.mo" afterPath="$PROJECT_DIR$/search/web_app/translations/ru/LC_MESSAGES/messages.mo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/categories.json" afterPath="$PROJECT_DIR$/conf/categories.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/web_app/__init__.py" afterPath="$PROJECT_DIR$/search/web_app/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src_convertors/eaf2json.py" afterPath="$PROJECT_DIR$/src_convertors/eaf2json.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/web_app/translations/ru/LC_MESSAGES/messages.po" afterPath="$PROJECT_DIR$/search/web_app/translations/ru/LC_MESSAGES/messages.po" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src_convertors/txt2json.py" afterPath="$PROJECT_DIR$/src_convertors/txt2json.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/indexator/indexator.py" afterPath="$PROJECT_DIR$/indexator/indexator.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,21 +27,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="categories.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/categories.json">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/search/web_app/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="93" column="9" lean-forward="false" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
+            <state relative-caret-position="623">
+              <caret line="1780" column="14" lean-forward="false" selection-start-line="1780" selection-start-column="14" selection-end-line="1780" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="corpus.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/conf/corpus.json">
+      <file leaf-file-name="annotation_concatenator.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src_convertors/annotation_concatenator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="42" />
+            <state relative-caret-position="524">
+              <caret line="338" column="46" lean-forward="false" selection-start-line="338" selection-start-column="46" selection-end-line="338" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dictionary_creator.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src_convertors/dictionary_creator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="659">
+              <caret line="95" column="70" lean-forward="false" selection-start-line="95" selection-start-column="70" selection-end-line="95" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -58,36 +68,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>meta.csv</find>
-      <find>2008_Tutonchany_Uvachan_Inna_LAv3_transliterated.eaf_new</find>
       <find>recplace</find>
-      <find>add_meta_keywords</find>
-      <find>&quot;evC</find>
-      <find>&lt;&lt;&lt;</find>
-      <find>&lt;&lt;&lt;&lt;</find>
-      <find>File not in meta</find>
-      <find>&quot;src&quot;</find>
-      <find>'src'</find>
-      <find>search_sent</find>
-      <find>src</find>
-      <find>'media'</find>
-      <find>media</find>
-      <find>src_alignment_files</find>
-      <find>/media</find>
-      <find>@MIME_TYPE</find>
-      <find>expir</find>
-      <find>session</find>
-      <find>class=&quot;get_glossed_copy&quot;</find>
-      <find>/searc</find>
-      <find>assign_word_events</find>
-      <find>get_glossed_copy</find>
-      <find>load_g</find>
-      <find>load_glossed_sentence</find>
-      <find>not in</find>
-      <find>replace</find>
-      <find>g</find>
-      <find>gloss</find>
-      <find>Select glosses</find>
+      <find>metafield_</find>
+      <find>ch_sit</find>
+      <find>metafield</find>
+      <find>metafield_recplace</find>
+      <find>Load external query</find>
+      <find>site_</find>
+      <find>Distance to word</find>
+      <find>metafield_g</find>
+      <find>remove_word</find>
+      <find>alert</find>
+      <find>copy_media(</find>
+      <find>copy_media_for_file</find>
+      <find>even</find>
+      <find>'word'</find>
+      <find>preprocess</find>
+      <find>met</find>
+      <find>meta.csv</find>
+      <find>create_parent_tier_from_annotation_concatenation</find>
+      <find>2007_Mutoray_Yastrikova_FSk2_transliterated</find>
+      <find>&quot;rus&quot;</find>
+      <find>type'</find>
+      <find>'lang'</find>
+      <find>select glosses</find>
+      <find>selectGlossCaption</find>
+      <find>get_gloss_selector</find>
+      <find>remove_point_annotation</find>
+      <find>/search</find>
+      <find>index</find>
+      <find>D://CompLing/CorpusUtils/tsakonian_corpus_platform/</find>
     </findStrings>
     <replaceStrings>
       <replace>recplace</replace>
@@ -108,7 +118,6 @@
         <option value="$PROJECT_DIR$/src_convertors/conf/corpus.json" />
         <option value="$PROJECT_DIR$/search/web_app/translations/en/LC_MESSAGES/messages.po" />
         <option value="$PROJECT_DIR$/search/web_app/translations/ru/LC_MESSAGES/messages.po" />
-        <option value="$PROJECT_DIR$/src_convertors/txt2json.py" />
         <option value="$PROJECT_DIR$/search/tsakorpus_local.wsgi" />
         <option value="$PROJECT_DIR$/conf/categories.json" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -119,15 +128,22 @@
         <option value="$PROJECT_DIR$/docs/src_convertors.md" />
         <option value="$PROJECT_DIR$/conf/corpus.json" />
         <option value="$PROJECT_DIR$/corpus/evenki/meta.csv" />
-        <option value="$PROJECT_DIR$/search/web_app/__init__.py" />
         <option value="$PROJECT_DIR$/search/web_app/static/js/result_parser.js" />
+        <option value="$PROJECT_DIR$/search/web_app/static/css/search.css" />
+        <option value="$PROJECT_DIR$/search/web_app/response_processors.py" />
+        <option value="$PROJECT_DIR$/src_convertors/special_helpers.py" />
+        <option value="$PROJECT_DIR$/src_convertors/txt2json.py" />
+        <option value="$PROJECT_DIR$/src_convertors/dictionary_creator.py" />
+        <option value="D:/Grisha/dicti.py" />
         <option value="$PROJECT_DIR$/src_convertors/eaf2json.py" />
+        <option value="$PROJECT_DIR$/search/web_app/__init__.py" />
         <option value="$PROJECT_DIR$/src_convertors/annotation_concatenator.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
+    <option name="x" value="90" />
+    <option name="y" value="153" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -147,6 +163,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -157,34 +174,7 @@
             <path>
               <item name="tsakonian_corpus_platform" type="b2602c69:ProjectViewProjectNode" />
               <item name="tsakonian_corpus_platform" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tsakonian_corpus_platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tsakonian_corpus_platform" type="462c0819:PsiDirectoryNode" />
-              <item name="corpus" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tsakonian_corpus_platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tsakonian_corpus_platform" type="462c0819:PsiDirectoryNode" />
-              <item name="corpus" type="462c0819:PsiDirectoryNode" />
-              <item name="evenki" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tsakonian_corpus_platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tsakonian_corpus_platform" type="462c0819:PsiDirectoryNode" />
-              <item name="indexator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tsakonian_corpus_platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tsakonian_corpus_platform" type="462c0819:PsiDirectoryNode" />
               <item name="search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tsakonian_corpus_platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tsakonian_corpus_platform" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
-              <item name="web_app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tsakonian_corpus_platform" type="b2602c69:ProjectViewProjectNode" />
@@ -196,12 +186,11 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/Grisha/dicti.py" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -215,7 +204,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.annotation_concatenator">
+  <component name="RunManager" selected="Python.tsakorpus_local">
     <configuration name="annotation_concatenator" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -229,6 +218,40 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="tsakonian_corpus_platform" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src_convertors/annotation_concatenator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="dicti" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="D:/Grisha" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tsakonian_corpus_platform" />
+      <option name="SCRIPT_NAME" value="D:\Grisha\dictionary_0508.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="dictionary_creator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src_convertors" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tsakonian_corpus_platform" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src_convertors/dictionary_creator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -284,23 +307,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="tsakorpus.wsgi" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src_convertors" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="tsakonian_corpus_platform" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/search/tsakorpus.wsgi" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <configuration name="txt2json" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -318,20 +324,22 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="6">
+    <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Python.tsakorpus_local" />
       <item index="1" class="java.lang.String" itemvalue="Python.eaf2json" />
-      <item index="2" class="java.lang.String" itemvalue="Python.tsakorpus.wsgi" />
-      <item index="3" class="java.lang.String" itemvalue="Python.indexator" />
-      <item index="4" class="java.lang.String" itemvalue="Python.annotation_concatenator" />
-      <item index="5" class="java.lang.String" itemvalue="Python.txt2json" />
+      <item index="2" class="java.lang.String" itemvalue="Python.indexator" />
+      <item index="3" class="java.lang.String" itemvalue="Python.annotation_concatenator" />
+      <item index="4" class="java.lang.String" itemvalue="Python.txt2json" />
+      <item index="5" class="java.lang.String" itemvalue="Python.dictionary_creator" />
+      <item index="6" class="java.lang.String" itemvalue="Python.dicti" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.annotation_concatenator" />
-        <item index="1" class="java.lang.String" itemvalue="Python.indexator" />
-        <item index="2" class="java.lang.String" itemvalue="Python.txt2json" />
-        <item index="3" class="java.lang.String" itemvalue="Python.tsakorpus.wsgi" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.indexator" />
+        <item index="1" class="java.lang.String" itemvalue="Python.annotation_concatenator" />
+        <item index="2" class="java.lang.String" itemvalue="Python.dicti" />
+        <item index="3" class="java.lang.String" itemvalue="Python.dictionary_creator" />
+        <item index="4" class="java.lang.String" itemvalue="Python.txt2json" />
       </list>
     </recent_temporary>
   </component>
@@ -350,11 +358,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1170" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16458334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28893661" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291506" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39285713" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39285713" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291506" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4107143" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -368,7 +378,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291506" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -393,42 +402,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src_convertors/annotation_concatenator.py</url>
-          <line>17</line>
-          <option name="timeStamp" value="128" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src_convertors/txt2json.py</url>
-          <line>157</line>
-          <option name="timeStamp" value="137" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/search/web_app/__init__.py</url>
-          <line>1717</line>
-          <option name="timeStamp" value="143" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src_convertors/annotation_concatenator.py</url>
           <line>138</line>
           <option name="timeStamp" value="145" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src_convertors/txt2json.py</url>
-          <line>144</line>
-          <option name="timeStamp" value="147" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src_convertors/eaf2json.py</url>
-          <line>133</line>
-          <option name="timeStamp" value="153" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/search/web_app/response_processors.py</url>
-          <line>521</line>
+          <line>524</line>
           <option name="timeStamp" value="154" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/search/web_app/response_processors.py</url>
-          <line>519</line>
+          <line>522</line>
           <option name="timeStamp" value="155" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -453,97 +437,25 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/search/web_app/__init__.py</url>
-          <line>310</line>
-          <option name="timeStamp" value="163" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/search/web_app/__init__.py</url>
           <line>1594</line>
           <option name="timeStamp" value="164" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src_convertors/eaf2json.py</url>
+          <line>422</line>
+          <option name="timeStamp" value="170" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/search/web_app/__init__.py</url>
+          <line>1719</line>
+          <option name="timeStamp" value="172" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="165" />
+      <option name="time" value="177" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Python35_64/Lib/site-packages/flask/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="2308" column="0" lean-forward="false" selection-start-line="2308" selection-start-column="0" selection-end-line="2308" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python35_64/Lib/site-packages/werkzeug/debug/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="287" column="0" lean-forward="false" selection-start-line="287" selection-start-column="0" selection-end-line="287" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python35_64/Lib/http/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="421" column="0" lean-forward="false" selection-start-line="421" selection-start-column="0" selection-end-line="421" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python35_64/Lib/site-packages/werkzeug/serving.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="292" column="0" lean-forward="false" selection-start-line="292" selection-start-column="0" selection-end-line="292" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python35_64/Lib/socketserver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="624" column="0" lean-forward="false" selection-start-line="624" selection-start-column="0" selection-end-line="624" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python35_64/Lib/threading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="861" column="0" lean-forward="false" selection-start-line="861" selection-start-column="0" selection-end-line="861" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src_convertors/json2cg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="353" column="8" lean-forward="false" selection-start-line="353" selection-start-column="8" selection-end-line="353" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src_convertors/exmaralda_hamburg2json.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/faq.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1134">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/configuration.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-232">
-          <caret line="42" column="17" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Program Files/Python36/Lib/site-packages/elasticsearch/client/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -562,13 +474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="29" column="2880" lean-forward="false" selection-start-line="29" selection-start-column="2880" selection-end-line="29" selection-end-column="2880" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src_convertors/conf/corpus.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -614,31 +519,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/tsakorpus.wsgi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/corpus/evenki/conf/corpus.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/src_convertors.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/interface_languages.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -649,33 +533,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src_convertors/txt2json.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src_convertors/media_operations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2598">
-          <caret line="31" column="45" lean-forward="false" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python35_64/Lib/shutil.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="234" column="0" lean-forward="false" selection-start-line="234" selection-start-column="0" selection-end-line="234" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search/web_app/response_processors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-162">
-          <caret line="246" column="0" lean-forward="false" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -721,25 +582,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/web_app/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="380" column="13" lean-forward="false" selection-start-line="380" selection-start-column="13" selection-end-line="380" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/search/web_app/templates/result_words.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
           <caret line="30" column="31" lean-forward="false" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search/web_app/static/js/json_loaders.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6075">
-          <caret line="225" column="0" lean-forward="false" selection-start-line="225" selection-start-column="0" selection-end-line="240" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -757,9 +603,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Python35_64/Lib/re.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="177" column="11" lean-forward="false" selection-start-line="177" selection-start-column="4" selection-end-line="177" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/corpus/evenki/meta.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="54">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
@@ -772,71 +625,199 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/search/web_app/static/css/search.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="206" column="16" lean-forward="false" selection-start-line="206" selection-start-column="16" selection-end-line="206" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/categories.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="921">
+          <caret line="93" column="9" lean-forward="false" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/corpus/evenki/conf/corpus.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/interface_languages.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="75" lean-forward="true" selection-start-line="10" selection-start-column="75" selection-end-line="10" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search/web_app/translations/en/LC_MESSAGES/messages.po">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4374">
+          <caret line="162" column="22" lean-forward="false" selection-start-line="162" selection-start-column="7" selection-end-line="162" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search/web_app/response_processors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="391" column="91" lean-forward="false" selection-start-line="391" selection-start-column="91" selection-end-line="391" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_convertors/special_helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_convertors/media_operations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="124" column="31" lean-forward="true" selection-start-line="124" selection-start-column="31" selection-end-line="124" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search/web_app/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search/web_app/static/js/json_loaders.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="477" column="24" lean-forward="true" selection-start-line="477" selection-start-column="24" selection-end-line="477" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python36/Lib/site-packages/flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="1812" column="0" lean-forward="false" selection-start-line="1812" selection-start-column="0" selection-end-line="1812" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search/tsakorpus.wsgi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python35_64/Lib/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="3572" column="4" lean-forward="false" selection-start-line="3572" selection-start-column="4" selection-end-line="3572" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Grisha/dictionary_0508.py" />
+    <entry file="file://$PROJECT_DIR$/conf/corpus.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_convertors/conf/corpus.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_convertors/xml_rnc2json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-891">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_convertors/txt2json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="678">
+          <caret line="203" column="0" lean-forward="false" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_convertors/txt_questionnaires2json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_convertors/tmx2json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_convertors/social_networks2json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2230">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src_convertors/eaf2json.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="524" column="39" lean-forward="false" selection-start-line="524" selection-start-column="39" selection-end-line="524" selection-end-column="39" />
+        <state relative-caret-position="660">
+          <caret line="539" column="22" lean-forward="false" selection-start-line="539" selection-start-column="8" selection-end-line="539" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/indexator/indexator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="59" column="33" lean-forward="false" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+        <state relative-caret-position="524">
+          <caret line="715" column="0" lean-forward="true" selection-start-line="715" selection-start-column="0" selection-end-line="715" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/search/tsakorpus_local.wsgi">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        <state relative-caret-position="216">
+          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python35_64/Lib/re.py">
+    <entry file="file://$PROJECT_DIR$/search/web_app/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="177" column="11" lean-forward="false" selection-start-line="177" selection-start-column="4" selection-end-line="177" selection-end-column="11" />
+        <state relative-caret-position="623">
+          <caret line="1780" column="14" lean-forward="false" selection-start-line="1780" selection-start-column="14" selection-end-line="1780" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_convertors/dictionary_creator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="659">
+          <caret line="95" column="70" lean-forward="false" selection-start-line="95" selection-start-column="70" selection-end-line="95" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_convertors/error.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src_convertors/annotation_concatenator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="309" column="19" lean-forward="false" selection-start-line="309" selection-start-column="19" selection-end-line="309" selection-end-column="19" />
-          <folding>
-            <element signature="e#41#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search/web_app/translations/en/LC_MESSAGES/messages.po">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-774">
-          <caret line="579" column="20" lean-forward="false" selection-start-line="579" selection-start-column="20" selection-end-line="579" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search/web_app/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/categories.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="93" column="9" lean-forward="false" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/corpus.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="42" />
+        <state relative-caret-position="524">
+          <caret line="338" column="46" lean-forward="false" selection-start-line="338" selection-start-column="46" selection-end-line="338" selection-end-column="46" />
           <folding />
         </state>
       </provider>

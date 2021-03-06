@@ -1775,3 +1775,11 @@ def get_dictionary(lang):
         return render_template(dictFilename)
     except:
         return ''
+
+
+@app.route('/convert')
+def convert():
+    try:
+        return render_template(dictFilename)
+    except:
+        return ''

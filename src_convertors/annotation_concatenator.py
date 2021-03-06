@@ -251,15 +251,15 @@ def prepare_file(filename, output_folder, language_tier_name):
     return new_filename
 
 def preprocess_folder(folder, output_folder, meta_folder, language_tier_name = "ev"):
-    with codecs.open(os.path.join(meta_folder, 'meta.csv'), 'w', 'utf-8') as fout:
-        fout.write('filename\r\n')
+    with codecs.open(os.path.join(meta_folder, 'meta.csv'), 'a', 'utf-8') as fout:
+        #fout.write('filename\r\n')
         for base_filename in os.listdir(folder):
             filename = os.path.join(folder, base_filename)
             if os.path.isfile(filename) and filename.lower().endswith('.eaf'):
                 print('starting to process: %s' % filename)
                 try:
                     new_filename = prepare_file(filename, output_folder, language_tier_name)
-                    fout.write(os.path.splitext(os.path.basename(new_filename))[0] + '\n')
+                    #fout.write(os.path.splitext(os.path.basename(new_filename))[0] + '\n')
                     print('processed: %s'  % filename)
                 except Exception as e:
                     print(e)
@@ -335,6 +335,17 @@ def is_grammar_gloss(gloss):
     return len(gloss_removed_everything) == 0
 
 
+def preprocess_folder(folder):
+    test_folder = os.path.join(folder, 'test')
+
+
+def main():
+    preprocess_folder("D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/evenki//test//",
+                      "D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/evenki/eaf",
+                      "D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/evenki")
+
+if __name__ == '__main__':
+    main()
 """create_parent_tier_from_annotation_concatenation(,
                                           "ev", "fonWord", "evFon")
 
@@ -345,25 +356,24 @@ create_child_tier_from_annotation_concatenation("D://ForElan//ForSIL_CORPUS//"
 create_child_gloss_tier_from_annotation_concatenation("D://ForElan//ForSIL_CORPUS//"
                                           "evenki_corpus//eaf//2007_Chirinda_Eldogir_Valentina_FSk9_test.eaf_new.eaf_new.eaf",
                                           "fonWord", "fon", "gl", "glConcat")"""
+
+
+
+
+#process_glosses("D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/evenki/eaf")
 """
-preprocess_folder("D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/evenki//test//",
-                  "D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/evenki/eaf",
-                  "D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/evenki")"""
-
-
-process_glosses("D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/evenki/eaf")
-
-"""preprocess_folder("D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/ket//test//",
+preprocess_folder("D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/ket//test//",
                   "D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/ket/eaf",
                   "D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/ket",
                   "ket")"""
-
-"""create_child_gloss_tier_from_annotation_concatenation("D://ForElan//OldMethod//1998_Sovrechka_Saygotina_Vera_LR//"
-                                                "1998_Sovrechka_Saygotina_Vera_LR_transliterated_new.eaf",
-"D://ForElan//OldMethod//1998_Sovrechka_Saygotina_Vera_LR//"
-                                                "1998_Sovrechka_Saygotina_Vera_LR_transliterated_new2.eaf",
-                                          "fonConcat", "fon", "gl", "glConcat");"""
-
 """
-copy_media("D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/evenki/eaf",
-           "D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/evenki/media")"""
+create_child_gloss_tier_from_annotation_concatenation(
+    "D://CompLing//CorpusUtils//tsakonian_corpus_platform//corpus//evenki//_old//"
+                                                "2006_Sovrechka_Arkadieva_LR1.eaf_new.eaf",
+"D://CompLing//CorpusUtils//tsakonian_corpus_platform//corpus//evenki//_old/"
+                                                "2006_Sovrechka_Arkadieva_LR1.eaf_new2.eaf",
+                                          "fonConcat", "fon", "gl", "glConcat")"""
+"""
+
+copy_media("D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/evenki/test",
+           "D://CompLing/CorpusUtils/tsakonian_corpus_platform/corpus/evenki/eaf/media")"""
