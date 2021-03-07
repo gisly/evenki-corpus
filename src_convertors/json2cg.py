@@ -13,17 +13,35 @@ class JSON2CG:
     Constraint Grammar format for subsequent disambiguation and
     backwards.
     """
-    SETTINGS_DIR = 'conf'
     rxCGWords = re.compile('"<[^<>]*>"\n(?:\t[^\n]*\n)*', flags=re.DOTALL)
-    rxCGAna = re.compile('<ana_([0-9]+)>', flags=re.DOTALL)
+    rxCGAna = re.compile('<ana_([0-9]+)> *([^\r\n]*)', flags=re.DOTALL)
 
-    def __init__(self):
-        f = open(os.path.join(self.SETTINGS_DIR, 'corpus.json'),
-                 'r', encoding='utf-8')
-        self.settings = json.loads(f.read())
-        f.close()
-        self.name = self.settings['corpus_name']
-        self.corpus_dir = os.path.join('corpus', self.name)
+    def __init__(self, settingsDir='conf_conversion', corpusDir='corpus', corpusName=''):
+        if not os.path.exists(settingsDir) and os.path.exists('conf'):
+            # Backward compatibility: check the old name of configuration folder
+            settingsDir = 'conf'
+        self.settingsDir = settingsDir
+        self.corpusDir = corpusDir
+        self.settings = {'corpus_dir': corpusDir}
+        self.name = corpusName
+        # if os.path.exists(self.settingsDir):
+        #     try:
+        #         f = open(os.path.join(self.settingsDir, 'conversion_settings.json'),
+        #                  'r', encoding='utf-8')
+        #     except IOError:
+        #         # Obsolete settings file name; I keep it here for backward compatibility
+        #         f = open(os.path.join(self.settingsDir, 'corpus.json'),
+        #                  'r', encoding='utf-8')
+        #     self.settings = json.loads(f.read())
+        #     f.close()
+        #     self.name = self.settings['corpus_name']
+        # if len(self.name) > 0:
+        #     self.corpusDir = os.path.join(self.corpusDir, self.name)
+        #     self.settingsDir = os.path.join(self.corpusDir, settingsDir)
+        #     if (not os.path.exists(self.settingsDir)
+        #             and os.path.exists(os.path.join(self.corpusDir, 'conf'))):
+        #         # Backward compatibility: check the old name of configuration folder
+        #         self.settingsDir = os.path.join(self.corpusDir, 'conf')
         self.load_settings()
         self.format = 'json'
         if self.settings['gzip']:
@@ -31,6 +49,12 @@ class JSON2CG:
         self.languages = self.settings['languages']
         if len(self.languages) <= 0:
             self.languages = [self.name]
+
+        fCategories = open(os.path.join(self.settingsDir, 'categories.json'), 'r',
+                           encoding='utf-8-sig')
+        self.categories = json.loads(fCategories.read())
+        fCategories.close()
+
         self.nonDisambAnalyses = 0      # number of analyses for analyzed tokens before disambiguation
         self.disambAnalyses = 0         # number of analyses after disambiguation
         self.nWords = 0                 # total number of words in the corpus
@@ -42,8 +66,13 @@ class JSON2CG:
         (they may override the general settings loaded earlier).
         Clean the error log file, if any.
         """
-        fCorpus = open(os.path.join(self.corpus_dir, 'conf', 'corpus.json'), 'r',
-                       encoding='utf-8-sig')
+        try:
+            fCorpus = open(os.path.join(self.settingsDir, 'conversion_settings.json'), 'r',
+                           encoding='utf-8-sig')
+        except IOError:
+            # Obsolete settings file name; I keep it here for backward compatibility
+            fCorpus = open(os.path.join(self.settingsDir, 'corpus.json'), 'r',
+                        encoding='utf-8-sig')
         self.settings.update(json.loads(fCorpus.read()))
         fCorpus.close()
 
@@ -121,7 +150,7 @@ class JSON2CG:
         for language in docCG:
             if language not in self.settings['cg_filename']:
                 continue
-            dirOut = os.path.join(self.corpus_dir, 'cg')
+            dirOut = os.path.join(self.corpusDir, 'cg')
             language = re.sub('[/\\?.()*"\']', '', language)
             dirOutLang = os.path.join(dirOut, language)
             mDir = re.search('^(.+)[/\\\\]', fname)
@@ -143,7 +172,7 @@ class JSON2CG:
         the corpus/%corpus_name%/cg/%language_name% directory.
         """
         iDoc = 0
-        jsonDir = os.path.join(self.corpus_dir, 'json')
+        jsonDir = os.path.join(self.corpusDir, 'json')
         for root, dirs, files in os.walk(jsonDir):
             for fname in files:
                 fnameRel = fname
@@ -175,12 +204,12 @@ class JSON2CG:
         """
         for language in self.settings['languages']:
             language4dir = re.sub('[/\\?.()*"\']', '', language)
-            langDirIn = os.path.join(self.corpus_dir, 'cg', language4dir)
-            langDirOut = os.path.join(self.corpus_dir, 'cg_disamb', language4dir)
+            langDirIn = os.path.join(self.corpusDir, 'cg', language4dir)
+            langDirOut = os.path.join(self.corpusDir, 'cg_disamb', language4dir)
             if not os.path.exists(langDirOut):
                 os.makedirs(langDirOut)
             if self.settings['cg_disambiguate'] and language in self.settings['cg_filename']:
-                fullGrammarFname = os.path.abspath(os.path.join(self.corpus_dir,
+                fullGrammarFname = os.path.abspath(os.path.join(self.corpusDir,
                                                                 self.settings['cg_filename'][language]))
             else:
                 continue
@@ -194,10 +223,10 @@ class JSON2CG:
                     mDir = re.search('^(.+)[/\\\\]', fullFnameOut)
                     if mDir is not None and not os.path.exists(mDir.group(1)):
                         os.makedirs(mDir.group(1))
-                    cgCmd = 'cg3 -g "' + fullGrammarFname + '" -I "' + fullFnameIn + '" -O "' + fullFnameOut + '"'
                     proc = subprocess.Popen('cg3 -g "' + fullGrammarFname + '"',
                                             stdin=subprocess.PIPE,
-                                            stdout=subprocess.PIPE)
+                                            stdout=subprocess.PIPE,
+                                            shell=True)
                     fIn = open(fullFnameIn, 'r', encoding='utf-8-sig')
                     text = fIn.read()
                     fIn.close()
@@ -208,6 +237,61 @@ class JSON2CG:
                     fOut.close()
         print('CG disambiguation finished.')
 
+    def modify_ana(self, anaOld, disambTags, lang):
+        """
+        Check if grammatical tags in the old analysis coincide with those
+        in the disambiguated analysis. Modify the former if needed.
+        Do not change the old analysis, return the disambiguated analysis.
+        """
+        if lang == '':
+            if 'languages' in self.settings and len(self.settings['languages']) > 0:
+                lang = self.settings['languages'][0]
+            else:
+                lang = self.settings['corpus_name']
+        ana = copy.deepcopy(anaOld)
+        disambTags = set([tag for tag in disambTags.strip().split(' ') if len(tag) > 0])
+        oldTags = set()
+        keys2delete = []
+        for k, v in ana.items():
+            if k.startswith('gr.'):
+                if type(v) == list:
+                    for iValue in range(len(v) - 1, -1, -1):
+                        curValue = v[-iValue]
+                        vCheck = curValue.strip().replace('<', '&lt;').replace('>', '&gt;').replace('"', '&quot;')
+                        if vCheck in disambTags:
+                            oldTags.add(vCheck)
+                        else:
+                            # print('Removed value ' + curValue + ' from analysis.')
+                            del v[-iValue]
+                    if len(v) == 0:
+                        # print('Removed key ' + k + ' from analysis.')
+                        keys2delete.append(k)
+                else:
+                    vCheck = v.strip().replace('<', '&lt;').replace('>', '&gt;').replace('"', '&quot;')
+                    if vCheck in disambTags:
+                        oldTags.add(vCheck)
+                    else:
+                        # print('Removed key ' + k + ' from analysis (value: ' + v + ')')
+                        keys2delete.append(k)
+        for k in keys2delete:
+            del ana[k]
+        for v in disambTags - oldTags:
+            # Add tags added during disambiguation
+            v = v.replace('&lt;', '<').replace('&gt;', '>').replace('&quot;', '"')
+            if lang not in self.categories or v not in self.categories[lang]:
+                print('Added tag ' + v + ' not found in categories.json.')
+            else:
+                # print('Added tag ' + v + '.')
+                k = 'gr.' + self.categories[lang][v]
+                if k in ana:
+                    if type(ana[k]) == list:
+                        ana[k].append(v)
+                    else:
+                        ana[k] = [ana[k], v]
+                else:
+                    ana[k] = v
+        return ana
+
     def disambiguate_sentence(self, s, sDisambCG):
         """
         Disambiguate a single JSON sentence using a string from
@@ -217,6 +301,9 @@ class JSON2CG:
         CGWords = self.rxCGWords.findall(sDisambCG)
         if len(CGWords) != len(s['words']):
             return copy.deepcopy(s)
+        lang = self.languages[0]
+        if 'lang' in s and 0 <= s['lang'] < len(self.languages):
+            lang = self.languages[s['lang']]
         sDisambJSON = {}
         for k, v in s.items():
             if k != 'words':
@@ -234,8 +321,9 @@ class JSON2CG:
             for k, v in wordSrc.items():
                 if k != 'ana':
                     wordDisamb[k] = copy.deepcopy(v)
-            wordDisamb['ana'] = [copy.deepcopy(wordSrc['ana'][int(iAna)])
-                                 for iAna in self.rxCGAna.findall(CGWords[iWord])]
+            wordDisamb['ana'] = []
+            for iAna, disambTags in self.rxCGAna.findall(CGWords[iWord]):
+                wordDisamb['ana'].append(self.modify_ana(wordSrc['ana'][int(iAna)], disambTags, lang))
             self.disambAnalyses += len(wordDisamb['ana'])
             sDisambJSON['words'].append(wordDisamb)
         return sDisambJSON
@@ -291,8 +379,8 @@ class JSON2CG:
         """
         self.nWords = self.nAnalyzedWords = self.nonDisambAnalyses = self.disambAnalyses = 0
         iDoc = 0
-        jsonDirIn = os.path.join(self.corpus_dir, 'json')
-        jsonDirOut = os.path.join(self.corpus_dir, 'json_disamb')
+        jsonDirIn = os.path.join(self.corpusDir, 'json')
+        jsonDirOut = os.path.join(self.corpusDir, 'json_disamb')
         if not os.path.exists(jsonDirOut):
             os.makedirs(jsonDirOut)
         for root, dirs, files in os.walk(jsonDirIn):
@@ -311,7 +399,7 @@ class JSON2CG:
                     if language not in self.settings['cg_filename']:
                         continue
                     language4dir = re.sub('[/\\?.()*"\']', '', language)
-                    cgDirIn = os.path.join(self.corpus_dir, 'cg_disamb', language4dir)
+                    cgDirIn = os.path.join(self.corpusDir, 'cg_disamb', language4dir)
                     # print(fnameCgIn)
                     fnameCgInLanguage = os.path.join(cgDirIn, fnameCgIn)
                     if not os.path.exists(fnameCgInLanguage):
@@ -363,5 +451,5 @@ class JSON2CG:
 
 if __name__ == '__main__':
     translator = JSON2CG()
-    # translator.process_corpus()
-    translator.disambiguate_json_corpus()
+    translator.process_corpus()
+    # translator.disambiguate_json_corpus()

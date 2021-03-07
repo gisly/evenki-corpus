@@ -2,6 +2,7 @@ import os
 import re
 import json
 import copy
+import datetime
 from lxml import etree
 from txt2json import Txt2JSON
 from media_operations import MediaCutter
@@ -27,7 +28,7 @@ class ISO_TEI_Hamburg2JSON(Txt2JSON):
     pfx_xml = '{http://www.w3.org/XML/1998/namespace}'
     pfx_tei = '{http://www.tei-c.org/ns/1.0}'
 
-    def __init__(self, settingsDir='conf'):
+    def __init__(self, settingsDir='conf_conversion'):
         Txt2JSON.__init__(self, settingsDir=settingsDir)
         self.mc = MediaCutter(settings=self.corpusSettings)
         self.srcExt = 'xml'  # extension of the source files to be converted
@@ -41,7 +42,7 @@ class ISO_TEI_Hamburg2JSON(Txt2JSON):
                              # (needed to understand ranges such as "w13 to inc2")
         self.glosses = set()
         self.posRules = {}
-        self.load_pos_rules(os.path.join(self.corpusSettings['corpus_dir'], 'conf/posRules.txt'))
+        self.load_pos_rules(os.path.join(self.settingsDir, 'posRules.txt'))
 
     def load_pos_rules(self, fname):
         """
@@ -213,12 +214,16 @@ class ISO_TEI_Hamburg2JSON(Txt2JSON):
                             wordAnno[wordID][tierID] = wSpanText
                         else:
                             wordAnno[wordID][tierID] = ''
-                    elif tierID not in ['mb', 'mp', 'ge', 'gr']:
+                    elif tierID not in ['mb', 'mp', 'ge', 'gr', 'gg']:
                         # Word-based annotations: one flat span for each word
                         if tierID not in wordAnno[wordID]:
                             wordAnno[wordID][tierID] = ''
                         if len(wordAnno[wordID][tierID]) > 0:
-                            wordAnno[wordID][tierID] += '-'
+                            if (wSpanText is not None
+                                    and wSpanText.startswith('[') and wSpanText.endswith(']')):
+                                wordAnno[wordID][tierID] += '.'
+                            else:
+                                wordAnno[wordID][tierID] += '-'
                         if wSpanText is not None:
                             wordAnno[wordID][tierID] += wSpanText
                     else:
@@ -252,7 +257,11 @@ class ISO_TEI_Hamburg2JSON(Txt2JSON):
                             if tierID not in wordAnno[wordID]:
                                 wordAnno[wordID][tierID] = ''
                             if len(wordAnno[wordID][tierID]) > 0:
-                                wordAnno[wordID][tierID] += '-'
+                                if (mText is not None
+                                        and mText.startswith('[') and mText.endswith(']')):
+                                    wordAnno[wordID][tierID] += '.'
+                                else:
+                                    wordAnno[wordID][tierID] += '-'
                             if mText is not None:
                                 wordAnno[wordID][tierID] += mText
                             else:
@@ -267,7 +276,7 @@ class ISO_TEI_Hamburg2JSON(Txt2JSON):
         the event is used as the value.
         """
         for tierName in curWordAnno:
-            if tierName in ['tx', 'mb', 'mp', 'gr', 'ge', 'ps', 'SpeakerContribution_Event']:
+            if tierName in ['tx', 'mb', 'mp', 'gr', 'ge', 'gg', 'ps', 'SpeakerContribution_Event']:
                 continue
             elif len(curWordAnno[tierName]) > 0:
                 ana[tierName] = curWordAnno[tierName]
@@ -277,6 +286,9 @@ class ISO_TEI_Hamburg2JSON(Txt2JSON):
         Iterate over words in an annotation block and add their
         analyses to the corresponding word objects in the sentences.
         """
+        useGlossList = False
+        if 'glosses' in self.corpusSettings and len(self.corpusSettings['glosses']) > 0:
+            useGlossList = True
         wordAnno = self.collect_annotation(annoTree)
         for wordID in wordAnno:
             ana = {}
@@ -301,6 +313,9 @@ class ISO_TEI_Hamburg2JSON(Txt2JSON):
             if 'gr' in curWordAnno:
                 ana['gloss_ru'] = curWordAnno['gr']
                 self.tp.parser.process_gloss_in_ana(ana, 'ru')
+            if 'gg' in curWordAnno:
+                ana['gloss_de'] = curWordAnno['gg']
+                self.tp.parser.process_gloss_in_ana(ana, 'de')
             if 'ps' in curWordAnno:
                 self.add_pos_ana(ana, curWordAnno['ps'])
             self.tp.parser.process_gloss_in_ana(ana)
@@ -311,17 +326,21 @@ class ISO_TEI_Hamburg2JSON(Txt2JSON):
                     ana['lex'] = ' '.join(s[1] for s in stems)
                 ana['trans_en'] = self.rxBracketGloss.sub('', ' '.join(s[0] for s in stems))
                 self.add_ana_fields(ana, curWordAnno)
-                self.tp.parser.gloss2gr(ana, self.corpusSettings['languages'][0])
+                self.tp.parser.gloss2gr(ana, self.corpusSettings['languages'][0],
+                                        useGlossList=useGlossList)
                 ana['gloss_index'] = self.rxBracketGloss.sub('', newIndexGloss)
-            if 'gloss_index_ru' in ana:
-                stems, newIndexGloss = self.tp.parser.find_stems(ana['gloss_index_ru'],
-                                                                 self.corpusSettings['languages'][0])
-                ana['trans_ru'] = self.rxBracketGloss.sub('', ' '.join(s[0] for s in stems))
-                del ana['gloss_index_ru']
-                del ana['gloss_ru']
-                if 'glosses_covert_ru' in ana:
-                    del ana['glosses_covert_ru']
-            if 'gloss' in ana:
+            for glossLang in ('ru', 'de'):
+                if 'gloss_index_' + glossLang in ana:
+                    stems, newIndexGloss = self.tp.parser.find_stems(ana['gloss_index_' + glossLang],
+                                                                     self.corpusSettings['languages'][0])
+                    ana['trans_' + glossLang] = self.rxBracketGloss.sub('', ' '.join(s[0] for s in stems))
+                    del ana['gloss_index_' + glossLang]
+                    del ana['gloss_' + glossLang]
+                    if 'glosses_covert_' + glossLang in ana:
+                        del ana['glosses_covert_' + glossLang]
+            if ('replace_bracketed_glosses' in self.corpusSettings
+                    and self.corpusSettings['replace_bracketed_glosses']
+                    and 'gloss' in ana):
                 ana['gloss'] = self.rxBracketGloss.sub('', ana['gloss'])
             self.wordsByID[wordID]['ana'] = [ana]
             self.wordsByID[wordID]['word_source'] = ''
@@ -655,13 +674,14 @@ class ISO_TEI_Hamburg2JSON(Txt2JSON):
         Return number of tokens, number of words and number of
         words with at least one analysis in the document.
         """
-        # curMeta = self.get_meta(fnameSrc)
-        # Currently, no metadata are loaded:
         print(fnameSrc)
-        curMeta = {'title': fnameSrc, 'author': '', 'year1': '1900', 'year2': '2017'}
+        curMeta = self.get_meta(fnameSrc)
+        if len(curMeta) == 1:
+            curMeta = {'filename': fnameSrc, 'title': fnameSrc, 'author': '',
+                       'year_from': '1900', 'year_to': str(datetime.datetime.now().year)}
 
         textJSON = {'meta': curMeta, 'sentences': []}
-        nTokens, nWords, nAnalyze = 0, 0, 0
+        nTokens, nWords, nAnalyzed = 0, 0, 0
         self.seg2pID = {}
         self.morph2wordID = {}
         self.wordIDseq = []
@@ -682,7 +702,14 @@ class ISO_TEI_Hamburg2JSON(Txt2JSON):
         self.tp.splitter.recalculate_offsets(textJSON['sentences'])
         self.tp.splitter.add_next_word_id(textJSON['sentences'])
         self.write_output(fnameTarget, textJSON)
-        return nTokens, nWords, nAnalyze
+        for s in textJSON['sentences']:
+            for word in s['words']:
+                nTokens += 1
+                if word['wtype'] == 'word':
+                    nWords += 1
+                    if 'ana' in word and len(word['ana']) > 0:
+                        nAnalyzed += 1
+        return nTokens, nWords, nAnalyzed
 
     def process_corpus(self, cutMedia=True):
         """
