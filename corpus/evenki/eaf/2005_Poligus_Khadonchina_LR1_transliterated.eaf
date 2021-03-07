@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ANNOTATION_DOCUMENT AUTHOR="unspecified" DATE="2020-08-08T11:49:30+04:00" FORMAT="3.0" VERSION="3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv3.0.xsd">
+<ANNOTATION_DOCUMENT AUTHOR="unspecified" DATE="2021-03-06T23:58:24+04:00" FORMAT="3.0" VERSION="3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv3.0.xsd">
     <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
         <MEDIA_DESCRIPTOR MEDIA_URL="file:///D:/ForElan/ForSIL/Natasha_Texts/2005_Poligus_Khadonchina_LR1/2005_Poligus_Khadonchina_LR1.wav" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="../../../../../../ForElan/ForSIL/Natasha_Texts/2005_Poligus_Khadonchina_LR1/2005_Poligus_Khadonchina_LR1.wav"/>
         <MEDIA_DESCRIPTOR EXTRACTED_FROM="file:///D:/ForElan/ForSIL/Natasha_Texts/2005_Poligus_Khadonchina_LR1/2005_Poligus_Khadonchina_LR1.wav" MEDIA_URL="file:///D:/ForElan/ForSIL/Natasha_Texts/2005_Poligus_Khadonchina_LR1/2005_Poligus_Khadonchina_LR1.wav" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="../../../../../../ForElan/ForSIL/Natasha_Texts/2005_Poligus_Khadonchina_LR1/2005_Poligus_Khadonchina_LR1.wav"/>
@@ -3980,7 +3980,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a7304" ANNOTATION_REF="a6786" PREVIOUS_ANNOTATION="a7303">
-                <ANNOTATION_VALUE>--ča</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>-ča</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -4730,7 +4730,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a7454" ANNOTATION_REF="a6857" PREVIOUS_ANNOTATION="a7453">
-                <ANNOTATION_VALUE>rə</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>-rə</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -5015,7 +5015,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a7511" ANNOTATION_REF="a6881" PREVIOUS_ANNOTATION="a7510">
-                <ANNOTATION_VALUE>rə</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>-rə</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -5135,7 +5135,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a7535" ANNOTATION_REF="a6891" PREVIOUS_ANNOTATION="a7534">
-                <ANNOTATION_VALUE>rə</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>-rə</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -5165,7 +5165,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a7541" ANNOTATION_REF="a6895" PREVIOUS_ANNOTATION="a7540">
-                <ANNOTATION_VALUE>rə</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>-rə</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -5480,7 +5480,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a7604" ANNOTATION_REF="a6925" PREVIOUS_ANNOTATION="a7603">
-                <ANNOTATION_VALUE>rə</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>-rə</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -5500,7 +5500,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a7608" ANNOTATION_REF="a6926" PREVIOUS_ANNOTATION="a7607">
-                <ANNOTATION_VALUE>rə</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>-rə</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -5670,7 +5670,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a7642" ANNOTATION_REF="a6940" PREVIOUS_ANNOTATION="a7641">
-                <ANNOTATION_VALUE>kōn</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>-kōn</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -5955,7 +5955,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a7699" ANNOTATION_REF="a6965" PREVIOUS_ANNOTATION="a7698">
-                <ANNOTATION_VALUE>ri</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>-ri</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -6250,7 +6250,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a7758" ANNOTATION_REF="a6993" PREVIOUS_ANNOTATION="a7757">
-                <ANNOTATION_VALUE>ri</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>-ri</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -6710,7 +6710,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a7850" ANNOTATION_REF="a7027" PREVIOUS_ANNOTATION="a7849">
-                <ANNOTATION_VALUE>rə</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>-rə</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -8075,7 +8075,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a8123" ANNOTATION_REF="a7141" PREVIOUS_ANNOTATION="a8122">
-                <ANNOTATION_VALUE>ďə</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>-ďə</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -8220,7 +8220,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a8152" ANNOTATION_REF="a7155" PREVIOUS_ANNOTATION="a8151">
-                <ANNOTATION_VALUE>rə</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>-rə</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -9245,7 +9245,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a8357" ANNOTATION_REF="a7242" PREVIOUS_ANNOTATION="a8356">
-                <ANNOTATION_VALUE>śi</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>-śi</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -11322,7 +11322,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a8770" ANNOTATION_REF="a7649">
-                <ANNOTATION_VALUE>верховой олень</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>верховой.олень</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -14257,7 +14257,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a9347" ANNOTATION_REF="a8236">
-                <ANNOTATION_VALUE>верховой олень</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>верховой.олень</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -14522,7 +14522,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a9400" ANNOTATION_REF="a8289">
-                <ANNOTATION_VALUE>верховой олень</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>верховой.олень</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -14687,7 +14687,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a9433" ANNOTATION_REF="a8322">
-                <ANNOTATION_VALUE>верховой олень</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>верховой.олень</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -14702,7 +14702,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a9436" ANNOTATION_REF="a8325">
-                <ANNOTATION_VALUE>верховой олень</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>верховой.олень</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -16483,7 +16483,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="fonConcat_a6786" ANNOTATION_REF="a6786">
-                <ANNOTATION_VALUE>ili-t--ča-ŋki-tin</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>ili-t-ča-ŋki-tin</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -16838,7 +16838,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="fonConcat_a6857" ANNOTATION_REF="a6857">
-                <ANNOTATION_VALUE>jūrə-w</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>jū-rə-w</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -16958,7 +16958,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="fonConcat_a6881" ANNOTATION_REF="a6881">
-                <ANNOTATION_VALUE>ičərə-w</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>ičə-rə-w</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -16983,7 +16983,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="fonConcat_a6886" ANNOTATION_REF="a6886">
-                <ANNOTATION_VALUE>sururə-w</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>suru-rə-w</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -17008,7 +17008,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="fonConcat_a6891" ANNOTATION_REF="a6891">
-                <ANNOTATION_VALUE>ŋənə-ďərə-w</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>ŋənə-ďə-rə-w</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -17028,7 +17028,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="fonConcat_a6895" ANNOTATION_REF="a6895">
-                <ANNOTATION_VALUE>ičərə-w</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>ičə-rə-w</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -17178,12 +17178,12 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="fonConcat_a6925" ANNOTATION_REF="a6925">
-                <ANNOTATION_VALUE>haŋī-ďarə-w</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>haŋī-ďa-rə-w</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="fonConcat_a6926" ANNOTATION_REF="a6926">
-                <ANNOTATION_VALUE>haŋī-ďarə-w</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>haŋī-ďa-rə-w</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -17203,7 +17203,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="fonConcat_a6930" ANNOTATION_REF="a6930">
-                <ANNOTATION_VALUE>supti-wrə-w</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>supti-w-rə-w</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -17253,7 +17253,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="fonConcat_a6940" ANNOTATION_REF="a6940">
-                <ANNOTATION_VALUE>orokōn-mə</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>oro-kōn-mə</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -17378,7 +17378,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="fonConcat_a6965" ANNOTATION_REF="a6965">
-                <ANNOTATION_VALUE>haktiri-n</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>hakti-ri-n</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -17518,7 +17518,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="fonConcat_a6993" ANNOTATION_REF="a6993">
-                <ANNOTATION_VALUE>haktiri-n</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>hakti-ri-n</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -17688,7 +17688,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="fonConcat_a7027" ANNOTATION_REF="a7027">
-                <ANNOTATION_VALUE>sururə-n</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>suru-rə-n</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -18328,7 +18328,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="fonConcat_a7155" ANNOTATION_REF="a7155">
-                <ANNOTATION_VALUE>ičərə-n</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>ičə-rə-n</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -18763,7 +18763,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="fonConcat_a7242" ANNOTATION_REF="a7242">
-                <ANNOTATION_VALUE>biśi-m</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>bi-śi-m</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -19295,7 +19295,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="glConcat_a6857" ANNOTATION_REF="a6857">
-                <ANNOTATION_VALUE>выйти NFUT-1PL(EXCL)</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>выйти-NFUT-1PL(EXCL)</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -19415,7 +19415,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="glConcat_a6881" ANNOTATION_REF="a6881">
-                <ANNOTATION_VALUE>увидеть NFUT-1PL(EXCL)</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>увидеть-NFUT-1PL(EXCL)</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -19440,7 +19440,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="glConcat_a6886" ANNOTATION_REF="a6886">
-                <ANNOTATION_VALUE>пойти NFUT-1PL(EXCL)</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>пойти-NFUT-1PL(EXCL)</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -19465,7 +19465,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="glConcat_a6891" ANNOTATION_REF="a6891">
-                <ANNOTATION_VALUE>идти-IPFV NFUT-1PL(EXCL)</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>идти-IPFV-NFUT-1PL(EXCL)</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -19485,7 +19485,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="glConcat_a6895" ANNOTATION_REF="a6895">
-                <ANNOTATION_VALUE>увидеть NFUT-1PL(EXCL)</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>увидеть-NFUT-1PL(EXCL)</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -19635,12 +19635,12 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="glConcat_a6925" ANNOTATION_REF="a6925">
-                <ANNOTATION_VALUE>следовать-IPFV NFUT-1PL(EXCL)</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>следовать-IPFV-NFUT-1PL(EXCL)</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="glConcat_a6926" ANNOTATION_REF="a6926">
-                <ANNOTATION_VALUE>следовать-IPFV NFUT-1PL(EXCL)</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>следовать-IPFV-NFUT-1PL(EXCL)</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -19660,7 +19660,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="glConcat_a6930" ANNOTATION_REF="a6930">
-                <ANNOTATION_VALUE>оставить.позади-PASS NFUT-1PL(EXCL)</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>оставить.позади-PASS-NFUT-1PL(EXCL)</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -19710,7 +19710,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="glConcat_a6940" ANNOTATION_REF="a6940">
-                <ANNOTATION_VALUE>олень ATTEN-ACC</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>олень-ATTEN-ACC</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -19725,7 +19725,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="glConcat_a6943" ANNOTATION_REF="a6943">
-                <ANNOTATION_VALUE>верховой олень-ACC.RFL</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>верховой.олень-ACC.RFL</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -19835,7 +19835,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="glConcat_a6965" ANNOTATION_REF="a6965">
-                <ANNOTATION_VALUE>стемнеть ???-3SG</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>стемнеть-???-3SG</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -19975,7 +19975,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="glConcat_a6993" ANNOTATION_REF="a6993">
-                <ANNOTATION_VALUE>стемнеть ???-3SG</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>стемнеть-???-3SG</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -20145,7 +20145,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="glConcat_a7027" ANNOTATION_REF="a7027">
-                <ANNOTATION_VALUE>пойти NFUT-3SG</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>пойти-NFUT-3SG</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -20715,7 +20715,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="glConcat_a7141" ANNOTATION_REF="a7141">
-                <ANNOTATION_VALUE>идти-IPFV PRS??-3SG</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>идти-IPFV-PRS??-3SG</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -20785,7 +20785,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="glConcat_a7155" ANNOTATION_REF="a7155">
-                <ANNOTATION_VALUE>увидеть NFUT-3SG</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>увидеть-NFUT-3SG</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -20970,7 +20970,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="glConcat_a7192" ANNOTATION_REF="a7192">
-                <ANNOTATION_VALUE>верховой олень-ACCIN-PS1SG</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>верховой.олень-ACCIN-PS1SG</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -21085,7 +21085,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="glConcat_a7215" ANNOTATION_REF="a7215">
-                <ANNOTATION_VALUE>верховой олень-DATLOC</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>верховой.олень-DATLOC</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -21145,12 +21145,12 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="glConcat_a7227" ANNOTATION_REF="a7227">
-                <ANNOTATION_VALUE>верховой олень-DATLOC-1SG</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>верховой.олень-DATLOC-1SG</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="glConcat_a7228" ANNOTATION_REF="a7228">
-                <ANNOTATION_VALUE>верховой олень-DATLOC</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>верховой.олень-DATLOC</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -21220,7 +21220,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="glConcat_a7242" ANNOTATION_REF="a7242">
-                <ANNOTATION_VALUE>быть NFUT-1SG</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>быть-NFUT-1SG</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
