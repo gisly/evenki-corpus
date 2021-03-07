@@ -388,6 +388,7 @@ class SentenceViewer:
         if format != 'csv':
             result += '</span>'
         if 'site_url' in meta:
+            result += '<span class="ch_site_url"> / <a href="' + meta['site_url'] + '"> URL</a></span>'
         return result
 
     def get_word_offsets(self, sSource, numSent, matchOffsets=None):
