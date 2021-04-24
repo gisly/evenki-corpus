@@ -635,6 +635,8 @@ class SentenceViewer:
         if 'words' not in sSource:
             return {'languages': {langView: {'text': highlightedText,
                                              'highlighted_text': highlightedText}}}
+
+        glosses = self.get_glossed_sentence(sSource, getHeader=False, skipNonGlossed=True)
         chars = list(sSource['text'])
         if format == 'csv':
             offParaStarts, offParaEnds = {}, {}
@@ -730,7 +732,8 @@ class SentenceViewer:
             relationsSatisfied = False
         text = self.view_sentence_meta(sSource, format) +\
                self.transliterate_baseline(''.join(chars), lang=lang, translit=translit)
-        langViewContents = {'text': text, 'highlighted_text': highlightedText}
+        langViewContents = {'text': text, 'highlighted_text': highlightedText,
+                            'glosses': glosses}
         if 'images' in self.settings and self.settings['images'] and 'img' in sSource['meta']:
             langViewContents['img'] = sSource['meta']['img']
         if 'rtl_languages' in self.settings and langView in self.settings['rtl_languages']:
@@ -739,7 +742,7 @@ class SentenceViewer:
                 'toggled_on': relationsSatisfied,
                 'src_alignment': fragmentInfo}
 
-    def get_glossed_sentence(self, s, getHeader=True, lang='', translit=None):
+    def get_glossed_sentence(self, s, getHeader=True, lang='', translit=None, skipNonGlossed=False):
         """
         Process one sentence taken from response['hits']['hits'].
         If getHeader is True, retrieve the metadata from the database.
@@ -822,6 +825,8 @@ class SentenceViewer:
             gramm = ''
         if self.rxTabs.search(lemmata) is not None:
             lemmata = ''
+        if skipNonGlossed and gloss == '':
+            return ''
         if len(parts) > 0:
             return text + parts + '\n' + gloss + '\n' + lemmata + '\n' + gramm + '\n'
         return text + tokens + '\n' + parts + '\n' + gloss + '\n' + lemmata + '\n' + gramm + '\n'

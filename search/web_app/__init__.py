@@ -242,7 +242,7 @@ def change_display_options(query):
 
 def add_sent_data_for_session(sent, sentData):
     """
-    Add information about one particluar sentence to the
+    Add information about one particular sentence to the
     sentData dictionary for storing in the session data
     dictionary.
     Modify sentData, do not return anything.
@@ -259,6 +259,7 @@ def add_sent_data_for_session(sent, sentData):
     langID = 0
     nextID = prevID = -1
     highlightedText = ''
+    glosses = ''
     if '_source' in sent:
         if 'next_id' in sent['_source']:
             nextID = sent['_source']['next_id']
@@ -270,6 +271,7 @@ def add_sent_data_for_session(sent, sentData):
             langID = sent['_source']['lang']
             highlightedText = sentView.process_sentence_csv(sent, lang=settings['languages'][langID],
                                                             translit=get_session_data('translit'))
+            glosses = sentView.get_glossed_sentence(sent['_source'], getHeader=False, skipNonGlossed=True)
         lang = settings['languages'][langID]
         langView = lang
         if 'transVar' in sent['_source']:
@@ -279,6 +281,7 @@ def add_sent_data_for_session(sent, sentData):
                                                'next_id': nextID,
                                                'prev_id': prevID,
                                                'highlighted_text': highlightedText,
+                                               'glosses': glosses,
                                                'source': sent['_source']}
         else:
             if ('next_id' not in sentData['languages'][langView]
@@ -325,14 +328,20 @@ def get_page_data(hitsProcessed):
         hit = hitsProcessed['contexts'][iHit]
         sentPageDataDict = {'toggled_off': False,
                             'highlighted_text_csv': [],
+                            'glosses_csv': [],
                             'header_csv': ''}
         if not hit['toggled_on']:
             sentPageDataDict['toggled_off'] = True
         for lang in settings['languages']:
             if lang not in curSentData[iHit]['languages']:
                 sentPageDataDict['highlighted_text_csv'].append('')
+                sentPageDataDict['glosses_csv'].append('')
             else:
                 sentPageDataDict['highlighted_text_csv'].append(curSentData[iHit]['languages'][lang]['highlighted_text'])
+                sentPageDataDict['glosses_csv'].append(
+                    curSentData[iHit]['languages'][lang].get('glosses', '')
+                        .replace('\n', '/')
+                        .replace('\t', ' ').strip('/'))
             if 'header_csv' in curSentData[iHit]:
                 sentPageDataDict['header_csv'] = curSentData[iHit]['header_csv']
         result.append(sentPageDataDict)
@@ -1614,7 +1623,8 @@ def prepare_results_for_download(pageData):
     for page in pageData:
         for sent in pageData[page]:
             if not sent['toggled_off']:
-                result.append([sent['header_csv']] + sent['highlighted_text_csv'])
+                result.append([sent['header_csv']] + sent['highlighted_text_csv']
+                              + sent['glosses_csv'])
     return result
 
 
