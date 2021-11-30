@@ -1,6 +1,6 @@
 # Tsakorpus
 
-If you want to use tsakorpus, download the most recent version from this repository.
+This is a modified version of Tsakorpus 1.0 (by Timofey Arkhangelskiy) deployed at http://gisly.net/corpus
 
 ## Overview
 
