@@ -65,6 +65,7 @@
       "recplace"
     ]
   },
+  "citation": "test",
   "word_fields":
   [
     "trans_ru",
@@ -77,6 +78,7 @@
   "all_language_search_enabled": true,
   "gloss_search_enabled": true,
   "ambiguous_analyses": true,
+  "generate_dictionary": true,
   "lang_props":
   {
     "evenkiTr":
