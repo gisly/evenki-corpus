@@ -19,8 +19,7 @@
   "corpus_name": "evenki",
   "input_format": "json-gzip",
   "debug": false,
-  "media": false,
-  "viewing_mode": "glossed",
+  "media": true,
   "media_length": 60,
   "max_context_expand": 4,
   "max_distance_filter": 200000,
@@ -66,6 +65,7 @@
       "recplace"
     ]
   },
+  "citation": "test",
   "word_fields":
   [
     "trans_ru",
@@ -78,6 +78,7 @@
   "all_language_search_enabled": true,
   "gloss_search_enabled": true,
   "ambiguous_analyses": true,
+  "generate_dictionary": true,
   "lang_props":
   {
     "evenkiTr":

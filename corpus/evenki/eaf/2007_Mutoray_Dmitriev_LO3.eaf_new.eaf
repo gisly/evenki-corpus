@@ -1,7 +1,7 @@
 <ANNOTATION_DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" AUTHOR="unspecified" DATE="2017-01-17T08:35:47+12:00" FORMAT="2.8" VERSION="2.8" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv2.8.xsd">
     <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
-        <MEDIA_DESCRIPTOR MEDIA_URL="file:///D:/ForElan/OldMethod/++2007_Mutoray_Dmitriev_LO3/2007_Mutoray_Dmitriev_LO3.wav" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="./2007_Mutoray_Dmitriev_LO3.wav"/>
-        <MEDIA_DESCRIPTOR EXTRACTED_FROM="file:///D:/ForElan/OldMethod/++2007_Mutoray_Dmitriev_LO3/2007_Mutoray_Dmitriev_LO3.wav" MEDIA_URL="file:///D:/ForElan/OldMethod/++2007_Mutoray_Dmitriev_LO3/2007_Mutoray_Dmitriev_LO3.wav" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="./2007_Mutoray_Dmitriev_LO3.wav"/>
+        <MEDIA_DESCRIPTOR MEDIA_URL="file:///D:/ForElan/OldMethod/2007_Mutoray_Dmitriev_LO3/2007_Mutoray_Dmitriev_LO3.wav" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="./2007_Mutoray_Dmitriev_LO3.wav"/>
+        <MEDIA_DESCRIPTOR EXTRACTED_FROM="file:///D:/ForElan/OldMethod/2007_Mutoray_Dmitriev_LO3/2007_Mutoray_Dmitriev_LO3.wav" MEDIA_URL="file:///D:/ForElan/OldMethod/2007_Mutoray_Dmitriev_LO3/2007_Mutoray_Dmitriev_LO3.wav" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="./2007_Mutoray_Dmitriev_LO3.wav"/>
         <PROPERTY NAME="URN">urn:nl-mpi-tools-elan-eaf:090262a3-30bb-4356-9d48-584df117c32c</PROPERTY>
         <PROPERTY NAME="lastUsedAnnotationId">145</PROPERTY>
     </HEADER>

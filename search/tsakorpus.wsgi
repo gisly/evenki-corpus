@@ -1,6 +1,6 @@
 python_home = '/home/gisly/evenki-corpus/search/venv'
 
-activator = python_home + '/bin/activate_this.py'
+activator = python_home + '/bin/activate.py'
 with open(activator) as f:
     exec(f.read(), {'__file__': activator})
 

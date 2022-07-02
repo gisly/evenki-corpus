@@ -271,15 +271,7 @@ def add_sent_data_for_session(sent, sentData):
             langID = sent['_source']['lang']
             highlightedText = sentView.process_sentence_csv(sent, lang=settings['languages'][langID],
                                                             translit=get_session_data('translit'))
-
-            glossed_sentence = sentView.get_glossed_sentence(sent['_source'], getHeader=False, skipNonGlossed=True)
-            if isinstance(glossed_sentence, set):
-                if glossed_sentence:
-                    glosses = glossed_sentence.pop()
-                else:
-                    glosses = ''
-            else:
-                glosses = glossed_sentence
+            glosses = sentView.get_glossed_sentence(sent['_source'], getHeader=False, skipNonGlossed=True)
         lang = settings['languages'][langID]
         langView = lang
         if 'transVar' in sent['_source']:
@@ -396,7 +388,7 @@ def update_expanded_contexts(context, neighboringIDs):
                 curSent['languages'][lang][side + '_id'] = neighboringIDs[lang][side]
 
 
-@app.route('/')
+@app.route('/search')
 def search_page():
     """
     Return HTML of the search page (the main page of the corpus).
@@ -1657,24 +1649,21 @@ def download_cur_results_xlsx():
     Write all sentences the user has already seen, except the
     toggled off ones, to an XSLX file. Return the file. 
     """
-    try:
-        pageData = get_session_data('page_data')
-        if pageData is None or len(pageData) <= 0:
-            return ''
-        results = prepare_results_for_download(pageData)
-        XLSXFilename = 'results-' + str(uuid.uuid4()) + '.xlsx'
-        if not os.path.exists('tmp'):
-            os.makedirs('tmp')
-        workbook = xlsxwriter.Workbook('tmp/' + XLSXFilename)
-        worksheet = workbook.add_worksheet('Search results')
-        for i in range(len(results)):
-            for j in range(len(results[i])):
-                worksheet.write(i, j, results[i][j])
-        workbook.close()
-        return send_from_directory('../tmp', XLSXFilename)
-    except Exception as e:
-        print(str(e))
+    pageData = get_session_data('page_data')
+    if pageData is None or len(pageData) <= 0:
         return ''
+    results = prepare_results_for_download(pageData)
+    XLSXFilename = 'results-' + str(uuid.uuid4()) + '.xlsx'
+    if not os.path.exists('tmp'):
+        os.makedirs('tmp')
+    workbook = xlsxwriter.Workbook('tmp/' + XLSXFilename)
+    worksheet = workbook.add_worksheet('Search results')
+    for i in range(len(results)):
+        for j in range(len(results[i])):
+            worksheet.write(i, j, results[i][j])
+    workbook.close()
+    return send_from_directory('../tmp', XLSXFilename)
+
 
 @app.route('/toggle_sentence/<int:sentNum>')
 def toggle_sentence(sentNum):

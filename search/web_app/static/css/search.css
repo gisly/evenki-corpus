@@ -116,6 +116,12 @@
 	margin: auto;
 }
 
+.get_glossed_copy {
+	margin: auto;
+	margin-left: -7px;
+	padding-right: 3px;
+}
+
 .glyph_expand {
 	width: 25px;
 	font-size: 26px;
@@ -123,6 +129,18 @@
 	cursor: pointer;
 	margin: auto;
 	margin-left: 10px;
+	margin-right: 5px;
+	text-align: center;
+	display: inline-grid;
+}
+
+.glyph_copy {
+	width: 20px;
+	font-size: 20px;
+	color: #1667aa;
+	cursor: pointer;
+	margin: auto;
+	margin-left: 5px;
 	margin-right: 5px;
 	text-align: center;
 	display: inline-grid;
@@ -185,6 +203,13 @@
 	color: #0470a5;
 }
 
+.ch_site_url {
+    padding-left: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #3a537a;
+}
+
 .ch_date {
 	padding-left: 10px;
 }
@@ -245,7 +270,11 @@
 }
 
 .word {
-	display: inline-grid;
+	display: inline-block;
+}
+
+.word_in_table {
+    white-space: nowrap;
 }
 
 .ana_interlinear {
@@ -279,6 +308,21 @@
 	transition: box-shadow 0.3s, border 0.3s;
 }
 
+.search_input_num {
+	color: black;
+	width: 70px;
+	margin-bottom: 1px;
+	margin-left: 1px;
+	padding-left: 3px;
+	border-radius: 2px;
+	border: solid 1px #707070;
+	box-shadow: none;
+	transition: box-shadow 0.3s, border 0.3s;
+}
+
+.disabled_search_input {
+	color: #AAAAAA;
+}
 
 .distance_input {
 	width: 45px;
@@ -327,11 +371,11 @@
 	margin-left: 3px;
 }
 
-.word_plus, .word_minus, .add_rel, .neg_query, .word_expand, .search_w, .stat_w, #show_help {
+.word_plus, .word_minus, .add_rel, .neg_query, .word_expand, .search_w, .stat_w, .search_l, .stat_l, #show_help, #show_dictionary, #cite_corpus {
 	cursor: pointer;
 }
 
-.search_w, .stat_w {
+.search_w, .stat_w, .search_l, .stat_l {
 	padding-left: 10px;
 	padding-right: 5px;
 }
@@ -386,7 +430,32 @@
 	color: #2664c9;
 }
 
+#show_help {
+	color: darkorange;
+	font-size: 20px;
+}
+
+#show_dictionary {
+	color: darkred;
+	font-size: 20px;
+	padding-right: 10px;
+}
+
+#cite_corpus {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#cite_corpus_img {
+	max-height: 24px;
+	margin-left: 20px;
+}
+
 #show_help:hover {
+	color: #2664c9;
+}
+
+#show_dictionary:hover {
 	color: #2664c9;
 }
 
@@ -431,6 +500,10 @@
 }
 
 #show_help:hover .tooltip_prompt {
+    visibility: visible;
+}
+
+#show_dictionary:hover .tooltip_prompt {
     visibility: visible;
 }
 
@@ -525,7 +598,6 @@ hr.separator {
 }
 
 .popup_field {
-	display: inline-block;
 }
 
 .popup_value {
@@ -569,6 +641,26 @@ hr.separator {
 	padding: 10px;
 	float: left;
 	display: inline-block;
+}
+
+#image_div {
+	max-width: 450px;
+	max-height: 500px;
+	padding: 10px;
+	float: left;
+	display: inline-block;
+	overflow: scroll;
+	cursor: pointer;
+}
+
+#image_src {
+	max-width: 600px;
+	max-height: 600px;
+}
+
+#full_image_body {
+	overflow: scroll;
+	max-height: 80rem;
 }
 
 #lower_part {
@@ -689,6 +781,68 @@ hr.separator {
 
 .words_list_table td {
 	padding: 3px 4px;
+}
+
+
+.dictionary_table {
+	border: solid 1px gray;
+	border-radius: 4px;
+	margin: auto;
+	margin-left: 5px;
+	margin-bottom: 15px;
+}
+
+.dictionary_table tr:nth-child(odd) {
+	background-color: #fffadb; 
+}
+
+.dictionary_table tr:nth-child(even) {
+	background-color: #f7ea9e;
+}
+
+.dictionary_table th {
+	padding: 3px 5px;
+	color: #fff9d8;
+	min-width: 45px;
+	background-color: #494005;
+	cursor: pointer;
+}
+
+.dictionary_table td {
+	padding: 3px 4px;
+}
+
+.dictionary_letter {
+	padding-left: 30px;
+	padding-right: 30px;
+	background-color: gold;
+	max-width: 100px;
+	text-align: center;
+	border-radius: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 25px;
+	margin-left: 10px;
+	font-weight: bold;
+	font-family: Arial;
+}
+
+.dictionary_header {
+	font-size: 25px;
+}
+
+.dictionary_lemma {
+	font-size: 1.2em;
+	cursor: pointer;
+}
+
+.dictionary_lemma:hover {
+	text-decoration: underline;
+}
+
+#dictionary_dialogue_body {
+	overflow-y: scroll;
+	max-height: 80rem;
 }
 
 .tabs-left {
@@ -834,6 +988,16 @@ hr.separator {
 	padding: 10px 15px;
 }
 
+.options_column_leftalign {
+	float: left;
+	text-align: left;
+	max-width: 375px;
+	margin-right: 3px;
+	border: 1px dotted gray;
+	border-radius: 3px;
+	padding: 10px 15px;
+}
+
 #txt {
 	width: 250px;
 	margin-right: 20px;
@@ -929,4 +1093,65 @@ svg circle {
 	max-width: 500px;
     top: 30px;
     left: 70%;
+}
+
+.style_i {
+	font-style: italic;
+}
+
+.style_b {
+	font-weight: bold;
+}
+
+.style_sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+
+.style_sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+
+.style_txt_h1 {
+	font-size: 150%;
+}
+
+.style_txt_h2 {
+	font-size: 125%;
+}
+
+.style_txt_h3 {
+	font-size: 110%;
+}
+
+#glossed_copy_textarea {
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 1em;
+	height: 1em;
+	padding: 0;
+	border: none;
+	outline: none;
+	background: transparent;
+}
+
+#td_load_more_words {
+	cursor: pointer;
+	text-align: center;
+}
+
+/* Predefined styles for certain tiers 
+(add styles for your languages/tiers if
+different languages should be displayed
+in different styles) */
+
+.sent_lang_ref {
+	font-size: 70%;
+	color: #777777;
+}
+
+.sent_lang_english_note {
+	color: #444444;
 }

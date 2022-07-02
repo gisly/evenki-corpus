@@ -1,8 +1,8 @@
 <ANNOTATION_DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" AUTHOR="unspecified" DATE="2017-01-17T08:34:00+12:00" FORMAT="2.8" VERSION="2.8" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv2.8.xsd">
     <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
-        <MEDIA_DESCRIPTOR MEDIA_URL="file:///D:/ForElan/OldMethod/++2007_Mutoray_Dmitriev_LO2/2007_Mutoray_Andreev_LO2_MPEG1.mpg" MIME_TYPE="video/mpeg" RELATIVE_MEDIA_URL="./2007_Mutoray_Andreev_LO2_MPEG1.mpg"/>
-        <MEDIA_DESCRIPTOR EXTRACTED_FROM="file:///D:/ForElan/OldMethod/++2007_Mutoray_Dmitriev_LO2/2007_Mutoray_Andreev_LO2_MPEG1.mpg" MEDIA_URL="file:///D:/ForElan/OldMethod/++2007_Mutoray_Dmitriev_LO2/2007_Mutoray_Dmitriev_LO2.wav" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="./2007_Mutoray_Dmitriev_LO2.wav"/>
-        <MEDIA_DESCRIPTOR MEDIA_URL="file:///D:/ForElan/OldMethod/++2007_Mutoray_Dmitriev_LO2/2007_Mutoray_Andreev_LO2_MP4.mp4" MIME_TYPE="video/mp4" RELATIVE_MEDIA_URL="./2007_Mutoray_Andreev_LO2_MP4.mp4"/>
+        <MEDIA_DESCRIPTOR MEDIA_URL="file:///D:/ForElan/OldMethod/2007_Mutoray_Dmitriev_LO2/2007_Mutoray_Andreev_LO2_MPEG1.mpg" MIME_TYPE="video/mpeg" RELATIVE_MEDIA_URL="./2007_Mutoray_Andreev_LO2_MPEG1.mpg"/>
+        <MEDIA_DESCRIPTOR EXTRACTED_FROM="file:///D:/ForElan/OldMethod/2007_Mutoray_Dmitriev_LO2/2007_Mutoray_Andreev_LO2_MPEG1.mpg" MEDIA_URL="file:///D:/ForElan/OldMethod/2007_Mutoray_Dmitriev_LO2/2007_Mutoray_Dmitriev_LO2.wav" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="./2007_Mutoray_Dmitriev_LO2.wav"/>
+        <MEDIA_DESCRIPTOR MEDIA_URL="file:///D:/ForElan/OldMethod/2007_Mutoray_Dmitriev_LO2/2007_Mutoray_Andreev_LO2_MP4.mp4" MIME_TYPE="video/mp4" RELATIVE_MEDIA_URL="./2007_Mutoray_Andreev_LO2_MP4.mp4"/>
         <PROPERTY NAME="URN">urn:nl-mpi-tools-elan-eaf:32a39df8-aa94-468a-83f2-24f4a1040e5a</PROPERTY>
         <PROPERTY NAME="lastUsedAnnotationId">322</PROPERTY>
     </HEADER>

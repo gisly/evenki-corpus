@@ -636,14 +636,7 @@ class SentenceViewer:
             return {'languages': {langView: {'text': highlightedText,
                                              'highlighted_text': highlightedText}}}
 
-        glossed_sentence = self.get_glossed_sentence(sSource, getHeader=False, skipNonGlossed=True)
-        if isinstance(glossed_sentence, set):
-            if glossed_sentence:
-                glosses = glossed_sentence.pop()
-            else:
-                glosses = ''
-        else:
-            glosses = glossed_sentence
+        glosses = self.get_glossed_sentence(sSource, getHeader=False, skipNonGlossed=True)
         chars = list(sSource['text'])
         if format == 'csv':
             offParaStarts, offParaEnds = {}, {}

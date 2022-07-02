@@ -482,7 +482,9 @@ class Eaf2JSON(Txt2JSON):
         srcTree = etree.parse(fnameSrc)
         self.tlis = self.get_tlis(srcTree)
         self.build_segment_tree(srcTree)
-        srcFileNode = srcTree.xpath('/ANNOTATION_DOCUMENT/HEADER/MEDIA_DESCRIPTOR')
+        srcFileNode = srcTree.xpath('/ANNOTATION_DOCUMENT/HEADER/MEDIA_DESCRIPTOR[@MIME_TYPE="audio/x-wav"]')
+        if not srcFileNode:
+            srcFileNode = srcTree.xpath('/ANNOTATION_DOCUMENT/HEADER/MEDIA_DESCRIPTOR')
         if len(srcFileNode) > 0 and 'RELATIVE_MEDIA_URL' in srcFileNode[0].attrib:
             srcFile = self.rxStripDir.sub('', html.unescape(srcFileNode[0].attrib['RELATIVE_MEDIA_URL']))
         elif len(srcFileNode) > 0 and 'MEDIA_URL' in srcFileNode[0].attrib:
@@ -508,17 +510,24 @@ class Eaf2JSON(Txt2JSON):
         self.write_output(fnameTarget, textJSON)
         return nTokens, nWords, nAnalyzed
 
-    def process_corpus(self, cutMedia=True):
+    def process_corpus(self, cutMedia=True, filenames = None, isToProcessCorpus = True):
         """
         Take every eaf file from the source directory subtree, turn it
         into a parsed json and store it in the target directory.
         """
-        Txt2JSON.process_corpus(self)
+        if isToProcessCorpus:
+            Txt2JSON.process_corpus(self)
         if not cutMedia:
             return
+        print(os.path.join(self.corpusSettings['corpus_dir'],
+                                                      self.srcExt))
         for path, dirs, files in os.walk(os.path.join(self.corpusSettings['corpus_dir'],
                                                       self.srcExt)):
+
             for fname in files:
+                if filenames and fname not in filenames:
+                    continue
+                print('!!!!')
                 fileExt = os.path.splitext(fname.lower())[1]
                 if fileExt in self.mediaExtensions:
                     fname = os.path.abspath(os.path.join(path, fname))
@@ -528,4 +537,8 @@ class Eaf2JSON(Txt2JSON):
 
 if __name__ == '__main__':
     t2j = Eaf2JSON()
-    t2j.process_corpus(cutMedia=False)
+    t2j.process_corpus(cutMedia = False,
+                       filenames = ['2019_Torom_MalyshevAF_LF5.wav'],
+                       isToProcessCorpus = True)
+    
+
